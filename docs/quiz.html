@@ -1750,7 +1750,7 @@
         let wrongIds = JSON.parse(localStorage.getItem('miracle_quiz_wrong') || '[]');
         let srs = JSON.parse(localStorage.getItem('miracle_quiz_srs') || '{}');
         
-        const STATIC_RESOURCE_BASE = "./Ressources";
+        const STATIC_RESOURCE_BASE = "https://raw.githubusercontent.com/promisemade/miracle/main/Ressources";
 
         function toStaticSourceUrl(url) {
             if (!url) return null;
@@ -1807,7 +1807,7 @@
         }
 
         async function loadData() {
-            const res = await fetch("./data/questions.json");
+            const res = await fetch("https://raw.githubusercontent.com/promisemade/miracle/main/data/questions.json");
             data = await res.json();
             const sourcesById = Object.fromEntries((data.sources || []).map(s => [s.id, s]));
 
