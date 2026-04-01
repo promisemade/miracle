@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mIRAcle | Fiches de poste</title>
+  <meta name="description" content="Version statique de mIRAcle pour GitHub Pages.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+  <link href="https://fonts.googleapis.com/css2?family=Marianne:wght@400;500;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./site/site.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">M</div>
+        <div class="brand-copy">
+          <div class="brand-title">mIRAcle</div>
+          <div class="brand-subtitle">Preparation orale IRA, version statique partageable</div>
+        </div>
+      </div>
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a class="nav-link" href="./index.html" aria-current="page"><i class="ri-folder-3-line"></i>Fiches</a>
+        <a class="nav-link" href="./quiz.html"><i class="ri-quill-pen-line"></i>Quiz</a>
+        <a class="nav-link" href="./ministeres.html"><i class="ri-government-line"></i>Ministeres</a>
+        <a class="nav-link" href="https://github.com/promisemade/miracle" target="_blank" rel="noreferrer"><i class="ri-github-line"></i>Depot</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">Oral IRA</p>
+      <h1 class="hero-title">Explorer les fiches, s'entrainer vite, reviser avec un lien simple.</h1>
+      <p class="hero-lead">
+        Cette version GitHub Pages reste en lecture seule. Les PDF, les donnees du quiz
+        et les fiches ministeres sont servis directement depuis le depot, sans Flask ni base locale.
+      </p>
+      <div class="hero-meta">
+        <span class="meta-pill"><i class="ri-file-list-3-line"></i><strong id="heroFichesCount">...</strong> fiches</span>
+        <span class="meta-pill"><i class="ri-question-answer-line"></i><strong id="heroQuizCount">...</strong> questions</span>
+        <span class="meta-pill"><i class="ri-building-line"></i><strong id="heroMinisteresCount">...</strong> ministeres</span>
+      </div>
+      <div class="view-switcher" role="tablist" aria-label="Vues">
+        <button class="view-pill is-active" data-view="fiches" type="button"><i class="ri-search-eye-line"></i>Fiches</button>
+        <button class="view-pill" data-view="training" type="button"><i class="ri-shuffle-line"></i>Entrainement</button>
+        <button class="view-pill" data-view="stats" type="button"><i class="ri-bar-chart-box-line"></i>Stats</button>
+      </div>
+    </section>
+
+    <section id="view-fiches" class="layout-grid">
+      <aside class="stack">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Filtres</h2>
+            <p>Recherche rapide sur le titre, l'administration, la structure ou le domaine.</p>
+          </div>
+          <div class="panel-body">
+            <div class="field">
+              <label for="searchInput">Recherche</label>
+              <input id="searchInput" class="input" type="search" placeholder="Ex. budget, RH, prefecture">
+            </div>
+            <div class="field">
+              <label for="domaineSelect">Domaine</label>
+              <select id="domaineSelect" class="select"></select>
+            </div>
+            <div class="field">
+              <label for="administrationSelect">Administration</label>
+              <select id="administrationSelect" class="select"></select>
+            </div>
+            <div class="field">
+              <label for="structureSelect">Structure</label>
+              <select id="structureSelect" class="select"></select>
+            </div>
+            <div class="field">
+              <label for="regionSelect">Region</label>
+              <select id="regionSelect" class="select"></select>
+            </div>
+            <div class="button-row">
+              <button id="resetFiltersBtn" class="btn btn-ghost" type="button"><i class="ri-refresh-line"></i>Reset</button>
+            </div>
+          </div>
+        </section>
+        <section class="panel">
+          <div class="panel-head">
+            <h3>Vue actuelle</h3>
+            <p id="filterSummary">Chargement...</p>
+          </div>
+        </section>
+      </aside>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Resultats</h2>
+          <p>Selectionne une fiche pour ouvrir le PDF directement dans la page.</p>
+        </div>
+        <div class="panel-body">
+          <div id="fichesList" class="result-list"></div>
+          <div id="fichesMoreWrap" class="button-row hidden" style="margin-top:14px;">
+            <button id="loadMoreBtn" class="btn" type="button"><i class="ri-arrow-down-line"></i>Afficher plus</button>
+          </div>
+        </div>
+      </section>
+
+      <aside class="panel">
+        <div class="panel-head">
+          <h2>Detail</h2>
+          <p>Lecture rapide dans la page ou ouverture dans un onglet separe.</p>
+        </div>
+        <div class="panel-body" id="detailPane">
+          <div class="empty-state">Choisis une fiche pour afficher son contenu ici.</div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="view-training" class="stack hidden">
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Entrainement express</h2>
+          <p>Pioche une fiche au hasard pour simuler une prise de connaissance rapide avant oral.</p>
+        </div>
+        <div class="panel-body">
+          <div class="button-row" style="margin-bottom:14px;">
+            <button id="drawRandomBtn" class="btn btn-accent" type="button"><i class="ri-shuffle-line"></i>Nouvelle fiche</button>
+            <button id="drawFromFiltersBtn" class="btn" type="button"><i class="ri-filter-3-line"></i>Depuis les filtres actifs</button>
+          </div>
+          <div id="trainingPane" class="empty-state">Tire une fiche pour commencer.</div>
+        </div>
+      </section>
+    </section>
+
+    <section id="view-stats" class="stack hidden">
+      <section class="metric-grid">
+        <article class="metric-card"><div class="metric-label">Total fiches</div><div id="metricTotal" class="metric-value">0</div></article>
+        <article class="metric-card"><div class="metric-label">Administrations</div><div id="metricAdmins" class="metric-value">0</div></article>
+        <article class="metric-card"><div class="metric-label">Domaines</div><div id="metricDomaines" class="metric-value">0</div></article>
+        <article class="metric-card"><div class="metric-label">Regions / departements</div><div id="metricRegions" class="metric-value">0</div></article>
+      </section>
+
+      <section class="triple-grid">
+        <article class="panel"><div class="panel-head"><h2>Top domaines</h2></div><div class="panel-body"><div id="statsDomaines" class="rank-list"></div></div></article>
+        <article class="panel"><div class="panel-head"><h2>Top structures</h2></div><div class="panel-body"><div id="statsStructures" class="rank-list"></div></div></article>
+        <article class="panel"><div class="panel-head"><h2>Top administrations</h2></div><div class="panel-body"><div id="statsAdministrations" class="rank-list"></div></div></article>
+      </section>
+    </section>
+
+    <p class="site-note">
+      Publication GitHub Pages recommandee: branche <code>main</code>, dossier <code>/(root)</code>.
+      Cette version statique laisse le projet partageable sans deploiement Python.
+    </p>
+  </div>
+
+  <script type="module" src="./site/index.js"></script>
+</body>
+</html>

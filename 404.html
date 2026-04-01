@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mIRAcle | Redirection</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="./site/site.css">
+</head>
+<body>
+  <div class="page-shell">
+    <section class="hero" style="margin-top:32px;">
+      <p class="eyebrow">Redirection</p>
+      <h1 class="hero-title">Le lien demande n'existe pas tel quel sur GitHub Pages.</h1>
+      <p class="hero-lead">
+        Si tu arrives depuis une ancienne URL Flask, la page tente une redirection automatique.
+        Sinon, utilise les boutons ci-dessous.
+      </p>
+      <div class="button-row" style="margin-top:18px;">
+        <a class="btn btn-primary" href="./index.html">Fiches</a>
+        <a class="btn" href="./quiz.html">Quiz</a>
+        <a class="btn" href="./ministeres.html">Ministeres</a>
+      </div>
+    </section>
+  </div>
+  <script>
+    const path = window.location.pathname.toLowerCase();
+    const rules = [
+      ["/quiz", "./quiz.html"],
+      ["/ministeres", "./ministeres.html"],
+      ["/training", "./index.html#training"],
+      ["/stats", "./index.html#stats"],
+      ["/welcome", "./index.html"],
+      ["/login", "./index.html"],
+      ["/register", "./index.html"]
+    ];
+    const found = rules.find(([from]) => path.endsWith(from) || path.endsWith(from + "/"));
+    if (found) {
+      window.location.replace(found[1]);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mIRAcle | Ministeres</title>
+  <meta name="description" content="Ministeres en version statique pour GitHub Pages.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+  <link href="https://fonts.googleapis.com/css2?family=Marianne:wght@400;500;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./site/site.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">M</div>
+        <div class="brand-copy">
+          <div class="brand-title">mIRAcle</div>
+          <div class="brand-subtitle">Panorama statique des ministeres et de leurs politiques</div>
+        </div>
+      </div>
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a class="nav-link" href="./index.html"><i class="ri-folder-3-line"></i>Fiches</a>
+        <a class="nav-link" href="./quiz.html"><i class="ri-quill-pen-line"></i>Quiz</a>
+        <a class="nav-link" href="./ministeres.html" aria-current="page"><i class="ri-government-line"></i>Ministeres</a>
+        <a class="nav-link" href="https://github.com/promisemade/miracle" target="_blank" rel="noreferrer"><i class="ri-github-line"></i>Depot</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">Administration centrale</p>
+      <h1 class="hero-title">Comparer les ministeres, memoriser leurs missions et repasser les grands textes.</h1>
+      <p class="hero-lead">
+        Version statique de la base ministeres. Pratique pour une navigation rapide et des revisions
+        orales sans dependance a l'application Flask.
+      </p>
+      <div class="hero-meta">
+        <span class="meta-pill"><i class="ri-building-line"></i><strong id="heroCount">...</strong> ministeres</span>
+      </div>
+    </section>
+
+    <section class="split-layout">
+      <aside class="stack">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Recherche</h2>
+            <p>Par nom, resume, mission ou politique publique.</p>
+          </div>
+          <div class="panel-body">
+            <div class="field">
+              <label for="searchMinistere">Recherche</label>
+              <input id="searchMinistere" class="input" type="search" placeholder="Ex. interieur, budget, cohesion">
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Liste</h2>
+            <p id="listSummary">Chargement...</p>
+          </div>
+          <div class="panel-body">
+            <div id="ministeresList" class="result-list"></div>
+          </div>
+        </section>
+      </aside>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Fiche ministere</h2>
+          <p>Resume, missions, competences, textes et sources.</p>
+        </div>
+        <div class="panel-body" id="ministereDetail">
+          <div class="empty-state">Choisis un ministere pour afficher sa fiche.</div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <script type="module" src="./site/ministeres.js"></script>
+</body>
+</html>

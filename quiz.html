@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mIRAcle | Quiz</title>
+  <meta name="description" content="Quiz statique mIRAcle pour GitHub Pages.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+  <link href="https://fonts.googleapis.com/css2?family=Marianne:wght@400;500;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./site/site.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">M</div>
+        <div class="brand-copy">
+          <div class="brand-title">mIRAcle</div>
+          <div class="brand-subtitle">Quiz et flashcards en local, sans connexion</div>
+        </div>
+      </div>
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a class="nav-link" href="./index.html"><i class="ri-folder-3-line"></i>Fiches</a>
+        <a class="nav-link" href="./quiz.html" aria-current="page"><i class="ri-quill-pen-line"></i>Quiz</a>
+        <a class="nav-link" href="./ministeres.html"><i class="ri-government-line"></i>Ministeres</a>
+        <a class="nav-link" href="https://github.com/promisemade/miracle" target="_blank" rel="noreferrer"><i class="ri-github-line"></i>Depot</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">Revision</p>
+      <h1 class="hero-title">Questionnaire rapide, mode erreurs, ou flashcards.</h1>
+      <p class="hero-lead">
+        Les donnees viennent directement de <code>data/questions.json</code>. Les statistiques et l'historique
+        sont conserves dans le navigateur de chaque utilisateur.
+      </p>
+    </section>
+
+    <section class="metric-grid" style="margin-bottom:18px;">
+      <article class="metric-card"><div class="metric-label">Questions</div><div id="metricQuestions" class="metric-value">0</div></article>
+      <article class="metric-card"><div class="metric-label">Sessions</div><div id="metricSessions" class="metric-value">0</div></article>
+      <article class="metric-card"><div class="metric-label">Precision</div><div id="metricAccuracy" class="metric-value">0%</div></article>
+      <article class="metric-card"><div class="metric-label">Questions a revoir</div><div id="metricWrong" class="metric-value">0</div></article>
+    </section>
+
+    <section class="split-layout">
+      <aside class="stack">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Lancer une session</h2>
+            <p>Choisis un mode, une categorie et le volume de travail.</p>
+          </div>
+          <div class="panel-body">
+            <div class="button-row" style="margin-bottom:14px;">
+              <button class="view-pill is-active" data-mode="qcm" type="button">QCM</button>
+              <button class="view-pill" data-mode="review" type="button">Erreurs</button>
+              <button class="view-pill" data-mode="flashcards" type="button">Flashcards</button>
+            </div>
+            <div class="field">
+              <label for="categorySelect">Categorie</label>
+              <select id="categorySelect" class="select"></select>
+            </div>
+            <div class="field">
+              <label for="countSelect">Nombre d'elements</label>
+              <select id="countSelect" class="select">
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+              </select>
+            </div>
+            <div class="button-row">
+              <button id="startSessionBtn" class="btn btn-primary" type="button"><i class="ri-play-line"></i>Demarrer</button>
+              <button id="resetStatsBtn" class="btn btn-ghost" type="button"><i class="ri-refresh-line"></i>Reset stats</button>
+            </div>
+            <p id="modeNote" class="site-note" style="margin-top:14px;">Mode QCM: reponse, explication, puis question suivante.</p>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Historique local</h2>
+            <p>Enregistre dans ce navigateur uniquement.</p>
+          </div>
+          <div class="panel-body">
+            <div id="historyList" class="history-list"></div>
+          </div>
+        </section>
+      </aside>
+
+      <section class="stack">
+        <section class="panel">
+          <div class="panel-head">
+            <h2 id="sessionTitle">Pret</h2>
+            <p id="sessionSubtitle">Lance une session pour commencer.</p>
+          </div>
+          <div class="panel-body">
+            <div id="sessionPane" class="empty-state">Aucune session en cours.</div>
+          </div>
+        </section>
+      </section>
+    </section>
+  </div>
+
+  <script type="module" src="./site/quiz.js"></script>
+</body>
+</html>
