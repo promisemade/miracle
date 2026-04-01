@@ -1,0 +1,4 @@
+# Beta whitelist emails (one per line)
+# Lines starting with # are ignored.
+
+exemple@domaine.fr

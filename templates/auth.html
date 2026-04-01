@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mIRAcle — Auth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Marianne:wght@400;500;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --miracle-primary: #1E2F5E;
+            --miracle-primary-dark: #111827;
+            --miracle-primary-light: #F5F7FA;
+            --miracle-accent: #1E2F5E;
+            --bg-default: #F8F8F6;
+            --bg-alt: #FFFFFF;
+            --text-default: #111827;
+            --text-mention: #6B7280;
+            --border-default: #E5E7EB;
+            --shadow-md: 0 10px 22px rgba(16, 24, 40, 0.08);
+            --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+            --dur-fast: 160ms;
+            --dur-med: 220ms;
+        }
+        body {
+            font-family: 'Marianne', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-default);
+            color: var(--text-default);
+            margin: 0;
+            min-height: 100vh;
+            position: relative;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image:
+                linear-gradient(0deg, rgba(17, 24, 39, 0.02), rgba(17, 24, 39, 0.02)),
+                repeating-linear-gradient(90deg, rgba(17, 24, 39, 0.02) 0, rgba(17, 24, 39, 0.02) 1px, transparent 1px, transparent 26px),
+                repeating-linear-gradient(0deg, rgba(17, 24, 39, 0.015) 0, rgba(17, 24, 39, 0.015) 1px, transparent 1px, transparent 26px);
+            opacity: 0.45;
+            z-index: -1;
+        }
+        .select-pill {
+            appearance: none;
+            background-color: #fff;
+            border: 1px solid rgba(17, 24, 39, 0.45);
+            border-radius: 999px;
+            padding: 6px 34px 6px 12px;
+            height: 30px;
+            font-weight: 700;
+            background-image:
+                linear-gradient(45deg, transparent 50%, #6B7280 50%),
+                linear-gradient(135deg, #6B7280 50%, transparent 50%);
+            background-position: calc(100% - 16px) 50%, calc(100% - 11px) 50%;
+            background-size: 5px 5px, 5px 5px;
+            background-repeat: no-repeat;
+        }
+        .select-pill:focus {
+            outline: none;
+            border-color: var(--miracle-primary);
+            box-shadow: 0 0 0 3px rgba(30, 47, 94, 0.12);
+        }
+        .card {
+            max-width: 420px;
+            margin: 60px auto;
+            background: var(--bg-alt);
+            border: 1px solid var(--border-default);
+            border-radius: 16px 14px 16px 14px;
+            padding: 24px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            inset: 8px 10px 8px 8px;
+            border: 1px solid rgba(30, 47, 94, 0.08);
+            border-radius: 11px 9px 11px 9px;
+            pointer-events: none;
+        }
+        .card > * { position: relative; z-index: 1; }
+        h1 {
+            font-size: 20px;
+            margin-bottom: 16px;
+            font-family: 'Source Serif 4', 'Marianne', serif;
+            font-weight: 800;
+            letter-spacing: -0.2px;
+            position: relative;
+            display: inline-block;
+            color: var(--text-default);
+        }
+        h1::after {
+            content: '';
+            display: block;
+            width: 32px;
+            height: 2px;
+            margin-top: 8px;
+            background: var(--miracle-primary);
+            border-radius: 999px;
+            opacity: 0.9;
+        }
+        label { display: block; font-size: 12px; margin-top: 10px; color: var(--text-mention); }
+        input {
+            width: 100%;
+            padding: 8px 12px;
+            margin-top: 6px;
+            border: 1px solid rgba(17, 24, 39, 0.45);
+            border-radius: 10px;
+            background: #fff;
+            transition: border-color var(--dur-fast) var(--ease-standard), box-shadow var(--dur-fast) var(--ease-standard), background var(--dur-fast) var(--ease-standard);
+        }
+        input:focus {
+            outline: none;
+            border-color: var(--miracle-primary);
+            box-shadow: 0 0 0 3px rgba(30, 47, 94, 0.12);
+        }
+        button {
+            margin-top: 16px;
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid var(--miracle-primary);
+            border-radius: 10px;
+            background: var(--miracle-primary);
+            color: #fff;
+            font-weight: 800;
+            cursor: pointer;
+            box-shadow: var(--shadow-sm);
+            transition: all var(--dur-fast) var(--ease-standard);
+        }
+        button:hover { 
+            background: var(--miracle-primary-dark);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+        .beta-note {
+            margin: 10px 0 6px;
+            padding: 10px 12px;
+            border-radius: 10px;
+            border: 1px solid var(--border-default);
+            background: var(--bg-contrast);
+            color: var(--text-mention);
+            font-size: 12px;
+        }
+        .link { margin-top: 12px; text-align: center; font-size: 12px; }
+        .error { color: #b91c1c; font-size: 12px; margin-top: 8px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        {% if mode == 'register' %}
+        <h1>Créer un compte</h1>
+        {% else %}
+        <h1>Connexion</h1>
+        {% endif %}
+
+        <div class="beta-note">
+            Accès réservé à la bêta privée. L'inscription est limitée aux emails autorisés.
+        </div>
+
+        {% if error %}
+        <div class="error">{{ error }}</div>
+        {% endif %}
+
+        <form method="post">
+            <label>Email</label>
+            <input type="email" name="email" required>
+            <label>Mot de passe</label>
+            <input type="password" name="password" required>
+            <button type="submit">Continuer</button>
+        </form>
+
+        <div class="link">
+            {% if mode == 'register' %}
+            <a href="/login">J'ai déjà un compte</a>
+            {% else %}
+            <a href="/register">Créer un compte</a>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

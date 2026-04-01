@@ -1,0 +1,19 @@
+Windows Task Scheduler steps (beta)
+
+1) Open Task Scheduler
+2) Create Task...
+3) General tab:
+   - Name: mIRAcle DB Backup
+   - Run whether user is logged on or not
+4) Triggers tab:
+   - New... -> Daily -> set time
+5) Actions tab:
+   - New... -> Action: Start a program
+   - Program/script: powershell.exe
+   - Add arguments: -NoProfile -ExecutionPolicy Bypass -File "C:\Users\lroos\Desktop\Projet mIRAcle\scripts\backup_db.ps1"
+   - Start in: C:\Users\lroos\Desktop\Projet mIRAcle
+6) Conditions/Settings: default is fine
+
+Notes:
+- Update the path if the project folder moves.
+- You can test by running the task manually after creation.

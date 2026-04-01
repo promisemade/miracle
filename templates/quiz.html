@@ -1,0 +1,2471 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mIRAcle — Révisions IRA</title>
+    <!-- DSFR Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Marianne:wght@400;500;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --miracle-primary: #1E2F5E;
+            --miracle-primary-dark: #111827;
+            --miracle-primary-light: #F5F7FA;
+            
+            --miracle-accent: #1E2F5E;
+            --miracle-accent-light: #EEF2F7;
+            
+            --miracle-secondary: #1E2F5E;
+            --miracle-secondary-light: #F1F3F5;
+            
+            --miracle-success: #199F4D;
+            --miracle-success-light: #E6F9F0;
+            
+            --miracle-warning: #FF8C00;
+            --miracle-warning-light: #FFF4E6;
+            
+            --bg-default: #F8F8F6;
+            --bg-alt: #FFFFFF;
+            --bg-contrast: #F1F3F5;
+            --bg-active: #F5F7FA;
+            
+            --text-default: #111827;
+            --text-mention: #6B7280;
+            --text-disabled: #C7CDD4;
+            --text-inverted: #FFFFFF;
+            
+            --border-default: #E5E7EB;
+            --border-active: #1E2F5E;
+            
+            --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06);
+            --shadow-md: 0 10px 22px rgba(16, 24, 40, 0.08);
+            --shadow-lg: 0 18px 36px rgba(16, 24, 40, 0.12);
+            --shadow-hover: 0 12px 28px rgba(16, 24, 40, 0.12);
+
+            --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+            --dur-fast: 160ms;
+            --dur-med: 220ms;
+
+            --pill-pad-y: 4px;
+            --pill-pad-x: 10px;
+            --pill-radius: 999px;
+            --pill-font: 11px;
+            
+            --topbar-height: 64px;
+            --topbar-bg: #FFFFFF;
+            --topbar-bg-2: #FFFFFF;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Marianne', -apple-system, BlinkMacSystemFont, sans-serif; 
+            background: var(--bg-default);
+            background-attachment: fixed;
+            color: var(--text-default); 
+            min-height: 100vh;
+            font-size: 13px;
+            line-height: 1.45;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image:
+                linear-gradient(0deg, rgba(17, 24, 39, 0.02), rgba(17, 24, 39, 0.02)),
+                repeating-linear-gradient(90deg, rgba(17, 24, 39, 0.02) 0, rgba(17, 24, 39, 0.02) 1px, transparent 1px, transparent 26px),
+                repeating-linear-gradient(0deg, rgba(17, 24, 39, 0.015) 0, rgba(17, 24, 39, 0.015) 1px, transparent 1px, transparent 26px);
+            opacity: 0.45;
+            z-index: -1;
+        }
+
+        .select-pill {
+            appearance: none;
+            background-color: #fff;
+            border: 1px solid rgba(17, 24, 39, 0.45);
+            border-radius: 999px;
+            padding: 6px 34px 6px 12px;
+            height: 30px;
+            font-weight: 700;
+            background-image:
+                linear-gradient(45deg, transparent 50%, #6B7280 50%),
+                linear-gradient(135deg, #6B7280 50%, transparent 50%);
+            background-position: calc(100% - 16px) 50%, calc(100% - 11px) 50%;
+            background-size: 5px 5px, 5px 5px;
+            background-repeat: no-repeat;
+        }
+        .select-pill:focus {
+            outline: none;
+            border-color: var(--miracle-primary);
+            box-shadow: 0 0 0 3px rgba(30, 47, 94, 0.12);
+        }
+        
+        /* ══════════ TOPBAR NAVIGATION ══════════ */
+        .topbar {
+            height: var(--topbar-height);
+            min-height: var(--topbar-height);
+            max-height: var(--topbar-height);
+            background: var(--topbar-bg);
+            color: var(--text-default);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            border-bottom: 1px solid var(--border-default);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            overflow: hidden;
+        }
+
+        .topbar-left {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .topbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            color: var(--text-default);
+        }
+
+        .topbar-brand-badge {
+            width: 28px;
+            height: 28px;
+            border-radius: 8px;
+            background: transparent;
+            border: 1px solid var(--text-default);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-default);
+            font-weight: 800;
+            font-size: 13px;
+        }
+
+        .topbar-nav {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+        .topbar-nav::after {
+            content: '';
+            position: absolute;
+            left: 0; right: 0;
+            bottom: 3px;
+            height: 1px;
+            background: var(--border-default);
+        }
+
+        .topbar-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 12px 8px;
+            border-radius: 6px 6px 2px 2px;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-mention);
+            cursor: pointer;
+            transition: color var(--dur-fast) var(--ease-standard), background var(--dur-fast) var(--ease-standard), border-color var(--dur-fast) var(--ease-standard);
+            white-space: nowrap;
+            text-decoration: none;
+            position: relative;
+            border: 1px solid transparent;
+        }
+        .topbar-item::after {
+            content: '';
+            position: absolute;
+            left: 10px;
+            bottom: -6px;
+            width: 16px;
+            height: 6px;
+            border-radius: 0 0 6px 6px;
+            background: transparent;
+            border: 1px solid transparent;
+            border-top: 0;
+            opacity: 0;
+            transition: opacity var(--dur-fast) var(--ease-standard), background var(--dur-fast) var(--ease-standard), border-color var(--dur-fast) var(--ease-standard);
+        }
+
+        .topbar-item:hover {
+            background: var(--bg-contrast);
+            color: var(--text-default);
+            border-color: var(--border-default);
+        }
+        .topbar-item:hover::after {
+            background: var(--bg-contrast);
+            border-color: var(--border-default);
+            opacity: 1;
+        }
+
+        .topbar-item.active {
+            background: #FFFFFF;
+            color: var(--text-default);
+            border: 1px solid var(--border-default);
+            box-shadow: inset 0 -1px 0 var(--miracle-primary);
+        }
+        .topbar-item.active::after {
+            left: 8px;
+            width: 20px;
+            height: 7px;
+            border-radius: 0 0 8px 4px;
+            background: #FFFFFF;
+            border-color: var(--border-default);
+            opacity: 1;
+        }
+
+        .topbar-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .topbar-pill {
+            padding: var(--pill-pad-y) var(--pill-pad-x);
+            border-radius: var(--pill-radius);
+            font-size: var(--pill-font);
+            font-weight: 700;
+            background: var(--bg-contrast);
+            color: var(--text-mention);
+            border: 1px solid var(--border-default);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .timer-mini {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 10px;
+            border-radius: 8px;
+            background: var(--bg-contrast);
+            border: 1px solid var(--border-default);
+        }
+
+        .timer-mini-display {
+            color: var(--text-default);
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .timer-mini-btn {
+            padding: 4px 6px;
+            background: transparent;
+            border: none;
+            color: var(--text-mention);
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .timer-mini-btn:hover {
+            background: var(--bg-contrast);
+            color: var(--text-default);
+        }
+
+        /* ══════════ DASHBOARD & HISTORY ══════════ */
+        .actions-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 0 0 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-badge {
+            margin-left: 8px;
+            padding: var(--pill-pad-y) var(--pill-pad-x);
+            border-radius: var(--pill-radius);
+            background: var(--bg-contrast);
+            border: 1px solid var(--border-default);
+            font-size: var(--pill-font);
+            font-weight: 800;
+            color: var(--text-mention);
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 0;
+        }
+
+        .dashboard-card {
+            background: var(--bg-alt);
+            border: 1px solid var(--border-default);
+            border-radius: 14px;
+            padding: 12px 14px;
+            box-shadow: var(--shadow-sm);
+            position: relative;
+        }
+        .dashboard-card::before {
+            content: '';
+            position: absolute;
+            inset: 8px 10px 8px 8px;
+            border: 1px solid rgba(30, 47, 94, 0.06);
+            border-radius: 10px 8px 10px 8px;
+            pointer-events: none;
+        }
+        .dashboard-card > * { position: relative; z-index: 1; }
+
+        .dashboard-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            color: var(--text-mention);
+            font-weight: 700;
+        }
+
+        .dashboard-value {
+            margin-top: 6px;
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--text-default);
+        }
+
+        .dashboard-sub {
+            margin-top: 4px;
+            font-size: 11px;
+            color: var(--text-mention);
+        }
+
+        .history-card {
+            background: var(--bg-alt);
+            border: 1px solid var(--border-default);
+            border-radius: 14px;
+            padding: 12px 14px;
+            box-shadow: var(--shadow-sm);
+            margin-top: 16px;
+            position: relative;
+        }
+        .history-card::before {
+            content: '';
+            position: absolute;
+            inset: 8px 10px 8px 8px;
+            border: 1px solid rgba(30, 47, 94, 0.06);
+            border-radius: 10px 8px 10px 8px;
+            pointer-events: none;
+        }
+        .history-card > * { position: relative; z-index: 1; }
+
+        body.session-active .actions-row,
+        body.session-active #dashboard,
+        body.session-active .history-card,
+        body.session-active .mode-selector,
+        body.session-active .categories,
+        body.session-active .section-title,
+        body.session-active .start-section {
+            display: none !important;
+        }
+
+        body.session-active .qcm-container,
+        body.session-active .flashcards-container,
+        body.session-active .results-container {
+            margin-top: 12px;
+        }
+
+        .history-list {
+            display: grid;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .history-item {
+            display: grid;
+            grid-template-columns: 120px 1fr 120px 120px;
+            gap: 10px;
+            align-items: center;
+            padding: 8px 10px;
+            background: var(--bg-contrast);
+            border: 1px solid var(--border-default);
+            border-radius: 10px;
+            font-size: 12px;
+        }
+
+        .history-mode {
+            font-weight: 800;
+            color: var(--text-default);
+        }
+
+        .history-score {
+            font-weight: 800;
+        }
+
+        .history-date {
+            color: var(--text-mention);
+            text-align: right;
+        }
+
+        .qcm-meta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-self: end;
+            flex-wrap: nowrap;
+        }
+
+        .qcm-mode-badge {
+            padding: var(--pill-pad-y) var(--pill-pad-x);
+            border-radius: var(--pill-radius);
+            font-size: var(--pill-font);
+            font-weight: 700;
+            background: var(--miracle-primary-light);
+            color: var(--miracle-primary);
+            border: 1px solid var(--border-default);
+        }
+
+        .qcm-timer {
+            padding: 4px 8px;
+            border-radius: 8px;
+            border: 1px solid var(--border-default);
+            background: var(--bg-contrast);
+            font-size: 12px;
+            font-weight: 800;
+            color: var(--text-default);
+            min-width: 64px;
+            text-align: center;
+        }
+
+        .timer-danger {
+            color: var(--red-marianne);
+            border-color: rgba(220, 38, 38, 0.4);
+            background: rgba(220, 38, 38, 0.08);
+        }
+
+        /* ══════════ SUBBAR WITH DOMAINS ══════════ */
+        .subbar {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 8px 20px;
+            background: var(--bg-contrast);
+            border-bottom: 1px solid var(--border-default);
+            position: relative;
+        }
+        .subbar::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            right: 20px;
+            top: 50%;
+            height: 2px;
+            background: rgba(17, 24, 39, 0.06);
+            transform: translateY(-50%);
+            z-index: 0;
+        }
+
+        .domaines-selector {
+            display: flex;
+            align-items: center;
+            gap: 0;
+            flex: 1;
+            min-width: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .domaines-label {
+            color: var(--text-mention);
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .domaines-list {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            padding: 0 4px;
+            row-gap: 8px;
+        }
+
+        .domaine-chip {
+            padding: 4px 12px;
+            border-radius: 999px;
+            background: var(--bg-alt);
+            border: 1px solid var(--border-default);
+            color: var(--text-mention);
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--dur-fast) var(--ease-standard);
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            position: relative;
+            height: 24px;
+        }
+        .domaine-chip::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 50%;
+            width: 7px;
+            height: 7px;
+            background: var(--bg-alt);
+            border: 1px solid var(--border-default);
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+        .domaine-chip::after {
+            content: '';
+            position: absolute;
+            right: -5px;
+            top: 50%;
+            width: 7px;
+            height: 7px;
+            background: var(--bg-alt);
+            border: 1px solid var(--border-default);
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+
+        .domaine-chip:hover {
+            background: var(--bg-contrast);
+            border-color: var(--miracle-primary);
+            color: var(--text-default);
+        }
+
+        .domaine-chip.active {
+            border-color: var(--miracle-primary);
+            color: var(--text-default);
+            box-shadow: inset 0 -1px 0 var(--miracle-primary);
+        }
+
+        .domaine-chip-count {
+            font-size: 10px;
+            opacity: 0.75;
+        }
+        
+        /* ══════════ HEADER - LEGACY (REMOVED) ══════════ */
+        .header {
+            display: none;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo:hover {
+            transform: translateY(-2px);
+        }
+        
+        .logo-icon {
+            width: 48px; height: 48px;
+            background: linear-gradient(135deg, var(--miracle-primary) 0%, var(--miracle-accent) 100%);
+            border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 800; font-size: 24px; color: var(--text-inverted);
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+        }
+        
+        .logo:hover .logo-icon {
+            transform: scale(1.08) rotate(2deg);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .logo-text { 
+            font-weight: 800; 
+            font-size: 20px; 
+            background: linear-gradient(135deg, var(--miracle-primary) 0%, var(--miracle-accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .logo-sub { 
+            font-size: 10px; 
+            color: var(--miracle-accent); 
+            margin-top: 2px; 
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        .header-stats {
+            display: flex;
+            gap: 16px;
+        }
+        
+        .stat-box {
+            text-align: center;
+            padding: 14px 24px;
+            background: linear-gradient(135deg, var(--bg-default) 0%, var(--miracle-primary-light) 100%);
+            border-radius: 12px;
+            border: 1px solid var(--border-default);
+            transition: all var(--dur-med) var(--ease-standard);
+        }
+        
+        .stat-box:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--miracle-primary);
+        }
+        
+        .stat-value { 
+            font-size: 24px; 
+            font-weight: 800; 
+            background: linear-gradient(135deg, var(--miracle-primary) 0%, var(--miracle-accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .stat-label { 
+            font-size: 11px; 
+            color: var(--text-mention); 
+            text-transform: uppercase; 
+            font-weight: 700; 
+            letter-spacing: 0.5px;
+            margin-top: 4px;
+        }
+        
+        .header-actions { display: flex; gap: 12px; }
+        
+        .btn {
+            padding: 8px 14px;
+            border-radius: 10px;
+            font-weight: 800;
+            font-size: 12px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: all var(--dur-fast) var(--ease-standard);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            font-family: inherit;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .btn-primary {
+            background: var(--miracle-primary);
+            color: var(--text-inverted);
+            border-color: var(--miracle-primary);
+        }
+        .btn-primary:hover { 
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+        .btn-primary:active {
+            transform: translateY(-1px);
+        }
+        
+        .btn-secondary {
+            background: #FFFFFF;
+            color: var(--text-default);
+            border: 1px solid var(--border-default);
+        }
+        .btn-secondary:hover { 
+            border-color: var(--miracle-primary);
+            background: var(--bg-contrast);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        /* ══════════ MAIN LAYOUT ══════════ */
+        .main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 32px 24px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* ══════════ MODE SELECTOR ══════════ */
+        .mode-selector {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 32px;
+        }
+        
+        .mode-card {
+            flex: 1;
+            background: var(--bg-alt);
+            border: 1px solid var(--border-default);
+            border-radius: 16px 14px 16px 14px;
+            padding: 20px 18px;
+            cursor: pointer;
+            transition: all var(--dur-fast) var(--ease-standard);
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            overflow: hidden;
+        }
+        .mode-card::before {
+            content: '';
+            position: absolute;
+            inset: 8px 10px 8px 8px;
+            border: 1px solid rgba(30, 47, 94, 0.08);
+            border-radius: 11px 9px 11px 9px;
+            pointer-events: none;
+        }
+        .mode-card:hover { 
+            border-color: var(--miracle-primary); 
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+        .mode-card.active { 
+            border-color: var(--miracle-primary); 
+            background: var(--bg-alt);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .mode-icon { 
+            font-size: 48px; 
+            margin-bottom: 16px;
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+        .mode-card:hover .mode-icon { transform: scale(1.12) rotate(-5deg); }
+        .mode-card.active .mode-icon { transform: scale(1.08); color: var(--miracle-primary); }
+
+        /* Mode-specific accent (uniform but distinct) */
+        .mode-card[data-mode="qcm"] { --mode-accent: #2E6FE0; }
+        .mode-card[data-mode="flashcards"] { --mode-accent: #6B3FD1; }
+        .mode-card[data-mode="duel"] { --mode-accent: #1DB8A8; }
+
+        .mode-card.active {
+            border-color: var(--mode-accent, var(--miracle-primary));
+            background: var(--bg-alt);
+        }
+        .mode-card.active .mode-title {
+            color: var(--mode-accent, var(--miracle-primary));
+        }
+        .mode-card.active .mode-icon {
+            color: var(--mode-accent, var(--miracle-primary));
+        }
+        
+        .mode-title { 
+            font-size: 16px; 
+            font-weight: 700; 
+            margin-bottom: 8px; 
+            color: var(--text-default);
+            font-family: 'Source Serif 4', 'Marianne', serif;
+        }
+        .mode-desc { 
+            font-size: 12px; 
+            color: var(--text-mention);
+            line-height: 1.5;
+        }
+        
+        /* ══════════ CATEGORIES ══════════ */
+        .section-title {
+            font-size: 12px;
+            font-weight: 800;
+            color: var(--text-mention);
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            position: relative;
+            padding-bottom: 8px;
+            font-family: 'Source Serif 4', 'Marianne', serif;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 32px; height: 2px;
+            background: var(--miracle-primary);
+            border-radius: 2px;
+        }
+        
+        .section-title i { 
+            color: var(--miracle-primary);
+            font-size: 14px;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .category-chip {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 14px;
+            background: var(--bg-alt);
+            border: 1px solid var(--border-default);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all var(--dur-fast) var(--ease-standard);
+            box-shadow: var(--shadow-sm);
+            position: relative;
+        }
+        .category-chip::before {
+            content: '';
+            position: absolute;
+            inset: 8px 10px 8px 8px;
+            border: 1px solid rgba(30, 47, 94, 0.06);
+            border-radius: 10px 8px 10px 8px;
+            pointer-events: none;
+        }
+
+        .category-chip:hover {
+            border-color: var(--miracle-primary);
+            box-shadow: var(--shadow-md);
+        }
+        .category-chip.active { 
+            border-color: var(--miracle-primary); 
+            background: var(--bg-alt);
+            box-shadow: var(--shadow-md);
+        }
+        .category-chip.active .cat-name { color: var(--text-default); font-weight: 700; }
+        .category-chip.active .cat-count { color: var(--miracle-primary); background: var(--bg-contrast); border-color: var(--border-default); }
+        
+        .cat-icon { 
+            font-size: 28px;
+            transition: transform var(--dur-med) var(--ease-standard);
+            flex-shrink: 0;
+        }
+        .category-chip:hover .cat-icon { transform: scale(1.2) rotate(5deg); }
+        .category-chip.active .cat-icon { color: var(--miracle-primary); filter: none; }
+        
+        .cat-name { 
+            font-size: 14px; 
+            font-weight: 700;
+            transition: color var(--dur-med) var(--ease-standard);
+            flex: 1;
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .cat-count { 
+            font-size: var(--pill-font); 
+            color: var(--miracle-primary); 
+            background: var(--bg-contrast);
+            padding: var(--pill-pad-y) var(--pill-pad-x);
+            border-radius: var(--pill-radius);
+            font-weight: 700;
+            flex-shrink: 0;
+            white-space: nowrap;
+            border: 1px solid var(--border-default);
+            transition: all var(--dur-med) var(--ease-standard);
+        }
+        .category-chip:hover .cat-count {
+            background: var(--miracle-primary);
+            color: var(--text-inverted);
+        }
+        
+        /* ══════════ START BUTTON ══════════ */
+        .start-section {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        
+        .btn-start {
+            padding: 14px 48px;
+            font-size: 15px;
+            border-radius: 999px;
+            box-shadow: var(--shadow-sm);
+            background: var(--bg-alt);
+            color: var(--miracle-primary);
+            border: 1px solid rgba(17, 24, 39, 0.45);
+            cursor: pointer;
+            font-weight: 800;
+            transition: all var(--dur-fast) var(--ease-standard);
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-start:hover {
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+            background: var(--bg-contrast);
+            border-color: var(--miracle-primary);
+        }
+        
+        /* ══════════ QCM ══════════ */
+        .qcm-container { display: none; }
+        .qcm-container.active { display: block; }
+        
+        .qcm-card {
+            background: var(--bg-alt);
+            border-radius: 16px 14px 16px 14px;
+            border: 1px solid var(--border-default);
+            overflow: hidden;
+            max-width: 900px;
+            margin: 0 auto;
+            box-shadow: var(--shadow-md);
+            animation: slideIn 0.4s ease-out;
+            position: relative;
+        }
+        .qcm-card::before {
+            content: '';
+            position: absolute;
+            inset: 8px 10px 8px 8px;
+            border: 1px solid rgba(30, 47, 94, 0.08);
+            border-radius: 11px 9px 11px 9px;
+            pointer-events: none;
+        }
+        .qcm-card > * { position: relative; z-index: 1; }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .qcm-header {
+            background: var(--bg-contrast);
+            padding: 18px 24px;
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            align-items: center;
+            gap: 16px;
+            border-bottom: 1px solid var(--border-default);
+        }
+        
+        .qcm-progress {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            flex: 1;
+        }
+        
+        .progress-bar {
+            width: clamp(140px, 30vw, 240px);
+            height: 8px;
+            background: var(--border-default);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: var(--miracle-primary);
+            border-radius: 8px;
+            transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 0 8px rgba(30, 47, 94, 0.2);
+        }
+        
+        .progress-text { 
+            font-size: 11px; 
+            color: var(--text-mention); 
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        .qcm-score {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            justify-self: end;
+            flex-wrap: nowrap;
+        }
+        
+        .score-item { 
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+            font-size: 15px; 
+            font-weight: 700;
+        }
+        .score-correct { color: var(--miracle-success); }
+        .score-wrong { color: var(--miracle-warning); }
+        
+        .qcm-body { padding: 32px; }
+        
+        .qcm-category {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 4px 12px;
+            background: var(--bg-contrast);
+            border-radius: 999px;
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--miracle-primary);
+            border: 1px solid var(--border-default);
+            margin-bottom: 20px;
+            transition: all 0.2s ease;
+        }
+        .qcm-body:hover .qcm-category {
+            transform: translateX(4px);
+        }
+        
+        .qcm-question {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.6;
+            margin-bottom: 24px;
+            color: var(--text-default);
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            letter-spacing: -0.2px;
+        }
+        
+        .qcm-options { display: flex; flex-direction: column; gap: 14px; }
+        
+        .qcm-option {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 14px 16px;
+            background: var(--bg-alt);
+            border: 1px solid var(--border-default);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all var(--dur-fast) var(--ease-standard);
+            position: relative;
+            overflow: hidden;
+        }
+        .qcm-option::before {
+            content: '';
+            position: absolute;
+            inset: 8px 10px 8px 8px;
+            border: 1px solid rgba(30, 47, 94, 0.06);
+            border-radius: 10px 8px 10px 8px;
+            pointer-events: none;
+        }
+        .qcm-option:hover:not(.disabled) { 
+            border-color: var(--miracle-primary); 
+            background: var(--bg-alt);
+            transform: translateX(1px);
+            box-shadow: var(--shadow-sm);
+        }
+        .qcm-option.selected { 
+            border-color: var(--miracle-primary); 
+            background: var(--bg-alt);
+            box-shadow: var(--shadow-sm);
+        }
+        .qcm-option.correct { 
+            border-color: var(--miracle-success); 
+            background: var(--miracle-success-light);
+            box-shadow: 0 0 12px rgba(76, 175, 80, 0.16);
+        }
+        .qcm-option.wrong { 
+            border-color: var(--miracle-warning); 
+            background: var(--miracle-warning-light);
+            box-shadow: 0 0 12px rgba(255, 167, 38, 0.16);
+        }
+        .qcm-option.disabled { cursor: default; opacity: 0.9; }
+        
+        .option-letter {
+            width: 38px; height: 38px;
+            background: var(--bg-contrast);
+            border: 1px solid var(--border-default);
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: 14px;
+            color: var(--miracle-primary);
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .qcm-option:hover .option-letter { 
+            transform: scale(1.1);
+        }
+        
+        .qcm-option.correct .option-letter { 
+            background: var(--miracle-success-light);
+            border-color: var(--miracle-success);
+            color: var(--miracle-success);
+        }
+        .qcm-option.wrong .option-letter { 
+            background: var(--miracle-warning-light);
+            border-color: var(--miracle-warning);
+            color: var(--miracle-warning);
+        }
+        
+        .option-text { 
+            font-size: 14px; 
+            flex: 1; 
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            line-height: 1.5;
+        }
+        
+        .qcm-explanation {
+            margin-top: 28px;
+            padding: 16px 18px;
+            background: var(--bg-contrast);
+            border-radius: 12px;
+            border-left: 3px solid var(--miracle-primary);
+            display: none;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .qcm-explanation.show { 
+            display: block; 
+            animation: slideInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(16px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .explanation-title { 
+            font-size: 11px; 
+            font-weight: 700; 
+            color: var(--miracle-secondary);
+            margin-bottom: 8px;
+            display: flex; 
+            align-items: center; 
+            gap: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+        .explanation-text { 
+        .explanation-ref {
+            margin-top: 8px;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+            font-size: 13px; 
+            color: var(--text-default); 
+            line-height: 1.7;
+        }
+
+        .explanation-source {
+            margin-top: 10px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--miracle-primary-dark);
+            text-decoration: none;
+        }
+
+        .explanation-source:hover {
+            text-decoration: underline;
+        }
+        
+        .qcm-footer {
+            padding: 16px 24px;
+            border-top: 1px solid #E5E7EB;
+            display: flex;
+            justify-content: space-between;
+            background: #F8FAFF;
+        }
+        
+        /* ══════════ FLASHCARDS ══════════ */
+        .flashcards-container { display: none; }
+        .flashcards-container.active { display: block; }
+        
+        .flashcard-wrapper {
+            perspective: 1000px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .flashcard {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            cursor: pointer;
+            transform-style: preserve-3d;
+            transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .flashcard.flipped { transform: rotateY(180deg); }
+        
+        .flashcard-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: #FFFFFF;
+            border: 1px solid #E5E7EB;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+            transition: all 0.7s ease;
+        }
+        
+        .flashcard-back { transform: rotateY(180deg); }
+        
+        .flashcard-header {
+            padding: 16px 20px;
+            background: #F8FAFF;
+            border-bottom: 1px solid #E5E7EB;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .flashcard-category {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 11px;
+            font-weight: 700;
+            color: #1F2937;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+        
+        .flashcard-hint { 
+            font-size: 11px; 
+            color: var(--text-mention);
+            font-weight: 600;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 1; }
+        }
+        
+        .flashcard-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px;
+            text-align: center;
+            background: #FFFFFF;
+        }
+        
+        .flashcard-front .flashcard-content {
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1.5;
+            color: var(--text-default);
+            letter-spacing: -0.3px;
+        }
+        
+        .flashcard-back .flashcard-content {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: left;
+            align-items: flex-start;
+            white-space: pre-line;
+            color: var(--text-default);
+            overflow-y: auto;
+            background: #FFFFFF;
+        }
+        
+        .flashcard-footer {
+            padding: 16px 20px;
+            background: #F8FAFF;
+            border-top: 1px solid #E5E7EB;
+        }
+        
+        .rating-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+        }
+        
+        .rating-btn {
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 12px;
+            cursor: pointer;
+            border: 1px solid;
+            transition: all 0.2s ease;
+            font-family: inherit;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+        
+        .rating-btn.hard { 
+            border-color: var(--miracle-warning); 
+            color: var(--miracle-warning); 
+            background: transparent; 
+        }
+        .rating-btn.hard:hover { 
+            background: transparent; 
+            color: var(--miracle-warning);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
+        }
+        
+        .rating-btn.medium { 
+            border-color: var(--miracle-secondary); 
+            color: var(--miracle-secondary); 
+            background: transparent; 
+        }
+        .rating-btn.medium:hover { 
+            background: transparent; 
+            color: var(--miracle-secondary);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
+        }
+        
+        .rating-btn.easy { 
+            border-color: var(--miracle-success); 
+            color: var(--miracle-success); 
+            background: transparent; 
+        }
+        .rating-btn.easy:hover { 
+            background: transparent; 
+            color: var(--miracle-success);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
+        }
+        
+        .flashcard-progress {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 28px;
+        }
+        
+        .fc-dot {
+            width: 10px; height: 10px;
+            background: var(--border-default);
+            border-radius: 50%;
+            transition: all 0.2s;
+        }
+        
+        .fc-dot.done { background: var(--green-emeraude); }
+        .fc-dot.current { background: var(--blue-france); transform: scale(1.3); }
+        
+        .flashcard-nav {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 24px;
+        }
+        
+        /* ══════════ RESULTS ══════════ */
+        .results-container { display: none; }
+        .results-container.active { display: block; }
+        
+        .results-card {
+            background: #FFFFFF;
+            border-radius: 14px;
+            border: 1px solid #E5E7EB;
+            max-width: 550px;
+            margin: 0 auto;
+            text-align: center;
+            overflow: hidden;
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.18);
+        }
+        
+        .results-header {
+            padding: 32px;
+            background: linear-gradient(135deg, var(--miracle-primary) 0%, var(--miracle-primary-dark) 100%);
+            color: var(--text-inverted);
+        }
+        
+        .results-icon { font-size: 64px; margin-bottom: 16px; }
+        .results-title { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+        .results-subtitle { font-size: 15px; opacity: 0.9; }
+        
+        .results-score {
+            padding: 24px;
+            border-bottom: 1px solid #E5E7EB;
+        }
+        
+        .score-circle {
+            width: 140px; height: 140px;
+            border-radius: 50%;
+            background: conic-gradient(var(--miracle-primary) 0%, #E5E7EB 0%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            position: relative;
+        }
+        
+        .score-circle::before {
+            content: '';
+            position: absolute;
+            width: 110px; height: 110px;
+            background: #FFFFFF;
+            border-radius: 50%;
+        }
+        
+        .score-value {
+            position: relative;
+            z-index: 1;
+            font-size: 36px;
+            font-weight: 900;
+            color: var(--miracle-primary);
+        }
+        
+        .results-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        
+        .result-stat { text-align: center; }
+        .result-stat-value { font-size: 28px; font-weight: 800; }
+        .result-stat-label { font-size: 12px; color: var(--text-mention); text-transform: uppercase; font-weight: 600; }
+        
+        .results-actions { 
+            padding: 24px; 
+            display: flex; 
+            justify-content: center; 
+            gap: 16px;
+            background: #F8FAFF;
+        }
+        
+        /* ══════════ ANIMATIONS ══════════ */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+        
+        .correct-animation { animation: pulse 0.3s; }
+        .wrong-animation { animation: shake 0.3s; }
+        
+        /* ══════════ SCROLLBAR ══════════ */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-default); }
+        ::-webkit-scrollbar-thumb { background: var(--border-default); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--text-mention); }
+        
+        /* ══════════ RESPONSIVE ══════════ */
+        @media (max-width: 768px) {
+            .header { flex-direction: column; gap: 16px; padding: 16px; }
+            .header-stats { order: 3; }
+            .mode-selector { flex-direction: column; }
+            .categories { grid-template-columns: repeat(2, 1fr); }
+            .qcm-question { font-size: 18px; }
+            .flashcard { height: 380px; }
+            .flashcard-front .flashcard-content { font-size: 22px; }
+            .dashboard { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .history-item { grid-template-columns: 1fr; gap: 6px; }
+            .history-date { text-align: left; }
+        }
+    </style>
+</head>
+<body>
+    <!-- TOPBAR NAVIGATION -->
+    <div class="topbar">
+        <div class="topbar-left">
+            <div class="topbar-brand">
+                <span class="topbar-brand-badge">m</span>
+                mIRAcle
+            </div>
+            <nav class="topbar-nav">
+                <a class="topbar-item" href="/" data-view="fiches"><i class="ri-folder-3-line"></i> Fiches</a>
+                <a class="topbar-item" href="/ministeres"><i class="ri-government-line"></i> Ministères</a>
+                <a class="topbar-item" href="/training" data-view="training"><i class="ri-focus-3-line"></i> Entraînement</a>
+                <a class="topbar-item" href="/stats" data-view="stats"><i class="ri-bar-chart-box-line"></i> Statistiques</a>
+                <a class="topbar-item active" href="/quiz"><i class="ri-question-answer-line"></i> QCM</a>
+            </nav>
+        </div>
+        <div class="topbar-right">
+            <a class="topbar-pill" href="/welcome"><i class="ri-compass-3-line"></i> Guide</a>
+            <a class="topbar-pill" href="/feedback?from={{ request.path }}"><i class="ri-chat-1-line"></i> Feedback</a>
+            <span class="topbar-pill">IRA</span>
+            <span class="topbar-pill">v3</span>
+        </div>
+    </div>
+    
+    <main class="main">
+        <!-- Mode Selector -->
+        <div class="section-title"><i class="ri-layout-grid-line"></i> Mode de révision</div>
+        <div class="mode-selector">
+            <div class="mode-card active" data-mode="qcm">
+                <div class="mode-icon"><i class="ri-checkbox-circle-line" style="color:var(--blue-france);"></i></div>
+                <div class="mode-title">QCM</div>
+                <div class="mode-desc">Questions à choix multiples</div>
+            </div>
+            <div class="mode-card" data-mode="flashcards">
+                <div class="mode-icon"><i class="ri-stack-line" style="color:var(--blue-france);"></i></div>
+                <div class="mode-title">Flashcards</div>
+                <div class="mode-desc">Cartes de révision Anki-style</div>
+            </div>
+            <div class="mode-card" data-mode="duel">
+                <div class="mode-icon"><i class="ri-timer-flash-line" style="color:var(--blue-france);"></i></div>
+                <div class="mode-title">Challenge</div>
+                <div class="mode-desc">10 questions, chrono</div>
+            </div>
+            <div class="mode-card" data-mode="exam">
+                <div class="mode-icon"><i class="ri-alarm-line" style="color:var(--blue-france);"></i></div>
+                <div class="mode-title">Examen</div>
+                <div class="mode-desc">30 questions, temps limité</div>
+            </div>
+        </div>
+        
+        <!-- Categories -->
+        <div class="section-title"><i class="ri-price-tag-3-line"></i> Catégories</div>
+        <div class="categories" id="categoriesContainer"></div>
+        
+        <!-- Start Button -->
+        <div class="start-section">
+            <button class="btn btn-primary btn-start" id="startBtn">
+                <i class="ri-play-fill"></i> Commencer la session
+            </button>
+        </div>
+
+        <div class="actions-row">
+            <button class="btn btn-secondary" id="reviewBtn" disabled>
+                <i class="ri-history-line"></i> Revoir mes erreurs
+                <span class="btn-badge" id="reviewCount">0</span>
+            </button>
+            <button class="btn btn-secondary" id="resetStatsBtn">
+                <i class="ri-refresh-line"></i> Réinitialiser les stats
+            </button>
+        </div>
+
+        <div class="section-title"><i class="ri-bar-chart-box-line"></i> Tableau de bord</div>
+        <div class="dashboard" id="dashboard">
+            <div class="dashboard-card">
+                <div class="dashboard-label">Questions traitées</div>
+                <div class="dashboard-value" id="statTotal">0</div>
+                <div class="dashboard-sub" id="statSessions">0 sessions</div>
+            </div>
+            <div class="dashboard-card">
+                <div class="dashboard-label">Précision</div>
+                <div class="dashboard-value" id="statAccuracy">0%</div>
+                <div class="dashboard-sub" id="statAvgTime">0s / question</div>
+            </div>
+            <div class="dashboard-card">
+                <div class="dashboard-label">Streak</div>
+                <div class="dashboard-value" id="statStreak">0</div>
+                <div class="dashboard-sub">jours consécutifs</div>
+            </div>
+            <div class="dashboard-card">
+                <div class="dashboard-label">Révision due</div>
+                <div class="dashboard-value" id="statDue">0</div>
+                <div class="dashboard-sub">flashcards à revoir</div>
+            </div>
+            <div class="dashboard-card">
+                <div class="dashboard-label">Point faible</div>
+                <div class="dashboard-value" id="statWeak">—</div>
+                <div class="dashboard-sub">catégorie la plus fragile</div>
+            </div>
+        </div>
+
+        <div class="history-card">
+            <div class="section-title" style="margin:0;"><i class="ri-time-line"></i> Historique des sessions</div>
+            <div class="history-list" id="historyList"></div>
+        </div>
+        
+        <!-- QCM Container -->
+        <div class="qcm-container" id="qcmContainer">
+            <div class="qcm-card">
+                <div class="qcm-header">
+                    <div class="qcm-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="qcmProgress" style="width: 0%"></div>
+                        </div>
+                        <span class="progress-text" id="qcmProgressText">1/10</span>
+                    </div>
+                    <div class="qcm-score">
+                        <div class="score-item score-correct"><i class="ri-check-line"></i> <span id="correctCount">0</span></div>
+                        <div class="score-item score-wrong"><i class="ri-close-line"></i> <span id="wrongCount">0</span></div>
+                    </div>
+                    <div class="qcm-meta">
+                        <span class="qcm-mode-badge" id="qcmModeBadge">QCM</span>
+                        <span class="qcm-timer" id="qcmTimer">00:00</span>
+                    </div>
+                </div>
+                <div class="qcm-body">
+                    <div class="qcm-category" id="qcmCategory">
+                        <span id="qcmCatIcon"><i class="ri-scales-3-line"></i></span>
+                        <span id="qcmCatName">Droit constitutionnel</span>
+                    </div>
+                    <div class="qcm-question" id="qcmQuestion">
+                        Chargement...
+                    </div>
+                    <div class="qcm-options" id="qcmOptions"></div>
+                    <div class="qcm-explanation" id="qcmExplanation">
+                        <div class="explanation-title"><i class="ri-lightbulb-line"></i> Explication</div>
+                        <div class="explanation-text" id="explanationText"></div>
+                        <div class="explanation-ref" id="sourceRef" style="display:none;"></div>
+                        <a class="explanation-source" id="sourceLink" href="#" target="_blank" rel="noopener" style="display:none;">
+                            <i class="ri-link"></i> Source officielle
+                        </a>
+                    </div>
+                </div>
+                <div class="qcm-footer">
+                    <button class="btn btn-secondary" id="skipBtn"><i class="ri-skip-forward-line"></i> Passer</button>
+                    <button class="btn btn-primary" id="nextBtn" style="display: none;"><i class="ri-arrow-right-line"></i> Question suivante</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Flashcards Container -->
+        <div class="flashcards-container" id="flashcardsContainer">
+            <div class="flashcard-wrapper">
+                <div class="flashcard" id="flashcard">
+                    <div class="flashcard-face flashcard-front">
+                        <div class="flashcard-header">
+                            <div class="flashcard-category">
+                                <span id="fcCatIcon"><i class="ri-scales-3-line"></i></span>
+                                <span id="fcCatName">Droit constitutionnel</span>
+                            </div>
+                            <div class="flashcard-hint"><i class="ri-refresh-line"></i> Cliquez pour retourner</div>
+                        </div>
+                        <div class="flashcard-content" id="fcFront">
+                            Chargement...
+                        </div>
+                    </div>
+                    <div class="flashcard-face flashcard-back">
+                        <div class="flashcard-header">
+                            <div class="flashcard-category">
+                                <i class="ri-lightbulb-line"></i>
+                                <span>Réponse</span>
+                            </div>
+                            <div class="flashcard-hint">Évaluez votre connaissance</div>
+                        </div>
+                        <div class="flashcard-content" id="fcBack">
+                            Chargement...
+                        </div>
+                        <div class="flashcard-footer">
+                            <div class="rating-buttons">
+                                <button class="rating-btn hard" data-rating="hard"><i class="ri-emotion-sad-line"></i> Difficile</button>
+                                <button class="rating-btn medium" data-rating="medium"><i class="ri-emotion-normal-line"></i> Moyen</button>
+                                <button class="rating-btn easy" data-rating="easy"><i class="ri-emotion-happy-line"></i> Facile</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-progress" id="fcProgress"></div>
+            <div class="flashcard-nav">
+                <button class="btn btn-secondary" id="fcPrev"><i class="ri-arrow-left-line"></i> Précédente</button>
+                <button class="btn btn-primary" id="fcNext">Suivante <i class="ri-arrow-right-line"></i></button>
+            </div>
+        </div>
+        
+        <!-- Results Container -->
+        <div class="results-container" id="resultsContainer">
+            <div class="results-card">
+                <div class="results-header">
+                    <div class="results-icon" id="resultsIcon">🏆</div>
+                    <div class="results-title" id="resultsTitle">Excellent !</div>
+                    <div class="results-subtitle" id="resultsSubtitle">Vous maîtrisez bien ce sujet</div>
+                </div>
+                <div class="results-score">
+                    <div class="score-circle" id="scoreCircle">
+                        <div class="score-value" id="scoreValue">0%</div>
+                    </div>
+                    <div class="results-stats">
+                        <div class="result-stat">
+                            <div class="result-stat-value" style="color: var(--green-emeraude);" id="finalCorrect">0</div>
+                            <div class="result-stat-label">Correctes</div>
+                        </div>
+                        <div class="result-stat">
+                            <div class="result-stat-value" style="color: var(--red-marianne);" id="finalWrong">0</div>
+                            <div class="result-stat-label">Erreurs</div>
+                        </div>
+                        <div class="result-stat">
+                            <div class="result-stat-value" style="color: var(--orange-warning);" id="finalTime">0:00</div>
+                            <div class="result-stat-label">Temps</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="results-actions">
+                    <button class="btn btn-secondary" onclick="backToMenu()"><i class="ri-arrow-left-line"></i> Menu</button>
+                    <button class="btn btn-secondary" id="reviewFromResultsBtn" onclick="startReviewSession()"><i class="ri-history-line"></i> Revoir erreurs</button>
+                    <button class="btn btn-primary" onclick="restartSession()"><i class="ri-restart-line"></i> Recommencer</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        let data = { categories: [], qcm: [], flashcards: [] };
+        let currentMode = 'qcm';
+        let selectedCategories = [];
+        let currentQuestions = [];
+        let currentIndex = 0;
+        let correctAnswers = 0;
+        let wrongAnswers = 0;
+        let skippedAnswers = 0;
+        let sessionStartTime = null;
+        let questionStartTime = null;
+        let answered = false;
+        let sessionTimer = null;
+        let countdownTimer = null;
+        let sessionConfig = { mode: 'qcm', showExplanation: true, timeLimit: 0, review: false };
+        
+        const categoryIcons = {
+            'rh': 'ri-team-line',
+            'budget': 'ri-money-euro-circle-line',
+            'juridique': 'ri-scales-3-line',
+            'achats': 'ri-shopping-cart-line',
+            'politiques': 'ri-government-line',
+            'communication': 'ri-megaphone-line',
+            'audit': 'ri-search-eye-line',
+            'general': 'ri-building-line',
+            'secretaire_eple': 'ri-graduation-cap-line',
+            'mises_situation': 'ri-briefcase-line'
+        };
+        
+        // Stats persistence
+        const statsDefault = {
+            total: 0,
+            correct: 0,
+            streak: 0,
+            lastDate: '',
+            sessions: 0,
+            totalTime: 0,
+            byCategory: {},
+            version: 2
+        };
+        let stats = JSON.parse(localStorage.getItem('miracle_quiz_stats') || '{}');
+        stats = {
+            ...statsDefault,
+            ...stats,
+            byCategory: stats.byCategory || {}
+        };
+        let history = JSON.parse(localStorage.getItem('miracle_quiz_history') || '[]');
+        let wrongIds = JSON.parse(localStorage.getItem('miracle_quiz_wrong') || '[]');
+        let srs = JSON.parse(localStorage.getItem('miracle_quiz_srs') || '{}');
+        
+        // Load data
+        function augmentExplanation(q) {
+            let text = q.explanation || '';
+            const questionText = q.question || '';
+            const additions = [];
+            const has = (token) => questionText.includes(token) || text.includes(token);
+            const addIfMissing = (needle, addition) => {
+                if (!text.toLowerCase().includes(needle.toLowerCase())) {
+                    additions.push(addition);
+                }
+            };
+
+            if (has('LOLF')) addIfMissing('loi organique relative aux lois de finances', 'LOLF = loi organique relative aux lois de finances (2001), logique de performance (PAP/RAP).');
+            if (has('LPFP')) addIfMissing('loi de programmation des finances publiques', 'LPFP = loi de programmation des finances publiques, trajectoire pluriannuelle déficit/dette.');
+            if (has('PAP')) addIfMissing('projet annuel de performance', 'PAP = Projet annuel de performance (objectifs et indicateurs).');
+            if (has('RAP')) addIfMissing('rapport annuel de performance', 'RAP = Rapport annuel de performance (résultats vs objectifs).');
+            if (has('HCFP')) addIfMissing('haut conseil', 'HCFP = Haut Conseil des finances publiques, avis sur la trajectoire.');
+            if (has('CRPA')) addIfMissing('code des relations entre le public et l’administration', 'CRPA = Code des relations entre le public et l’administration (droits des usagers).');
+            if (has('CJA')) addIfMissing('code de justice administrative', 'CJA = Code de justice administrative.');
+            if (has('REP')) addIfMissing('recours pour excès de pouvoir', 'REP = recours pour excès de pouvoir (annulation d’un acte).');
+            if (has('QPC')) addIfMissing('question prioritaire', 'QPC = question prioritaire de constitutionnalité (filtrée CE/Cass).');
+            if (has('AAU')) addIfMissing('acte administratif unilatéral', 'AAU = acte administratif unilatéral.');
+            if (has('PGD')) addIfMissing('principes généraux du droit', 'PGD = principes généraux du droit, dégagés par le juge.');
+            if (has('SVA') || has('silence')) addIfMissing('silence vaut acceptation', 'SVA = silence vaut acceptation, avec exceptions prévues au CRPA.');
+            if (has('DUME')) addIfMissing('document unique de marché européen', 'DUME = document unique de marché européen (déclaration sur l’honneur).');
+            if (has('MAPA')) addIfMissing('procédure adaptée', 'MAPA = marché à procédure adaptée (publicité/mise en concurrence proportionnées).');
+            if (has('RIFSEEP')) addIfMissing('régime indemnitaire', 'RIFSEEP = régime indemnitaire de référence (IFSE + CIA).');
+            if (has('IFSE')) addIfMissing('indemnité de fonctions', 'IFSE = Indemnité de fonctions, de sujétions et d’expertise.');
+            if (has('CIA')) addIfMissing('complément indemnitaire', 'CIA = complément indemnitaire annuel, lié à l’engagement.');
+            if (has('LDG')) addIfMissing('lignes directrices de gestion', 'LDG = lignes directrices de gestion (stratégie RH pluriannuelle).');
+            if (has('RSU')) addIfMissing('rapport social unique', 'RSU = rapport social unique (données sociales consolidées).');
+            if (has('GPEEC')) addIfMissing('gestion prévisionnelle', 'GPEEC = gestion prévisionnelle des emplois, effectifs et compétences.');
+            if (has('ETPT')) addIfMissing('équivalent temps plein', 'ETPT = équivalent temps plein travaillé (unité d’emplois budgétaires).');
+            if (has('GVT')) addIfMissing('glissement vieillesse technicité', 'GVT = glissement vieillesse technicité (dynamique de masse salariale).');
+            if (has('3DS')) addIfMissing('différenciation', '3DS = différenciation, décentralisation, déconcentration, simplification.');
+            if (has('Climat') || has('Résilience') || has('2021-1104')) addIfMissing('enjeu', 'Enjeu : réduction des émissions et adaptation des territoires (logement, transports, ZAN).');
+            if (has('2019-828') || has('transformation de la fonction publique')) addIfMissing('enjeu', 'Enjeu : moderniser la gestion RH, élargir les leviers managériaux et renforcer le dialogue social.');
+
+            if (additions.length) {
+                return `${text} ${additions.join(' ')}`.trim();
+            }
+            return text;
+        }
+
+        async function loadData() {
+            const res = await fetch('/api/quiz/data');
+            data = await res.json();
+            const sourcesById = Object.fromEntries((data.sources || []).map(s => [s.id, s]));
+
+            data.qcm = (data.qcm || []).map((q, i) => {
+                const source = q.source_id ? sourcesById[q.source_id] : null;
+                return {
+                    ...q,
+                    _id: q.id || `qcm-${i}`,
+                    source_url: q.source_url || source?.source_url || null,
+                    source_title: q.source_title || source?.source_title || null,
+                    source_org: q.source_org || source?.source_org || null,
+                    source_date: q.source_date || source?.source_date || null,
+                    explanation_augmented: augmentExplanation(q)
+                };
+            });
+            data.flashcards = (data.flashcards || []).map((f, i) => ({ ...f, _id: f.id || `fc-${i}` }));
+            console.log('Data loaded:', data);
+            sanitizeStats();
+            renderCategories();
+            renderDomaines();
+            updateStatsDisplay();
+            updateDashboard();
+        }
+
+        function renderDomaines() {
+            // Group categories by domain-like groups for quiz page
+            const domaines = {
+                'RH': data.categories.filter(c => c.id === 'rh').length,
+                'Budget': data.categories.filter(c => c.id === 'budget').length,
+                'Juridique': data.categories.filter(c => c.id === 'juridique').length,
+                'Achats': data.categories.filter(c => c.id === 'achats').length,
+                'Politiques': data.categories.filter(c => c.id === 'politiques').length,
+                'Communication': data.categories.filter(c => c.id === 'communication').length,
+                'Audit/Risques': data.categories.filter(c => c.id === 'audit').length,
+                'EPLE': data.categories.filter(c => c.id === 'secretaire_eple').length,
+                'Mises en situation': data.categories.filter(c => c.id === 'mises_situation').length,
+                'Autre': data.categories.filter(c => c.id === 'general').length
+            };
+
+            const domainesList = document.getElementById('domainesList');
+            const totalCount = data.categories.length;
+            
+            let chips = `<div class="domaine-chip active">
+                Tous domaines
+                <span class="domaine-chip-count">(${totalCount})</span>
+            </div>`;
+            
+            Object.entries(domaines).forEach(([nom, count]) => {
+                if (count > 0) {
+                    chips += `<div class="domaine-chip">
+                        ${nom}
+                        <span class="domaine-chip-count">(${count})</span>
+                    </div>`;
+                }
+            });
+            
+            domainesList.innerHTML = chips;
+        }
+        
+        function renderCategories() {
+            const container = document.getElementById('categoriesContainer');
+            container.innerHTML = data.categories.map(cat => {
+                const qcmCount = data.qcm.filter(q => q.category === cat.id).length;
+                const fcCount = data.flashcards.filter(f => f.category === cat.id).length;
+                const iconClass = categoryIcons[cat.id] || 'ri-bookmark-line';
+                return `
+                    <div class="category-chip" data-id="${cat.id}">
+                        <span class="cat-icon"><i class="${iconClass}"></i></span>
+                        <span class="cat-name">${cat.name}</span>
+                        <span class="cat-count">${currentMode === 'flashcards' ? fcCount : qcmCount}</span>
+                    </div>
+                `;
+            }).join('');
+            
+            document.querySelectorAll('.category-chip').forEach(chip => {
+                chip.addEventListener('click', () => {
+                    chip.classList.toggle('active');
+                    const id = chip.dataset.id;
+                    if (selectedCategories.includes(id)) {
+                        selectedCategories = selectedCategories.filter(c => c !== id);
+                    } else {
+                        selectedCategories.push(id);
+                    }
+                });
+            });
+        }
+        
+        function updateStatsDisplay() {
+            const today = new Date().toDateString();
+            if (stats.lastDate !== today && stats.lastDate !== new Date(Date.now() - 86400000).toDateString()) {
+                stats.streak = 0;
+            }
+            updateDashboard();
+        }
+
+        function saveStats() {
+            localStorage.setItem('miracle_quiz_stats', JSON.stringify(stats));
+        }
+
+        function saveHistory() {
+            localStorage.setItem('miracle_quiz_history', JSON.stringify(history.slice(0, 50)));
+        }
+
+        function saveWrongIds() {
+            localStorage.setItem('miracle_quiz_wrong', JSON.stringify(wrongIds));
+        }
+
+        function saveSrs() {
+            localStorage.setItem('miracle_quiz_srs', JSON.stringify(srs));
+        }
+
+        function sanitizeStats() {
+            const categoryIds = new Set((data.categories || []).map(c => c.id));
+            const qcmIds = new Set((data.qcm || []).map(q => q._id));
+
+            if (stats.version !== statsDefault.version) {
+                stats = { ...statsDefault, byCategory: {} };
+                history = [];
+                wrongIds = [];
+                srs = {};
+            }
+
+            if (!Number.isFinite(stats.total) || stats.total < 0) stats.total = 0;
+            if (!Number.isFinite(stats.correct) || stats.correct < 0) stats.correct = 0;
+            if (stats.correct > stats.total) stats.correct = stats.total;
+            if (!Number.isFinite(stats.totalTime) || stats.totalTime < 0) stats.totalTime = 0;
+            if (!Number.isFinite(stats.sessions) || stats.sessions < 0) stats.sessions = 0;
+
+            stats.byCategory = Object.fromEntries(
+                Object.entries(stats.byCategory || {}).filter(([key, val]) => categoryIds.has(key) && val && val.total > 0)
+            );
+
+            wrongIds = (wrongIds || []).filter(id => qcmIds.has(id));
+            history = Array.isArray(history) ? history : [];
+
+            saveStats();
+            saveWrongIds();
+            saveHistory();
+            saveSrs();
+        }
+
+        function updateDashboard() {
+            const total = stats.total || 0;
+            const correct = stats.correct || 0;
+            const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
+            const avgTime = total > 0 ? Math.round((stats.totalTime || 0) / total) : 0;
+
+            document.getElementById('statTotal').textContent = total;
+            document.getElementById('statSessions').textContent = `${stats.sessions || 0} sessions`;
+            document.getElementById('statAccuracy').textContent = `${accuracy}%`;
+            document.getElementById('statAvgTime').textContent = `${avgTime}s / question`;
+            document.getElementById('statStreak').textContent = stats.streak || 0;
+
+            const dueCount = getDueFlashcards().length;
+            document.getElementById('statDue').textContent = dueCount;
+
+            const weak = getWeakCategory();
+            document.getElementById('statWeak').textContent = weak || '—';
+
+            const reviewBtn = document.getElementById('reviewBtn');
+            document.getElementById('reviewCount').textContent = wrongIds.length;
+            reviewBtn.disabled = wrongIds.length === 0;
+
+            renderHistory();
+        }
+
+        function renderHistory() {
+            const container = document.getElementById('historyList');
+            if (!container) return;
+            if (history.length === 0) {
+                container.innerHTML = '<div class="history-item">Aucune session pour le moment.</div>';
+                return;
+            }
+            container.innerHTML = history.slice(0, 8).map(item => `
+                <div class="history-item">
+                    <div class="history-mode">${item.mode}</div>
+                    <div>${item.details}</div>
+                    <div class="history-score">${item.score}</div>
+                    <div class="history-date">${item.date}</div>
+                </div>
+            `).join('');
+        }
+
+        function getWeakCategory() {
+            const entries = Object.entries(stats.byCategory || {});
+            if (entries.length === 0) return null;
+            const worst = entries
+                .map(([key, val]) => ({ key, accuracy: val.total > 0 ? val.correct / val.total : 1 }))
+                .sort((a, b) => a.accuracy - b.accuracy)[0];
+            const cat = data.categories.find(c => c.id === worst.key);
+            return cat ? cat.name : worst.key;
+        }
+
+        function getDueFlashcards() {
+            const now = Date.now();
+            return data.flashcards.filter(card => {
+                const state = srs[card._id];
+                if (!state) return true;
+                return state.due <= now;
+            });
+        }
+
+        function updateSrs(cardId, quality) {
+            const now = Date.now();
+            let state = srs[cardId] || { ease: 2.5, interval: 0, repetitions: 0, due: now };
+            const q = Math.max(0, Math.min(5, quality));
+
+            if (q < 3) {
+                state.repetitions = 0;
+                state.interval = 1;
+            } else {
+                state.repetitions += 1;
+                if (state.repetitions === 1) state.interval = 1;
+                else if (state.repetitions === 2) state.interval = 3;
+                else state.interval = Math.round(state.interval * state.ease);
+                state.ease = Math.max(1.3, state.ease + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02)));
+            }
+            state.due = now + state.interval * 24 * 60 * 60 * 1000;
+            srs[cardId] = state;
+            saveSrs();
+        }
+
+        function addCategoryStats(categoryId, isCorrect, elapsedSeconds) {
+            if (!categoryId) return;
+            if (!stats.byCategory[categoryId]) {
+                stats.byCategory[categoryId] = { total: 0, correct: 0, time: 0 };
+            }
+            stats.byCategory[categoryId].total += 1;
+            stats.byCategory[categoryId].correct += isCorrect ? 1 : 0;
+            stats.byCategory[categoryId].time += elapsedSeconds || 0;
+        }
+
+        function updateTimerDisplay(seconds, isCountdown = false) {
+            const el = document.getElementById('qcmTimer');
+            if (!el) return;
+            const minutes = Math.floor(seconds / 60);
+            const secs = seconds % 60;
+            el.textContent = `${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+            el.classList.toggle('timer-danger', isCountdown && seconds <= 60);
+        }
+
+        function clearTimers() {
+            if (sessionTimer) clearInterval(sessionTimer);
+            if (countdownTimer) clearInterval(countdownTimer);
+            sessionTimer = null;
+            countdownTimer = null;
+        }
+        
+        // Mode selection
+        document.querySelectorAll('.mode-card').forEach(card => {
+            card.addEventListener('click', () => {
+                document.querySelectorAll('.mode-card').forEach(c => c.classList.remove('active'));
+                card.classList.add('active');
+                currentMode = card.dataset.mode;
+                renderCategories();
+            });
+        });
+
+        document.getElementById('reviewBtn').addEventListener('click', () => {
+            startReviewSession();
+        });
+
+        document.getElementById('resetStatsBtn').addEventListener('click', () => {
+            if (!confirm('Réinitialiser toutes les statistiques et historiques ?')) return;
+            stats = { ...statsDefault, byCategory: {} };
+            history = [];
+            wrongIds = [];
+            srs = {};
+            saveStats();
+            saveHistory();
+            saveWrongIds();
+            saveSrs();
+            updateStatsDisplay();
+        });
+        
+        // Start session
+        document.getElementById('startBtn').addEventListener('click', startSession);
+        
+        function startSession() {
+            startSessionInternal(currentMode);
+        }
+
+        function startSessionInternal(modeOverride) {
+            const mode = modeOverride || currentMode;
+            const cats = selectedCategories.length > 0 ? selectedCategories : data.categories.map(c => c.id);
+
+            sessionConfig = {
+                mode,
+                showExplanation: mode !== 'exam',
+                timeLimit: mode === 'exam' ? 25 * 60 : 0,
+                review: mode === 'review'
+            };
+
+            if (mode === 'flashcards') {
+                let pool = data.flashcards.filter(f => cats.includes(f.category));
+                const due = getDueFlashcards().filter(f => cats.includes(f.category));
+                currentQuestions = due.length > 0 ? due : pool;
+            } else if (mode === 'review') {
+                currentQuestions = data.qcm.filter(q => wrongIds.includes(q._id));
+            } else {
+                currentQuestions = data.qcm.filter(q => cats.includes(q.category));
+            }
+
+            currentQuestions = currentQuestions.sort(() => Math.random() - 0.5);
+
+            if (mode === 'duel') {
+                currentQuestions = currentQuestions.slice(0, 10);
+            }
+            if (mode === 'exam') {
+                currentQuestions = currentQuestions.slice(0, 30);
+            }
+
+            if (currentQuestions.length === 0) {
+                alert('Aucune question disponible pour cette sélection');
+                return;
+            }
+
+            currentIndex = 0;
+            correctAnswers = 0;
+            wrongAnswers = 0;
+            skippedAnswers = 0;
+            answered = false;
+            sessionStartTime = Date.now();
+            questionStartTime = Date.now();
+
+            clearTimers();
+            if (sessionConfig.timeLimit > 0) {
+                let remaining = sessionConfig.timeLimit;
+                updateTimerDisplay(remaining, true);
+                countdownTimer = setInterval(() => {
+                    remaining -= 1;
+                    updateTimerDisplay(remaining, true);
+                    if (remaining <= 0) {
+                        clearTimers();
+                        showResults();
+                    }
+                }, 1000);
+            } else {
+                sessionTimer = setInterval(() => {
+                    const elapsed = Math.round((Date.now() - sessionStartTime) / 1000);
+                    updateTimerDisplay(elapsed, false);
+                }, 1000);
+            }
+
+            document.getElementById('qcmModeBadge').textContent =
+                mode === 'exam' ? 'EXAMEN' : mode === 'duel' ? 'CHALLENGE' : mode === 'review' ? 'ERREURS' : 'QCM';
+
+            document.body.classList.add('session-active');
+            document.getElementById('resultsContainer').classList.remove('active');
+
+            if (mode === 'flashcards') {
+                document.getElementById('flashcardsContainer').classList.add('active');
+                document.getElementById('qcmContainer').classList.remove('active');
+                loadFlashcard();
+            } else {
+                document.getElementById('qcmContainer').classList.add('active');
+                document.getElementById('flashcardsContainer').classList.remove('active');
+                loadQuestion();
+            }
+        }
+
+        function startReviewSession() {
+            if (wrongIds.length === 0) {
+                alert('Aucune erreur à revoir pour le moment.');
+                return;
+            }
+            startSessionInternal('review');
+        }
+        
+        // QCM Logic
+        function loadQuestion() {
+            if (currentIndex >= currentQuestions.length) {
+                showResults();
+                return;
+            }
+            
+            const q = currentQuestions[currentIndex];
+            const cat = data.categories.find(c => c.id === q.category);
+            const iconClass = categoryIcons[q.category] || 'ri-bookmark-line';
+            questionStartTime = Date.now();
+            
+            document.getElementById('qcmCatIcon').innerHTML = `<i class="${iconClass}"></i>`;
+            document.getElementById('qcmCatName').textContent = cat?.name || q.category;
+            document.getElementById('qcmQuestion').textContent = q.question;
+            
+            const letters = ['A', 'B', 'C', 'D'];
+            document.getElementById('qcmOptions').innerHTML = q.options.map((opt, i) => `
+                <div class="qcm-option" data-index="${i}">
+                    <div class="option-letter">${letters[i]}</div>
+                    <div class="option-text">${opt}</div>
+                </div>
+            `).join('');
+            
+            document.querySelectorAll('.qcm-option').forEach(opt => {
+                opt.addEventListener('click', () => selectAnswer(parseInt(opt.dataset.index)));
+            });
+            
+            document.getElementById('qcmExplanation').classList.remove('show');
+            document.getElementById('nextBtn').style.display = 'none';
+            document.getElementById('skipBtn').style.display = sessionConfig.mode === 'exam' ? 'none' : 'inline-flex';
+            answered = false;
+            
+            updateProgress();
+        }
+        
+        function selectAnswer(index) {
+            if (answered) return;
+            answered = true;
+            
+            const q = currentQuestions[currentIndex];
+            const isCorrect = index === q.correct;
+            const elapsed = questionStartTime ? Math.round((Date.now() - questionStartTime) / 1000) : 0;
+            
+            document.querySelectorAll('.qcm-option').forEach((opt, i) => {
+                opt.classList.add('disabled');
+                if (i === q.correct) opt.classList.add('correct');
+                if (i === index && !isCorrect) opt.classList.add('wrong');
+            });
+            
+            if (isCorrect) {
+                correctAnswers++;
+                document.getElementById('correctCount').textContent = correctAnswers;
+                document.querySelector('.qcm-card').classList.add('correct-animation');
+            } else {
+                wrongAnswers++;
+                document.getElementById('wrongCount').textContent = wrongAnswers;
+                document.querySelector('.qcm-card').classList.add('wrong-animation');
+            }
+            
+            setTimeout(() => {
+                document.querySelector('.qcm-card').classList.remove('correct-animation', 'wrong-animation');
+            }, 300);
+
+            if (sessionConfig.showExplanation) {
+                document.getElementById('explanationText').textContent = q.explanation_augmented || q.explanation || '—';
+                document.getElementById('qcmExplanation').classList.add('show');
+            } else {
+                document.getElementById('qcmExplanation').classList.remove('show');
+            }
+
+            const sourceRef = document.getElementById('sourceRef');
+            const refParts = [q.source_title, q.source_org, q.source_date].filter(Boolean);
+            if (refParts.length) {
+                sourceRef.textContent = `Référence : ${refParts.join(' — ')}`;
+                sourceRef.style.display = 'block';
+            } else {
+                sourceRef.textContent = '';
+                sourceRef.style.display = 'none';
+            }
+
+            const sourceLink = document.getElementById('sourceLink');
+            if (q.source_url) {
+                sourceLink.href = q.source_url;
+                sourceLink.style.display = 'inline-flex';
+            } else {
+                sourceLink.href = '#';
+                sourceLink.style.display = 'none';
+            }
+            
+            document.getElementById('nextBtn').style.display = 'inline-flex';
+            document.getElementById('skipBtn').style.display = 'none';
+
+            stats.total++;
+            if (isCorrect) stats.correct++;
+            stats.totalTime += elapsed;
+            addCategoryStats(q.category, isCorrect, elapsed);
+            if (!isCorrect && !wrongIds.includes(q._id)) {
+                wrongIds.push(q._id);
+                saveWrongIds();
+            }
+            if (sessionConfig.review && isCorrect && wrongIds.includes(q._id)) {
+                wrongIds = wrongIds.filter(id => id !== q._id);
+                saveWrongIds();
+            }
+            saveStats();
+            updateStatsDisplay();
+        }
+        
+        function updateProgress() {
+            const pct = ((currentIndex + 1) / currentQuestions.length) * 100;
+            document.getElementById('qcmProgress').style.width = `${pct}%`;
+            document.getElementById('qcmProgressText').textContent = `${currentIndex + 1}/${currentQuestions.length}`;
+        }
+        
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            currentIndex++;
+            loadQuestion();
+        });
+        
+        document.getElementById('skipBtn').addEventListener('click', () => {
+            const q = currentQuestions[currentIndex];
+            const elapsed = questionStartTime ? Math.round((Date.now() - questionStartTime) / 1000) : 0;
+            skippedAnswers++;
+            wrongAnswers++;
+            document.getElementById('wrongCount').textContent = wrongAnswers;
+            stats.total++;
+            stats.totalTime += elapsed;
+            addCategoryStats(q.category, false, elapsed);
+            if (!wrongIds.includes(q._id)) {
+                wrongIds.push(q._id);
+                saveWrongIds();
+            }
+            saveStats();
+            updateStatsDisplay();
+            currentIndex++;
+            loadQuestion();
+        });
+        
+        // Flashcards Logic
+        function loadFlashcard() {
+            if (currentIndex >= currentQuestions.length) {
+                showResults();
+                return;
+            }
+            
+            const fc = currentQuestions[currentIndex];
+            const cat = data.categories.find(c => c.id === fc.category);
+            const iconClass = categoryIcons[fc.category] || 'ri-bookmark-line';
+            questionStartTime = Date.now();
+            
+            document.getElementById('fcCatIcon').innerHTML = `<i class="${iconClass}"></i>`;
+            document.getElementById('fcCatName').textContent = cat?.name || fc.category;
+            document.getElementById('fcFront').textContent = fc.front;
+            document.getElementById('fcBack').textContent = fc.back;
+            
+            document.getElementById('flashcard').classList.remove('flipped');
+            renderFcProgress();
+        }
+        
+        function renderFcProgress() {
+            const container = document.getElementById('fcProgress');
+            container.innerHTML = currentQuestions.slice(0, 15).map((_, i) => {
+                let cls = 'fc-dot';
+                if (i < currentIndex) cls += ' done';
+                if (i === currentIndex) cls += ' current';
+                return `<div class="${cls}"></div>`;
+            }).join('');
+        }
+        
+        document.getElementById('flashcard').addEventListener('click', function() {
+            this.classList.toggle('flipped');
+        });
+        
+        document.querySelectorAll('.rating-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const rating = btn.dataset.rating;
+                const elapsed = questionStartTime ? Math.round((Date.now() - questionStartTime) / 1000) : 0;
+                const fc = currentQuestions[currentIndex];
+                if (rating === 'easy') correctAnswers++;
+                else if (rating === 'hard') wrongAnswers++;
+                
+                stats.total++;
+                if (rating !== 'hard') stats.correct++;
+                stats.totalTime += elapsed;
+                addCategoryStats(fc.category, rating !== 'hard', elapsed);
+                saveStats();
+                updateStatsDisplay();
+
+                const quality = rating === 'easy' ? 4 : rating === 'medium' ? 3 : 1;
+                updateSrs(fc._id, quality);
+                
+                currentIndex++;
+                loadFlashcard();
+            });
+        });
+        
+        document.getElementById('fcPrev').addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                loadFlashcard();
+            }
+        });
+        
+        document.getElementById('fcNext').addEventListener('click', () => {
+            currentIndex++;
+            loadFlashcard();
+        });
+        
+        // Results
+        function showResults() {
+            clearTimers();
+            document.getElementById('qcmContainer').classList.remove('active');
+            document.getElementById('flashcardsContainer').classList.remove('active');
+            document.getElementById('resultsContainer').classList.add('active');
+            
+            const total = correctAnswers + wrongAnswers;
+            const pct = total > 0 ? Math.round(correctAnswers / total * 100) : 0;
+            const elapsed = Math.round((Date.now() - sessionStartTime) / 1000);
+            const minutes = Math.floor(elapsed / 60);
+            const seconds = elapsed % 60;
+            
+            document.getElementById('scoreValue').textContent = pct + '%';
+            document.getElementById('scoreCircle').style.background = `conic-gradient(var(--blue-france) ${pct}%, var(--border-default) ${pct}%)`;
+            document.getElementById('finalCorrect').textContent = correctAnswers;
+            document.getElementById('finalWrong').textContent = wrongAnswers;
+            document.getElementById('finalTime').textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+            
+            if (pct >= 80) {
+                document.getElementById('resultsIcon').textContent = '🏆';
+                document.getElementById('resultsTitle').textContent = 'Excellent !';
+                document.getElementById('resultsSubtitle').textContent = 'Vous maîtrisez parfaitement ce sujet';
+            } else if (pct >= 60) {
+                document.getElementById('resultsIcon').textContent = '👍';
+                document.getElementById('resultsTitle').textContent = 'Bien joué !';
+                document.getElementById('resultsSubtitle').textContent = 'Continuez à réviser pour progresser';
+            } else {
+                document.getElementById('resultsIcon').textContent = '💪';
+                document.getElementById('resultsTitle').textContent = 'Persévérez !';
+                document.getElementById('resultsSubtitle').textContent = 'Révisez et réessayez';
+            }
+            
+            const today = new Date().toDateString();
+            if (stats.lastDate !== today) {
+                stats.streak++;
+                stats.lastDate = today;
+                saveStats();
+            }
+
+            stats.sessions += 1;
+            saveStats();
+
+            const modeLabel = sessionConfig.mode === 'exam'
+                ? 'Examen'
+                : sessionConfig.mode === 'duel'
+                ? 'Challenge'
+                : sessionConfig.mode === 'flashcards'
+                ? 'Flashcards'
+                : sessionConfig.mode === 'review'
+                ? 'Erreurs'
+                : 'QCM';
+
+            history.unshift({
+                mode: modeLabel,
+                details: `${correctAnswers}/${total} • ${minutes}:${seconds.toString().padStart(2, '0')}`,
+                score: `${pct}%`,
+                date: new Date().toLocaleDateString('fr-FR')
+            });
+            saveHistory();
+            updateStatsDisplay();
+
+            document.getElementById('reviewFromResultsBtn').style.display = wrongIds.length > 0 ? 'inline-flex' : 'none';
+        }
+        
+        function backToMenu() {
+            document.body.classList.remove('session-active');
+            document.getElementById('resultsContainer').classList.remove('active');
+            document.getElementById('qcmContainer').classList.remove('active');
+            document.getElementById('flashcardsContainer').classList.remove('active');
+        }
+        
+        function restartSession() {
+            document.getElementById('resultsContainer').classList.remove('active');
+            startSessionInternal(sessionConfig.mode || currentMode);
+        }
+        
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.key === ' ' && currentMode === 'flashcards') {
+                e.preventDefault();
+                document.getElementById('flashcard').click();
+            } else if (e.key >= '1' && e.key <= '4' && currentMode !== 'flashcards' && !answered) {
+                selectAnswer(parseInt(e.key) - 1);
+            } else if (e.key === 'Enter' && answered) {
+                document.getElementById('nextBtn').click();
+            }
+        });
+        
+        // Init
+        loadData();
+    </script>
+</body>
+</html>

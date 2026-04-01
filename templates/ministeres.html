@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mIRAcle — Ministères</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Marianne:wght@400;500;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --miracle-primary: #1E2F5E;
+            --miracle-primary-dark: #111827;
+            --miracle-primary-light: #F5F7FA;
+            --miracle-accent: #1E2F5E;
+            --miracle-accent-2: #6B7280;
+            --bg-default: #F8F8F6;
+            --bg-alt: #FFFFFF;
+            --bg-contrast: #F1F3F5;
+            --text-default: #111827;
+            --text-mention: #6B7280;
+            --border-default: #E5E7EB;
+            --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06);
+            --shadow-md: 0 10px 22px rgba(16, 24, 40, 0.08);
+            --radius-sm: 10px;
+            --radius-md: 12px;
+            --radius-lg: 14px;
+            --topbar-height: 64px;
+            --topbar-bg: #FFFFFF;
+            --topbar-bg-2: #FFFFFF;
+            --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+            --dur-fast: 160ms;
+            --dur-med: 220ms;
+            --pill-pad-y: 4px;
+            --pill-pad-x: 10px;
+            --pill-radius: 999px;
+            --pill-font: 11px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Marianne', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-default);
+            color: var(--text-default);
+            min-height: 100vh;
+            font-size: 13px;
+            line-height: 1.55;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image:
+                linear-gradient(0deg, rgba(17, 24, 39, 0.02), rgba(17, 24, 39, 0.02)),
+                repeating-linear-gradient(90deg, rgba(17, 24, 39, 0.02) 0, rgba(17, 24, 39, 0.02) 1px, transparent 1px, transparent 26px),
+                repeating-linear-gradient(0deg, rgba(17, 24, 39, 0.015) 0, rgba(17, 24, 39, 0.015) 1px, transparent 1px, transparent 26px);
+            opacity: 0.45;
+            z-index: 0;
+        }
+
+        .select-pill {
+            appearance: none;
+            background-color: #fff;
+            border: 1px solid rgba(17, 24, 39, 0.45);
+            border-radius: 999px;
+            padding: 6px 34px 6px 12px;
+            height: 30px;
+            font-weight: 700;
+            background-image:
+                linear-gradient(45deg, transparent 50%, #6B7280 50%),
+                linear-gradient(135deg, #6B7280 50%, transparent 50%);
+            background-position: calc(100% - 16px) 50%, calc(100% - 11px) 50%;
+            background-size: 5px 5px, 5px 5px;
+            background-repeat: no-repeat;
+        }
+        .select-pill:focus {
+            outline: none;
+            border-color: var(--miracle-primary);
+            box-shadow: 0 0 0 3px rgba(30, 47, 94, 0.12);
+        }
+
+        .topbar {
+            height: var(--topbar-height);
+            background: var(--topbar-bg);
+            color: var(--text-default);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            border-bottom: 1px solid var(--border-default);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .topbar-left { display: flex; align-items: center; gap: 16px; }
+        .topbar-brand { display: flex; align-items: center; gap: 10px; font-weight: 800; color: var(--text-default); }
+        .topbar-brand-badge {
+            width: 28px; height: 28px; border-radius: 8px;
+            background: transparent;
+            border: 1px solid var(--text-default);
+            display: flex; align-items: center; justify-content: center;
+            color: var(--text-default); font-weight: 800; font-size: 13px;
+        }
+        .topbar-nav {
+            display: flex; align-items: center; gap: 8px;
+            position: relative; padding-bottom: 8px;
+        }
+        .topbar-nav::after {
+            content: '';
+            position: absolute;
+            left: 0; right: 0;
+            bottom: 3px;
+            height: 1px;
+            background: var(--border-default);
+        }
+        .topbar-item {
+            display: flex; align-items: center; gap: 8px;
+            padding: 10px 12px 8px; border-radius: 6px 6px 2px 2px;
+            font-size: 12px; font-weight: 700;
+            color: var(--text-mention); cursor: pointer;
+            transition: color var(--dur-fast) var(--ease-standard), background var(--dur-fast) var(--ease-standard), border-color var(--dur-fast) var(--ease-standard);
+            white-space: nowrap; text-decoration: none;
+            position: relative;
+            border: 1px solid transparent;
+            z-index: 1;
+        }
+        .topbar-item::after {
+            content: '';
+            position: absolute;
+            left: 10px;
+            bottom: -6px;
+            width: 16px;
+            height: 6px;
+            border-radius: 0 0 6px 6px;
+            background: transparent;
+            border: 1px solid transparent;
+            border-top: 0;
+            opacity: 0;
+            transition: opacity var(--dur-fast) var(--ease-standard), background var(--dur-fast) var(--ease-standard), border-color var(--dur-fast) var(--ease-standard);
+        }
+        .topbar-item:hover {
+            background: var(--bg-contrast);
+            color: var(--text-default);
+            border-color: var(--border-default);
+        }
+        .topbar-item:hover::after {
+            background: var(--bg-contrast);
+            border-color: var(--border-default);
+            opacity: 1;
+        }
+        .topbar-item.active {
+            background: #FFFFFF;
+            color: var(--text-default);
+            border-color: var(--border-default);
+            box-shadow: inset 0 -1px 0 var(--miracle-primary);
+        }
+        .topbar-item.active::after {
+            left: 8px;
+            width: 20px;
+            height: 7px;
+            border-radius: 0 0 8px 4px;
+            background: #FFFFFF;
+            border-color: var(--border-default);
+            opacity: 1;
+        }
+        .topbar-right { display: flex; align-items: center; gap: 12px; }
+        .topbar-pill {
+            padding: var(--pill-pad-y) var(--pill-pad-x);
+            border-radius: var(--pill-radius);
+            font-size: var(--pill-font);
+            font-weight: 700;
+            background: var(--bg-contrast); color: var(--text-mention);
+            border: 1px solid var(--border-default);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .main { padding: 28px 24px 40px; position: relative; z-index: 1; }
+        .page-header {
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            gap: 16px;
+            margin-bottom: 18px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid var(--border-default);
+            position: relative;
+            overflow: hidden;
+        }
+        .page-header::before {
+            content: '';
+            position: absolute;
+            inset: 0 0 8px 0;
+            background-image:
+                repeating-linear-gradient(90deg, rgba(17, 24, 39, 0.04) 0, rgba(17, 24, 39, 0.04) 1px, transparent 1px, transparent 34px),
+                repeating-linear-gradient(0deg, rgba(17, 24, 39, 0.03) 0, rgba(17, 24, 39, 0.03) 1px, transparent 1px, transparent 34px);
+            opacity: 0.35;
+            pointer-events: none;
+        }
+        .page-title {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: -0.2px;
+            font-family: 'Source Serif 4', 'Marianne', serif;
+            position: relative;
+            display: inline-block;
+        }
+        .page-title::after {
+            content: '';
+            display: block;
+            width: 44px;
+            height: 2px;
+            margin-top: 8px;
+            background: var(--miracle-primary);
+            opacity: 0.9;
+            border-radius: 999px;
+        }
+        .page-subtitle {
+              color: var(--text-mention);
+              font-size: 13px;
+            max-width: 520px;
+        }
+
+        .page-kpis {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(140px, 1fr));
+            gap: 10px;
+            min-width: 360px;
+        }
+        .page-kpi {
+            background: var(--bg-alt);
+            border: 1px solid var(--border-default);
+            border-radius: var(--radius-md);
+            padding: 10px 12px;
+            box-shadow: var(--shadow-sm), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+        }
+        .page-kpi strong {
+            font-size: 18px;
+            display: block;
+            font-family: 'Source Serif 4', 'Marianne', serif;
+        }
+        .page-kpi span { color: var(--text-mention); font-size: 11px; text-transform: uppercase; letter-spacing: 0.3px; }
+
+        .search-box {
+            position: relative;
+            width: 260px;
+        }
+        .search-box input {
+            width: 100%;
+            padding: 6px 12px 6px 34px;
+            background: var(--bg-alt);
+            border: 1px solid rgba(17, 24, 39, 0.45);
+            border-radius: 999px;
+            color: var(--text-default);
+            font-size: 12px;
+            font-family: inherit;
+            transition: all var(--dur-fast) var(--ease-standard);
+            height: 30px;
+        }
+        .search-box input::placeholder { color: var(--text-mention); }
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--miracle-primary);
+            box-shadow: 0 0 0 3px rgba(30, 47, 94, 0.12);
+        }
+        .search-box i {
+            position: absolute;
+            left: 6px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 22px;
+            height: 22px;
+            border-radius: 999px;
+            border: 1px solid rgba(17, 24, 39, 0.15);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: var(--miracle-primary);
+            background: var(--miracle-primary-light);
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 360px 1fr;
+            gap: 18px;
+        }
+        .panel {
+            background: var(--bg-alt);
+            border: 1px solid var(--border-default);
+            border-radius: 16px 14px 16px 14px;
+            box-shadow: var(--shadow-sm), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+            position: relative;
+            overflow: hidden;
+        }
+        .panel::before {
+            content: '';
+            position: absolute;
+            inset: 8px 10px 8px 8px;
+            border: 1px solid rgba(30, 47, 94, 0.08);
+            border-radius: 11px 9px 11px 9px;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .panel > * {
+            position: relative;
+            z-index: 1;
+        }
+        .panel-list { position: relative; }
+        .panel-list::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 56px;
+            bottom: 16px;
+            width: 2px;
+            border-radius: 999px;
+            background: linear-gradient(180deg, rgba(30, 47, 94, 0.4), rgba(30, 47, 94, 0));
+            z-index: 1;
+        }
+        .panel-header {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border-default);
+            display: flex; align-items: center; justify-content: space-between;
+            background: var(--bg-contrast);
+            font-weight: 700; font-size: 12px;
+            color: var(--miracle-primary-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            position: relative;
+            z-index: 2;
+        }
+        .panel-header::after {
+            content: '';
+            position: absolute;
+            left: 14px;
+            right: 14px;
+            bottom: 0;
+            height: 1px;
+            background: var(--border-default);
+            opacity: 0.7;
+        }
+        .panel-header span:first-child {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 18px 8px;
+            margin-bottom: 0;
+            border: 1px solid var(--border-default);
+            border-radius: 16px 16px 10px 10px;
+            background: #fff;
+            font-family: 'Source Serif 4', 'Marianne', serif;
+            font-size: 12px;
+            letter-spacing: 0.6px;
+            box-shadow: inset 0 -2px 0 rgba(30, 47, 94, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+        }
+        .panel-header span:last-child {
+            padding: 4px 10px 6px;
+            margin-bottom: 6px;
+            border-radius: 999px;
+            background: #fff;
+            border: 1px solid var(--border-default);
+            font-size: 11px;
+            color: var(--text-mention);
+            text-transform: none;
+            letter-spacing: 0.2px;
+        }
+        .panel-body { padding: 16px; }
+
+        .min-list { display: grid; gap: 10px; }
+        .min-item {
+            padding: 12px 14px;
+            border: 1px solid var(--border-default);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+            background: #fff;
+            font-weight: 700;
+            position: relative;
+        }
+        .min-item::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 10px; bottom: 10px;
+            width: 3px; border-radius: 999px;
+            background: transparent;
+        }
+        .min-item:hover {
+            border-color: var(--miracle-primary);
+            background: var(--miracle-primary-light);
+            box-shadow: var(--shadow-sm);
+            transform: translateY(-1px);
+        }
+        .min-item.active {
+            border-color: var(--miracle-primary);
+            background: var(--miracle-primary-light);
+            box-shadow: var(--shadow-sm);
+        }
+        .min-item.active::before { background: var(--miracle-primary); }
+        .min-item small { display: block; color: var(--text-mention); font-weight: 500; margin-top: 4px; }
+
+        .detail-title {
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: -0.1px;
+            font-family: 'Source Serif 4', 'Marianne', serif;
+        }
+        .detail-sub { color: var(--text-mention); font-size: 12px; margin-top: 4px; }
+        .detail-section { margin-top: 14px; }
+        .detail-section h3 {
+            font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px;
+            color: var(--miracle-primary-dark); margin-bottom: 8px;
+        }
+        .detail-list { display: grid; gap: 6px; }
+        .detail-list .is-hidden { display: none; }
+        .detail-list.expanded .is-hidden { display: block; }
+        .detail-chip {
+            padding: var(--pill-pad-y) var(--pill-pad-x);
+            border-radius: var(--pill-radius);
+            border: 1px solid var(--border-default);
+            background: var(--bg-contrast);
+            font-size: var(--pill-font);
+        }
+        .detail-chip.clickable {
+            cursor: pointer;
+            transition: border-color var(--dur-fast) var(--ease-standard), transform var(--dur-fast) var(--ease-standard);
+        }
+        .detail-chip.clickable:hover {
+            border-color: var(--miracle-primary);
+            background: var(--miracle-primary-light);
+            transform: translateY(-1px);
+        }
+        .detail-note { font-size: 12px; color: var(--text-mention); }
+
+        .detail-focus {
+            margin-top: 12px;
+            padding: 12px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-default);
+            background: var(--bg-contrast);
+        }
+        .detail-focus h4 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; color: var(--text-mention); }
+        .detail-focus-title { font-size: 14px; font-weight: 700; margin-top: 6px; }
+        .detail-focus-list { margin-top: 6px; display: grid; gap: 6px; }
+
+        .summary-card {
+            padding: 12px 14px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-default);
+            background: var(--bg-contrast);
+            font-size: 12px;
+            color: var(--text-default);
+        }
+        .summary-head {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 700;
+            color: var(--miracle-primary-dark);
+            margin-bottom: 6px;
+        }
+        .summary-head i { color: var(--miracle-primary); }
+        .summary-head {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 700;
+            color: var(--miracle-primary-dark);
+            margin-bottom: 6px;
+        }
+        .summary-head i { color: var(--miracle-primary); }
+
+        .budget-header {
+            font-size: 11px; text-transform: uppercase; letter-spacing: 0.4px;
+            color: var(--text-mention); margin-top: 6px;
+        }
+        .budget-item {
+            padding-left: 10px; position: relative;
+        }
+        .budget-item::before {
+            content: "•"; position: absolute; left: 0; color: var(--miracle-primary);
+        }
+        .budget-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            width: 100%;
+        }
+        .budget-pct {
+            font-size: 11px;
+            color: var(--text-mention);
+            white-space: nowrap;
+            margin-left: 6px;
+        }
+        .budget-badge {
+            font-size: var(--pill-font);
+            font-weight: 800;
+            padding: var(--pill-pad-y) var(--pill-pad-x);
+            border-radius: var(--pill-radius);
+            background: var(--bg-contrast);
+            color: var(--text-default);
+            border: 1px solid var(--border-default);
+            text-transform: uppercase;
+        }
+        .budget-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            width: 100%;
+        }
+        .budget-pct {
+            font-size: 11px;
+            color: var(--text-mention);
+            white-space: nowrap;
+        }
+
+        .drawer-overlay {
+            position: fixed; inset: 0; background: rgba(15, 23, 42, 0.45);
+            display: none; z-index: 120;
+        }
+        .drawer {
+            position: fixed; top: 8vh; right: 12px; height: min(560px, 80vh); width: min(420px, 92vw);
+            background: #fff; border: 1px solid var(--border-default);
+            box-shadow: -10px 0 28px rgba(15, 23, 42, 0.18);
+            border-radius: 18px;
+            transform: translateX(110%); transition: transform 0.2s ease;
+            z-index: 130; display: grid; grid-template-rows: auto 1fr;
+        }
+        .drawer.open { transform: translateX(0); }
+        .drawer-header {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 16px; border-bottom: 1px solid var(--border-default);
+            background: var(--bg-contrast);
+        }
+        .drawer-title {
+            font-size: 14px;
+            font-weight: 800;
+            font-family: 'Source Serif 4', 'Marianne', serif;
+        }
+        .drawer-subtitle { font-size: 11px; color: var(--text-mention); margin-top: 2px; }
+        .drawer-close {
+            width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--border-default);
+            background: #fff; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
+            transition: background var(--dur-fast) var(--ease-standard), border-color var(--dur-fast) var(--ease-standard), transform var(--dur-fast) var(--ease-standard);
+        }
+        .drawer-close:hover {
+            background: var(--bg-contrast);
+            border-color: var(--miracle-primary);
+            transform: translateY(-1px);
+        }
+        .drawer-body { padding: 16px; display: grid; gap: 10px; overflow: auto; }
+        .drawer-summary {
+            border-radius: 10px;
+            border: 1px solid var(--border-default);
+            padding: 10px 12px;
+            background: var(--bg-contrast);
+            font-size: 12px;
+        }
+        .budget-badge {
+            font-size: var(--pill-font);
+            font-weight: 800;
+            padding: var(--pill-pad-y) var(--pill-pad-x);
+            border-radius: var(--pill-radius);
+            background: var(--bg-contrast);
+            color: var(--text-default);
+            border: 1px solid var(--border-default);
+            text-transform: uppercase;
+        }
+
+        .section-grid {
+            display: grid; grid-template-columns: repeat(2, minmax(260px, 1fr));
+            gap: 12px;
+        }
+        .card {
+            --section-color: var(--miracle-primary);
+            border: 1px solid var(--border-default);
+            border-radius: var(--radius-lg);
+            padding: 12px;
+            background: var(--bg-alt);
+            box-shadow: var(--shadow-sm), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+            transition: border-color var(--dur-fast) var(--ease-standard), box-shadow var(--dur-fast) var(--ease-standard), transform var(--dur-fast) var(--ease-standard);
+        }
+        .card::before {
+            content: "";
+            display: block;
+            height: 3px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, var(--section-color), rgba(255, 255, 255, 0));
+            margin-bottom: 8px;
+        }
+        .card-header {
+            display: flex; align-items: center; justify-content: space-between;
+            font-weight: 700; font-size: 12px; margin-bottom: 8px;
+        }
+        .card-header .card-title {
+            display: inline-flex; align-items: center; gap: 8px;
+        }
+        .card-filter {
+              border: 1px solid var(--border-default);
+              background: var(--bg-contrast);
+              color: var(--text-default);
+              font-size: var(--pill-font);
+              font-weight: 700;
+              padding: var(--pill-pad-y) var(--pill-pad-x);
+              border-radius: var(--pill-radius);
+              cursor: pointer;
+        }
+        .card:hover {
+            border-color: var(--miracle-primary);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-1px);
+        }
+        .card-badge {
+            padding: var(--pill-pad-y) var(--pill-pad-x);
+            border-radius: var(--pill-radius);
+            font-size: var(--pill-font);
+            background: var(--bg-contrast); color: var(--text-default);
+            border: 1px solid var(--border-default);
+        }
+        .card-body { margin-top: 8px; }
+        .card-meta { color: var(--text-mention); font-size: 11px; margin-top: 6px; }
+        .card-indicator {
+            display: grid; gap: 6px;
+        }
+        .indicator-row {
+            display: flex; align-items: center; justify-content: space-between;
+            font-size: 11px; color: var(--text-mention);
+        }
+        .indicator-bar {
+            height: 6px; border-radius: 999px; background: #E5E7EB; overflow: hidden;
+        }
+        .indicator-bar span {
+            display: block; height: 100%;
+            background: var(--miracle-primary);
+            width: 0%;
+        }
+
+        .link-chip {
+            display: inline-flex; align-items: center; gap: 6px;
+            text-decoration: none; color: var(--text-default);
+        }
+        .link-chip i { color: var(--miracle-primary); }
+
+        .card-missions { --section-color: var(--miracle-primary); }
+        .card-competences { --section-color: var(--miracle-primary); }
+        .card-politiques_publiques { --section-color: var(--miracle-primary); }
+        .card-chiffres_cles { --section-color: var(--miracle-primary); }
+        .card-budget { --section-color: var(--miracle-primary); }
+        .card-organigramme { --section-color: var(--miracle-primary); }
+        .card-operateurs { --section-color: var(--miracle-primary); }
+        .card-sources { --section-color: var(--miracle-primary); }
+        .card-notes { --section-color: var(--miracle-primary); }
+
+        .card-grandes_lois { --section-color: var(--miracle-primary); }
+
+        .card-missions .card-badge,
+        .card-competences .card-badge,
+        .card-politiques_publiques .card-badge,
+        .card-chiffres_cles .card-badge,
+        .card-budget .card-badge,
+        .card-organigramme .card-badge,
+        .card-operateurs .card-badge,
+        .card-sources .card-badge,
+        .card-notes .card-badge {
+            background: var(--bg-contrast);
+            color: var(--text-default);
+            border-color: var(--border-default);
+        }
+
+        .detail-chip.section-missions,
+        .detail-chip.section-competences,
+        .detail-chip.section-politiques_publiques,
+        .detail-chip.section-chiffres_cles,
+        .detail-chip.section-budget,
+        .detail-chip.section-organigramme,
+        .detail-chip.section-operateurs,
+        .detail-chip.section-sources,
+        .detail-chip.section-notes,
+        .detail-chip.section-grandes_lois {
+            border-color: var(--border-default);
+            background: var(--bg-contrast);
+        }
+
+        @media (max-width: 1100px) {
+            .page-kpis { grid-template-columns: repeat(2, minmax(120px, 1fr)); }
+            .section-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 960px) {
+            .layout { grid-template-columns: 1fr; }
+            .page-header { flex-direction: column; align-items: flex-start; }
+            .page-kpis { width: 100%; grid-template-columns: repeat(3, minmax(120px, 1fr)); }
+        }
+        @media (max-width: 640px) {
+            .page-kpis { grid-template-columns: repeat(2, minmax(120px, 1fr)); }
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <div class="topbar-left">
+            <div class="topbar-brand">
+                <span class="topbar-brand-badge">m</span>
+                mIRAcle
+            </div>
+            <nav class="topbar-nav">
+                <a class="topbar-item" href="/"><i class="ri-folder-3-line"></i> Fiches</a>
+                <a class="topbar-item active" href="/ministeres"><i class="ri-government-line"></i> Ministères</a>
+                <a class="topbar-item" href="/training"><i class="ri-focus-3-line"></i> Entraînement</a>
+                <a class="topbar-item" href="/stats"><i class="ri-bar-chart-box-line"></i> Statistiques</a>
+                <a class="topbar-item" href="/quiz"><i class="ri-question-answer-line"></i> QCM</a>
+            </nav>
+        </div>
+        <div class="topbar-right">
+            <a class="topbar-pill" href="/welcome"><i class="ri-compass-3-line"></i> Guide</a>
+            <a class="topbar-pill" href="/feedback?from={{ request.path }}"><i class="ri-chat-1-line"></i> Feedback</a>
+            <span class="topbar-pill">IRA</span>
+            <span class="topbar-pill">v3</span>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="page-header">
+            <div>
+                <div class="page-title">Ministères</div>
+                <div class="page-subtitle">Base de révision par administration centrale, structurée en tableau de bord.</div>
+            </div>
+            <div class="page-kpis">
+                <div class="page-kpi">
+                    <strong id="kpiTotal">0</strong>
+                    <span>Administrations</span>
+                </div>
+                <div class="page-kpi">
+                    <strong id="kpiFilled">0</strong>
+                    <span>Fiches renseignées</span>
+                </div>
+                <div class="page-kpi">
+                    <strong id="kpiFields">0%</strong>
+                    <span>Remplissage moyen</span>
+                </div>
+            </div>
+            <div class="search-box">
+                <i class="ri-search-line"></i>
+                <input id="searchInput" type="text" placeholder="Rechercher un ministère...">
+            </div>
+        </div>
+
+        <div class="layout">
+            <section class="panel panel-list">
+                <div class="panel-header">
+                    <span>Liste</span>
+                    <span id="minCount">0</span>
+                </div>
+                <div class="panel-body">
+                    <div id="ministeresList" class="min-list"></div>
+                </div>
+            </section>
+
+            <section class="panel">
+                <div class="panel-header">
+                    <span>Fiche ministère</span>
+                    <span id="detailId" class="detail-note"></span>
+                </div>
+                <div class="panel-body" id="detailPanel">
+                    <div class="detail-note">Sélectionnez un ministère pour afficher la fiche.</div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <aside class="drawer" id="detailDrawer">
+        <div class="drawer-header">
+            <div>
+                <div class="drawer-title" id="drawerTitle">Détails</div>
+                <div class="drawer-subtitle" id="drawerSubtitle"></div>
+            </div>
+            <button class="drawer-close" id="drawerClose" aria-label="Fermer">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+        <div class="drawer-body" id="drawerBody">
+            <div class="detail-note">Sélectionnez un élément.</div>
+        </div>
+    </aside>
+
+    <script type="application/json" id="ministeresData">{{ ministeres | tojson }}</script>
+    <script>
+        const ministeres = JSON.parse(document.getElementById('ministeresData').textContent);
+        const listEl = document.getElementById('ministeresList');
+        const detailEl = document.getElementById('detailPanel');
+        const countEl = document.getElementById('minCount');
+        const detailIdEl = document.getElementById('detailId');
+        const searchEl = document.getElementById('searchInput');
+        const kpiTotalEl = document.getElementById('kpiTotal');
+        const kpiFilledEl = document.getElementById('kpiFilled');
+        const kpiFieldsEl = document.getElementById('kpiFields');
+        const drawer = document.getElementById('detailDrawer');
+        const drawerOverlay = document.getElementById('drawerOverlay');
+        const drawerTitle = document.getElementById('drawerTitle');
+        const drawerSubtitle = document.getElementById('drawerSubtitle');
+        const drawerBody = document.getElementById('drawerBody');
+        const drawerClose = document.getElementById('drawerClose');
+        const TOTAL_ETAT_AE_MDEUR = 843;
+        const TOTAL_ETAT_CP_MDEUR = 819;
+        let activeId = null;
+
+        function normalize(text) {
+            return (text || '').toLowerCase();
+        }
+
+        function renderList() {
+            const query = normalize(searchEl.value);
+            const filtered = ministeres.filter(m => {
+                const name = normalize(m.name);
+                const shortName = normalize(m.short_name);
+                return !query || name.includes(query) || shortName.includes(query);
+            });
+
+            countEl.textContent = filtered.length;
+            listEl.innerHTML = filtered.map(m => {
+                const activeClass = m.id === activeId ? 'active' : '';
+                return `
+                    <div class="min-item ${activeClass}" data-id="${m.id}">
+                        ${m.name}
+                        <small>${m.short_name || ''}</small>
+                    </div>
+                `;
+            }).join('') || '<div class="detail-note">Aucun résultat</div>';
+
+            document.querySelectorAll('.min-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    selectMinistere(item.dataset.id);
+                });
+            });
+        }
+
+        function countFilledFields(m) {
+            const fields = [
+                (m.missions || []),
+                (m.competences || []),
+                (m.politiques_publiques || []),
+                (m.chiffres_cles || []),
+                (m.grandes_lois || []),
+                (m.organigramme || []),
+                (m.operateurs || []),
+                (m.sources || [])
+            ];
+            const filled = fields.filter(arr => Array.isArray(arr) && arr.length > 0).length;
+            return { filled, total: fields.length };
+        }
+
+        function renderGlobalKpis() {
+            const total = ministeres.length;
+            const filledCount = ministeres.filter(m => countFilledFields(m).filled > 0).length;
+            const fieldTotals = ministeres.reduce((acc, m) => {
+                const { filled, total } = countFilledFields(m);
+                acc.filled += filled;
+                acc.total += total;
+                return acc;
+            }, { filled: 0, total: 0 });
+
+            const ratio = fieldTotals.total ? Math.round((fieldTotals.filled / fieldTotals.total) * 100) : 0;
+            kpiTotalEl.textContent = total;
+            kpiFilledEl.textContent = filledCount;
+            kpiFieldsEl.textContent = `${ratio}%`;
+        }
+
+        function renderListBlock(sectionKey, items, maxItems = 8) {
+            if (!items || items.length === 0) {
+                return `<div class="detail-note">À compléter</div>`;
+            }
+            const hasMore = items.length > maxItems;
+            return `
+                <div class="detail-list" data-section="${sectionKey}" data-collapsed="${hasMore ? 'true' : 'false'}">
+                    ${items.map((i, index) => {
+                        const data = `data-section="${sectionKey}" data-label="${i}"`;
+                        const extraClass = index >= maxItems ? ' is-hidden' : '';
+                        return `<div class="detail-chip clickable section-${sectionKey}${extraClass}" ${data}>${i}</div>`;
+                    }).join('')}
+                </div>
+            `;
+        }
+
+        function renderLois(lois) {
+            if (!lois || lois.length === 0) {
+                return `<div class="detail-note">À compléter</div>`;
+            }
+            return `
+                <div class="detail-list">
+                    ${lois.map((l, index) => {
+                        const label = typeof l === 'string' ? l : (l.label || 'Loi');
+                        const data = `data-section="grandes_lois" data-index="${index}" data-label="${label}"`;
+                        return `<div class="detail-chip clickable section-grandes_lois" ${data}>${label}</div>`;
+                    }).join('')}
+                </div>
+            `;
+        }
+
+        function parseBudgetValueMdEur(text) {
+            const match = String(text).match(/([0-9]+(?:[\.,][0-9]+)?)\s*MdEUR/i);
+            if (!match) return null;
+            return parseFloat(match[1].replace(',', '.'));
+        }
+
+        function formatPct(value, total) {
+            if (!value || !total) return '';
+            const pct = (value / total) * 100;
+            return `${pct.toFixed(1).replace('.', ',')}%`;
+        }
+
+        function extractBudgetItems(m) {
+            if (Array.isArray(m.budget) && m.budget.length > 0) {
+                return m.budget;
+            }
+            return (m.chiffres_cles || []).filter(item => {
+                const text = (item || '').toLowerCase();
+                return text.includes('budget') || text.includes('credits') || text.includes('crédits') || text.includes('mission');
+            });
+        }
+
+        function renderBudgetPanel(m) {
+            const items = extractBudgetItems(m);
+            if (!items.length) {
+                return '<div class="detail-note">À compléter (budget/crédits). Ajoute des lignes dans le champ "budget".</div>';
+            }
+            const blocks = items.map(i => {
+                const trimmed = (i || '').trim();
+                if (trimmed.endsWith(':')) {
+                    return `<div class="budget-header">${trimmed}</div>`;
+                }
+                if (trimmed.startsWith('- ')) {
+                    return `<div class="detail-chip clickable budget-item section-budget" data-section="budget" data-label="${trimmed.slice(2)}">${trimmed.slice(2)}</div>`;
+                }
+                const lower = trimmed.toLowerCase();
+                const value = parseBudgetValueMdEur(trimmed);
+                let pct = '';
+                let badge = '';
+                if (value && lower.startsWith('total cp')) {
+                    pct = formatPct(value, TOTAL_ETAT_CP_MDEUR);
+                    badge = 'CP';
+                } else if (value && lower.startsWith('total ae')) {
+                    pct = formatPct(value, TOTAL_ETAT_AE_MDEUR);
+                    badge = 'AE';
+                }
+                return `
+                    <div class="detail-chip clickable section-budget" data-section="budget" data-label="${trimmed}">
+                        <div class="budget-row">
+                            <span>${trimmed}</span>
+                            <span>
+                                ${badge ? `<span class="budget-badge">${badge}</span>` : ''}
+                                ${pct ? `<span class="budget-pct">${pct} du total État</span>` : ''}
+                            </span>
+                        </div>
+                    </div>
+                `;
+            });
+            const emplois = Array.isArray(m.emplois_etpt) ? m.emplois_etpt : [];
+            const emploiBlock = emplois.length ? `
+                <div class="budget-header">Emplois / ETPT (PLF 2026) :</div>
+                ${emplois.map(item => `<div class="detail-chip section-budget">${item}</div>`).join('')}
+            ` : '';
+            return `
+                <div class="detail-list">
+                    ${blocks.join('')}
+                    ${emploiBlock}
+                </div>
+            `;
+        }
+
+        function openDrawer(title, items, sectionLabel, linkUrl, summary) {
+            drawerTitle.textContent = title;
+            drawerSubtitle.textContent = sectionLabel || '';
+            if (!items || items.length === 0) {
+                drawerBody.innerHTML = '<div class="detail-note">Exemples a completer.</div>';
+            } else {
+                const summaryBlock = summary ? `<div class="drawer-summary">${summary}</div>` : '';
+                drawerBody.innerHTML = `
+                    ${summaryBlock}
+                    <div class="detail-list">
+                        ${items.map(item => `<div class="detail-chip">${item}</div>`).join('')}
+                    </div>
+                    ${linkUrl ? `<a class="detail-chip link-chip" href="${linkUrl}" target="_blank" rel="noreferrer"><i class="ri-links-line"></i>Accéder au texte</a>` : ''}
+                `;
+            }
+            drawerOverlay.style.display = 'block';
+            drawer.classList.add('open');
+        }
+
+        function closeDrawer() {
+            drawer.classList.remove('open');
+            drawerOverlay.style.display = 'none';
+        }
+
+        function wireChipDetails(m) {
+            const details = m.details || {};
+            document.querySelectorAll('.detail-chip.clickable').forEach(chip => {
+                chip.addEventListener('click', () => {
+                    const section = chip.dataset.section;
+                    const label = chip.dataset.label;
+                    if (section === 'budget') {
+                        openDrawer('Budget', [label], 'Crédits');
+                        return;
+                    }
+                    if (section === 'grandes_lois') {
+                        const index = Number(chip.dataset.index || -1);
+                        const loi = Array.isArray(m.grandes_lois) ? m.grandes_lois[index] : null;
+                        const title = (loi && loi.label) || label || 'Loi';
+                        const examples = (loi && loi.details) || [];
+                        const url = loi && loi.url ? loi.url : '';
+                        const summary = loi && loi.synthese ? loi.synthese : '';
+                        openDrawer(title, examples, 'Grandes lois', url, summary);
+                        return;
+                    }
+                    const examples = (details[section] && details[section][label]) || [];
+                    const sectionLabel = section.replace(/_/g, ' ');
+                    openDrawer(label, examples, sectionLabel);
+                });
+            });
+        }
+
+        function renderFilterButton(sectionKey, items) {
+            if (!items || items.length <= 8) return '';
+            return `<button class="card-filter" data-section="${sectionKey}">Voir tout</button>`;
+        }
+
+        function wireSectionFilters() {
+            document.querySelectorAll('.card-filter').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const section = btn.dataset.section;
+                    const list = document.querySelector(`.detail-list[data-section="${section}"]`);
+                    if (!list) return;
+                    const isExpanded = list.classList.toggle('expanded');
+                    btn.textContent = isExpanded ? 'Réduire' : 'Voir tout';
+                });
+            });
+        }
+
+        function selectMinistere(id) {
+            const m = ministeres.find(x => x.id === id);
+            if (!m) return;
+            activeId = id;
+            detailIdEl.textContent = m.id;
+            detailEl.innerHTML = `
+                <div class="detail-title">${m.name}</div>
+                <div class="detail-sub">${m.short_name || ''}</div>
+                <div class="detail-section">
+                    <h3>Résumé</h3>
+                    ${m.resume ? `
+                        <div class="summary-card">
+                            <div class="summary-head"><i class="ri-sparkling-2-line"></i>Vue d'ensemble</div>
+                            <div>${m.resume}</div>
+                        </div>
+                    ` : '<div class="detail-note">À compléter</div>'}
+                </div>
+                <div class="detail-section">
+                    <h3>Site officiel</h3>
+                    ${m.site_url ? `<a class="link-chip" href="${m.site_url}" target="_blank" rel="noreferrer"><i class="ri-external-link-line"></i>${m.site_url}</a>` : '<div class="detail-note">À compléter</div>'}
+                </div>
+                <div class="detail-section section-grid">
+                    <div class="card card-missions">
+                        <div class="card-header">
+                            <span class="card-title">Missions <span class="card-badge">${(m.missions || []).length}</span></span>
+                            ${renderFilterButton('missions', m.missions)}
+                        </div>
+                        <div class="card-body">
+                            ${renderListBlock('missions', m.missions)}
+                        </div>
+                    </div>
+                    <div class="card card-competences">
+                        <div class="card-header">
+                            <span class="card-title">Compétences <span class="card-badge">${(m.competences || []).length}</span></span>
+                            ${renderFilterButton('competences', m.competences)}
+                        </div>
+                        <div class="card-body">
+                            ${renderListBlock('competences', m.competences)}
+                        </div>
+                    </div>
+                    <div class="card card-politiques_publiques">
+                        <div class="card-header">
+                            <span class="card-title">Politiques publiques <span class="card-badge">${(m.politiques_publiques || []).length}</span></span>
+                            ${renderFilterButton('politiques_publiques', m.politiques_publiques)}
+                        </div>
+                        <div class="card-body">
+                            ${renderListBlock('politiques_publiques', m.politiques_publiques)}
+                        </div>
+                    </div>
+                    <div class="card card-chiffres_cles">
+                        <div class="card-header">
+                            <span class="card-title">Chiffres clés <span class="card-badge">${(m.chiffres_cles || []).length}</span></span>
+                            ${renderFilterButton('chiffres_cles', m.chiffres_cles)}
+                        </div>
+                        <div class="card-body">
+                            ${renderListBlock('chiffres_cles', m.chiffres_cles)}
+                        </div>
+                    </div>
+                    <div class="card card-budget">
+                        <div class="card-header">
+                            <span class="card-title">Budget <span class="card-badge">${extractBudgetItems(m).length}</span></span>
+                        </div>
+                        <div class="card-body">
+                            ${renderBudgetPanel(m)}
+                        </div>
+                        <div class="card-meta">Source suggérée : budget.gouv.fr</div>
+                    </div>
+                    <div class="card card-organigramme">
+                        <div class="card-header">
+                            <span class="card-title">Organigramme <span class="card-badge">${(m.organigramme || []).length}</span></span>
+                            ${renderFilterButton('organigramme', m.organigramme)}
+                        </div>
+                        <div class="card-body">
+                            ${renderListBlock('organigramme', m.organigramme)}
+                        </div>
+                    </div>
+                    <div class="card card-operateurs">
+                        <div class="card-header">
+                            <span class="card-title">Opérateurs <span class="card-badge">${(m.operateurs || []).length}</span></span>
+                            ${renderFilterButton('operateurs', m.operateurs)}
+                        </div>
+                        <div class="card-body">
+                            ${renderListBlock('operateurs', m.operateurs)}
+                        </div>
+                    </div>
+                    <div class="card card-grandes_lois">
+                        <div class="card-header">
+                            <span class="card-title">Grandes lois <span class="card-badge">${(m.grandes_lois || []).length}</span></span>
+                        </div>
+                        <div class="card-body">
+                            ${renderLois(m.grandes_lois)}
+                        </div>
+                    </div>
+                    <div class="card card-notes">
+                        <div class="card-header">
+                            <span class="card-title">Notes</span>
+                        </div>
+                        <div class="card-body">
+                            ${m.notes ? `<div>${m.notes}</div>` : '<div class="detail-note">À compléter</div>'}
+                        </div>
+                    </div>
+                </div>
+            `;
+            renderList();
+            wireChipDetails(m);
+            wireSectionFilters();
+        }
+
+        drawerClose.addEventListener('click', closeDrawer);
+        drawerOverlay.addEventListener('click', closeDrawer);
+
+        searchEl.addEventListener('input', renderList);
+
+        renderGlobalKpis();
+        renderList();
+        if (ministeres.length > 0) {
+            selectMinistere(ministeres[0].id);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mIRAcle — Guide rapide</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Marianne:wght@400;500;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --miracle-primary: #1E2F5E;
+            --miracle-primary-dark: #111827;
+            --miracle-primary-light: #F5F7FA;
+            --bg-default: #F8F8F6;
+            --bg-alt: #FFFFFF;
+            --bg-contrast: #F1F3F5;
+            --text-default: #111827;
+            --text-mention: #6B7280;
+            --border-default: #E5E7EB;
+            --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06);
+            --shadow-md: 0 10px 22px rgba(16, 24, 40, 0.08);
+            --topbar-height: 64px;
+            --topbar-bg: #FFFFFF;
+            --pill-pad-y: 4px;
+            --pill-pad-x: 10px;
+            --pill-radius: 999px;
+            --pill-font: 11px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Marianne', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-default);
+            color: var(--text-default);
+            min-height: 100vh;
+            font-size: 13px;
+            line-height: 1.5;
+            position: relative;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image:
+                linear-gradient(0deg, rgba(17, 24, 39, 0.02), rgba(17, 24, 39, 0.02)),
+                repeating-linear-gradient(90deg, rgba(17, 24, 39, 0.02) 0, rgba(17, 24, 39, 0.02) 1px, transparent 1px, transparent 26px),
+                repeating-linear-gradient(0deg, rgba(17, 24, 39, 0.015) 0, rgba(17, 24, 39, 0.015) 1px, transparent 1px, transparent 26px);
+            opacity: 0.45;
+            z-index: -1;
+        }
+        .topbar {
+            height: var(--topbar-height);
+            background: var(--topbar-bg);
+            color: var(--text-default);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            border-bottom: 1px solid var(--border-default);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .topbar-left { display: flex; align-items: center; gap: 16px; }
+        .topbar-brand { display: flex; align-items: center; gap: 10px; font-weight: 800; color: var(--text-default); }
+        .topbar-brand-badge {
+            width: 28px; height: 28px; border-radius: 8px;
+            background: transparent; border: 1px solid var(--text-default);
+            display: flex; align-items: center; justify-content: center;
+            color: var(--text-default); font-weight: 800; font-size: 13px;
+        }
+        .topbar-nav {
+            display: flex; align-items: center; gap: 8px;
+            position: relative; padding-bottom: 8px;
+        }
+        .topbar-nav::after {
+            content: '';
+            position: absolute; left: 0; right: 0; bottom: 3px;
+            height: 1px; background: var(--border-default);
+        }
+        .topbar-item {
+            display: flex; align-items: center; gap: 8px;
+            padding: 10px 12px 8px; border-radius: 6px 6px 2px 2px;
+            font-size: 12px; font-weight: 700; color: var(--text-mention);
+            text-decoration: none; border: 1px solid transparent;
+        }
+        .topbar-item:hover {
+            background: var(--bg-contrast);
+            color: var(--text-default);
+            border-color: var(--border-default);
+        }
+        .topbar-item.active {
+            background: #FFFFFF;
+            color: var(--text-default);
+            border-color: var(--border-default);
+            box-shadow: inset 0 -1px 0 var(--miracle-primary);
+        }
+        .topbar-right { display: flex; align-items: center; gap: 10px; }
+        .topbar-pill {
+            padding: var(--pill-pad-y) var(--pill-pad-x);
+            border-radius: var(--pill-radius);
+            font-size: var(--pill-font);
+            font-weight: 700;
+            background: var(--bg-contrast);
+            color: var(--text-mention);
+            border: 1px solid var(--border-default);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .main {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 28px 24px 40px;
+        }
+        .page-title {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: -0.2px;
+            font-family: 'Source Serif 4', 'Marianne', serif;
+            display: inline-block;
+        }
+        .page-title::after {
+            content: '';
+            display: block;
+            width: 44px;
+            height: 2px;
+            margin-top: 8px;
+            background: var(--miracle-primary);
+            border-radius: 999px;
+        }
+        .page-subtitle { color: var(--text-mention); margin-top: 8px; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 12px;
+            margin-top: 18px;
+        }
+        .card {
+            background: var(--bg-alt);
+            border: 1px solid var(--border-default);
+            border-radius: 16px 14px 16px 14px;
+            padding: 16px;
+            box-shadow: var(--shadow-sm);
+            position: relative;
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            inset: 8px 10px 8px 8px;
+            border: 1px solid rgba(30, 47, 94, 0.08);
+            border-radius: 11px 9px 11px 9px;
+            pointer-events: none;
+        }
+        .card > * { position: relative; z-index: 1; }
+        .card h3 {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            color: var(--text-mention);
+            margin-bottom: 8px;
+        }
+        .card p { color: var(--text-default); }
+        .card a { color: var(--miracle-primary); text-decoration: none; font-weight: 700; }
+        .cta-row {
+            display: flex;
+            gap: 12px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+        .cta {
+            padding: 8px 14px;
+            border-radius: 10px;
+            font-weight: 800;
+            font-size: 12px;
+            text-decoration: none;
+            border: 1px solid var(--border-default);
+            background: var(--bg-alt);
+            color: var(--text-default);
+            box-shadow: var(--shadow-sm);
+        }
+        .cta.primary {
+            background: var(--miracle-primary);
+            color: #fff;
+            border-color: var(--miracle-primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <div class="topbar-left">
+            <div class="topbar-brand">
+                <span class="topbar-brand-badge">m</span>
+                mIRAcle
+            </div>
+            <nav class="topbar-nav">
+                <a class="topbar-item" href="/"><i class="ri-folder-3-line"></i> Fiches</a>
+                <a class="topbar-item" href="/ministeres"><i class="ri-government-line"></i> Ministères</a>
+                <a class="topbar-item" href="/training"><i class="ri-focus-3-line"></i> Entraînement</a>
+                <a class="topbar-item" href="/stats"><i class="ri-bar-chart-box-line"></i> Statistiques</a>
+                <a class="topbar-item" href="/quiz"><i class="ri-question-answer-line"></i> QCM</a>
+            </nav>
+        </div>
+        <div class="topbar-right">
+            <a class="topbar-pill" href="/welcome"><i class="ri-compass-3-line"></i> Guide</a>
+            <a class="topbar-pill" href="/feedback"><i class="ri-chat-1-line"></i> Feedback</a>
+            <span class="topbar-pill">IRA</span>
+            <span class="topbar-pill">v3</span>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="page-title">Guide rapide</div>
+        <div class="page-subtitle">Prends 3 minutes pour explorer les modules clés et gagner du temps.</div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Fiches</h3>
+                <p>Filtre par domaine et structure, ouvre une fiche pour afficher le PDF et les détails essentiels.</p>
+            </div>
+            <div class="card">
+                <h3>Ministères</h3>
+                <p>Explore les missions, compétences et chiffres clés par ministère.</p>
+            </div>
+            <div class="card">
+                <h3>QCM</h3>
+                <p>Lance des sessions courtes pour valider les acquis et suivre tes stats.</p>
+            </div>
+            <div class="card">
+                <h3>Entraînement</h3>
+                <p>Utilise le chrono pour simuler l'oral et structurer ton discours.</p>
+            </div>
+        </div>
+
+        <div class="cta-row">
+            <a class="cta primary" href="/">Ouvrir les fiches</a>
+            <a class="cta" href="/quiz">Démarrer un QCM</a>
+            <a class="cta" href="/feedback">Donner un feedback</a>
+        </div>
+    </main>
+</body>
+</html>

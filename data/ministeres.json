@@ -1,0 +1,4139 @@
+{
+  "ministeres": [
+    {
+      "id": "caisse-des-depots-et-consignations",
+      "name": "Caisse des Dépôts et Consignations",
+      "short_name": "Caisse des Dépôts",
+      "site_url": "https://www.caissedesdepots.fr/",
+      "resume": "Groupe public financier au service de l'intérêt général, la Caisse des Dépôts finance le logement social, l'investissement territorial et gère des mandats publics.",
+      "missions": [
+        "Protéger l'épargne",
+        "Financer le logement social",
+        "Gérer des mandats",
+        "Accompagner le parcours de vie des Français",
+        "Contribuer au développement économique"
+      ],
+      "competences": [
+        "Financement du logement social",
+        "Gestion de l'épargne réglementée",
+        "Investissements territoriaux",
+        "Gestion de fonds et mandats publics",
+        "Appui aux collectivités et entreprises"
+      ],
+      "politiques_publiques": [
+        "Transition écologique des territoires",
+        "Cohésion sociale et territoriale",
+        "Soutien à l'investissement local",
+        "Financement du logement social",
+        "Transformation numérique des services publics"
+      ],
+      "chiffres_cles": [
+        "Budget 2026 (dépenses par ministère) : 34,22 MdEUR (4,1 %)",
+        "Mission Sécurités (2026) : 26,58 MdEUR",
+        "Mission Administration générale et territoriale de l'État (2026) : 5,03 MdEUR",
+        "Mission Immigration, asile et intégration (2026) : 2,24 MdEUR",
+        "Mission Contrôle de la circulation et du stationnement routiers (2026) : 1,93 MdEUR"
+      ],
+      "organigramme": [
+        "Direction des investissements",
+        "Direction des prêts",
+        "Direction des fonds d'épargne",
+        "Direction des politiques sociales",
+        "Direction des opérations et du pilotage"
+      ],
+      "operateurs": [
+        "Banque des Territoires",
+        "BPIfrance",
+        "CDC Habitat"
+      ],
+      "details": {
+        "missions": {
+          "Protéger l'épargne": [
+            "Gestion du Livret A",
+            "Sécurisation des dépôts"
+          ],
+          "Financer le logement social": [
+            "Prêts long terme",
+            "Financement des bailleurs"
+          ],
+          "Gérer des mandats": [
+            "Mandats publics",
+            "Gestion pour compte de tiers"
+          ],
+          "Accompagner le parcours de vie des Français": [
+            "Retraites et solidarité",
+            "Équipements collectifs"
+          ],
+          "Contribuer au développement économique": [
+            "Investissements territoriaux",
+            "Soutien aux entreprises"
+          ]
+        },
+        "competences": {
+          "Financement du logement social": [
+            "Prêts aux bailleurs",
+            "Programmes de rénovation"
+          ],
+          "Gestion de l'épargne réglementée": [
+            "Centralisation",
+            "Placements sécurisés"
+          ],
+          "Investissements territoriaux": [
+            "Projets locaux",
+            "Partenariats publics"
+          ],
+          "Gestion de fonds et mandats publics": [
+            "Fonds dédiés",
+            "Gestion déléguée"
+          ],
+          "Appui aux collectivités et entreprises": [
+            "Ingénierie",
+            "Accompagnement financier"
+          ]
+        },
+        "politiques_publiques": {
+          "Transition écologique des territoires": [
+            "Financement vert",
+            "Infrastructures durables"
+          ],
+          "Cohésion sociale et territoriale": [
+            "Services essentiels",
+            "Accès au logement"
+          ],
+          "Soutien à l'investissement local": [
+            "Prêts aux collectivités",
+            "Co-financements"
+          ],
+          "Financement du logement social": [
+            "Prêts long terme",
+            "Investissements"
+          ],
+          "Transformation numérique des services publics": [
+            "Services numériques",
+            "Modernisation"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Textes fondateurs de la Caisse des Dépôts (1816)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=caisse%20des%20depots%201816",
+          "synthese": "Fixe les missions et le statut de la Caisse des Dépôts comme établissement public.",
+          "details": [
+            "Statut public : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Missions d'intérêt général : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Gestion de l'épargne : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Code monétaire et financier - Caisse des Dépôts",
+          "url": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006072026/",
+          "synthese": "Encadre les missions financières et les modalités d'intervention de la CDC.",
+          "details": [
+            "Rôle public : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Gouvernance : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Mandats : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Nos missions",
+          "url": "https://www.caissedesdepots.fr/nous-connaitre/notre-modele/nos-missions-au-service-de-linteret-general"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Budget : à compléter (établissement public financier hors périmètre PLF par ministère)"
+      ]
+    },
+    {
+      "id": "conseil-d-etat",
+      "name": "Conseil d'État",
+      "short_name": "Conseil d'État",
+      "site_url": "https://www.conseil-etat.fr/",
+      "resume": "Conseiller juridique du Gouvernement et juge suprême de l'ordre administratif, garant de la légalité des décisions publiques.",
+      "missions": [
+        "Juger les conflits entre les citoyens et l'administration",
+        "Rendre des avis juridiques au Gouvernement et au Parlement sur les projets de loi et de réglementation"
+      ],
+      "competences": [
+        "Contentieux administratif",
+        "Conseil juridique au Gouvernement",
+        "Évaluation de la légalité",
+        "Juridictions administratives"
+      ],
+      "politiques_publiques": [
+        "Avis sur les projets de loi",
+        "Contrôle de la légalité administrative",
+        "Amélioration de la qualité du droit"
+      ],
+      "chiffres_cles": [
+        "Juridiction administrative suprême",
+        "Avis sur les projets de loi et décrets"
+      ],
+      "organigramme": [
+        "Section du contentieux",
+        "Sections administratives",
+        "Assemblée générale"
+      ],
+      "operateurs": [
+        "Tribunaux administratifs",
+        "Cours administratives d'appel"
+      ],
+      "details": {
+        "missions": {
+          "Juger les conflits entre les citoyens et l'administration": [
+            "Recours en excès de pouvoir",
+            "Contrôle de légalité"
+          ],
+          "Rendre des avis juridiques au Gouvernement et au Parlement sur les projets de loi et de réglementation": [
+            "Avis sur projets de loi",
+            "Sécurisation juridique"
+          ]
+        },
+        "competences": {
+          "Contentieux administratif": [
+            "Juridiction suprême",
+            "Uniformisation de la jurisprudence"
+          ],
+          "Conseil juridique au Gouvernement": [
+            "Consultations",
+            "Sécurisation des textes"
+          ],
+          "Évaluation de la légalité": [
+            "Contrôle de conformité",
+            "Avis motivés"
+          ],
+          "Juridictions administratives": [
+            "Organisation",
+            "Suivi des juridictions"
+          ]
+        },
+        "politiques_publiques": {
+          "Avis sur les projets de loi": [
+            "Examen préalable",
+            "Conseil juridique"
+          ],
+          "Contrôle de la légalité administrative": [
+            "Sécurité juridique",
+            "Contentieux"
+          ],
+          "Amélioration de la qualité du droit": [
+            "Clarté et accessibilité",
+            "Simplification"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Constitution de 1958 (rôle consultatif)",
+          "url": "https://www.legifrance.gouv.fr/constitution/",
+          "synthese": "Fonde le rôle du Conseil d'État dans la procédure législative et réglementaire.",
+          "details": [
+            "Avis sur les projets de loi : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Sécurisation juridique : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Garanties constitutionnelles : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Code de justice administrative",
+          "url": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070933/",
+          "synthese": "Encadre l'organisation et les procédures de la juridiction administrative.",
+          "details": [
+            "Procédures contentieuses : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Compétences juridictionnelles : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Garanties des justiciables : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Le Conseil d'État",
+          "url": "https://www.conseil-etat.fr/qui-sommes-nous/le-conseil-d-etat"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Budget : rattaché à la mission \"Conseil et contrôle de l'État\" (voir Premier ministre)"
+      ]
+    },
+    {
+      "id": "direction-generale-de-l-aviation-civile",
+      "name": "Direction générale de l'Aviation civile",
+      "short_name": "DGAC",
+      "site_url": "https://www.ecologie.gouv.fr/",
+      "resume": "Autorité de l'État chargée de la sécurité, de la sûreté et du développement du transport aérien civil en France.",
+      "missions": [
+        "Garantir la sécurité aérienne",
+        "Assurer la sûreté du transport aérien",
+        "Développer et réguler le transport aérien",
+        "Gérer la navigation aérienne",
+        "Accompagner la transition écologique de l'aviation"
+      ],
+      "competences": [
+        "Régulation du transport aérien",
+        "Sécurité et sûreté aérienne",
+        "Navigation aérienne",
+        "Certification et contrôles",
+        "Transition énergétique du secteur"
+      ],
+      "politiques_publiques": [
+        "Sécurité aérienne",
+        "Sûreté aéroportuaire",
+        "Développement des infrastructures",
+        "Réduction de l'empreinte carbone",
+        "Innovation aéronautique"
+      ],
+      "chiffres_cles": [
+        "Réseau des services de navigation aérienne",
+        "Certification des opérateurs",
+        "Contrôles de sécurité"
+      ],
+      "organigramme": [
+        "Direction des services de la navigation aérienne (DSNA)",
+        "Direction de la sécurité de l'aviation civile (DSAC)",
+        "Direction du transport aérien"
+      ],
+      "operateurs": [
+        "ENAC",
+        "Météo-France"
+      ],
+      "details": {
+        "missions": {
+          "Garantir la sécurité aérienne": [
+            "Normes et contrôles",
+            "Surveillance des opérateurs"
+          ],
+          "Assurer la sûreté du transport aérien": [
+            "Contrôles aéroportuaires",
+            "Gestion des risques"
+          ],
+          "Développer et réguler le transport aérien": [
+            "Régulation économique",
+            "Autorisations"
+          ],
+          "Gérer la navigation aérienne": [
+            "Contrôle aérien",
+            "Gestion des flux"
+          ],
+          "Accompagner la transition écologique de l'aviation": [
+            "Réduction des émissions",
+            "Soutien à l'innovation"
+          ]
+        },
+        "competences": {
+          "Régulation du transport aérien": [
+            "Régulation économique",
+            "Veille concurrentielle"
+          ],
+          "Sécurité et sûreté aérienne": [
+            "Contrôles",
+            "Audits"
+          ],
+          "Navigation aérienne": [
+            "Services de navigation",
+            "Optimisation des routes"
+          ],
+          "Certification et contrôles": [
+            "Agrément",
+            "Surveillance"
+          ],
+          "Transition énergétique du secteur": [
+            "Carburants durables",
+            "Efficacité opérationnelle"
+          ]
+        },
+        "politiques_publiques": {
+          "Sécurité aérienne": [
+            "Normes",
+            "Supervision"
+          ],
+          "Sûreté aéroportuaire": [
+            "Contrôles",
+            "Protection"
+          ],
+          "Développement des infrastructures": [
+            "Investissements",
+            "Planification"
+          ],
+          "Réduction de l'empreinte carbone": [
+            "Décarbonation",
+            "Innovation"
+          ],
+          "Innovation aéronautique": [
+            "Recherche",
+            "Projets pilotes"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Code de l'aviation civile",
+          "url": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006072665/",
+          "synthese": "Cadre juridique de l'aviation civile en France.",
+          "details": [
+            "Sécurité et sûreté : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Régulation : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Navigation aérienne : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "DGAC",
+          "url": "https://www.ecologie.gouv.fr/"
+        },
+        {
+          "label": "DSNA",
+          "url": "https://www.ecologie.gouv.fr/"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Budget : rattaché au ministère des Transports (voir budget Transports)"
+      ]
+    },
+    {
+      "id": "premier-ministre",
+      "name": "Premier ministre",
+      "short_name": "Premier ministre",
+      "site_url": "https://lannuaire.service-public.gouv.fr/gouvernement/a515667c-6dc0-4544-a1a8-2cf13d7da23b",
+      "resume": "Coordonner l'action du Gouvernement, arbitrer les politiques publiques et piloter les services rattachés au Premier ministre.",
+      "missions": [
+        "Coordonner l'action gouvernementale",
+        "Arbitrer les politiques publiques interministérielles",
+        "Assurer le suivi des réformes",
+        "Piloter les services du Premier ministre",
+        "Garantir la cohérence de l'action de l'État"
+      ],
+      "competences": [
+        "Coordination interministérielle",
+        "Arbitrages et planification",
+        "Communication gouvernementale",
+        "Soutien juridique et réglementaire",
+        "Transformation de l'action publique"
+      ],
+      "politiques_publiques": [
+        "Réformes de l'État",
+        "Simplification administrative",
+        "Transformation numérique",
+        "Suivi de l'action gouvernementale",
+        "Dialogue interministériel"
+      ],
+      "chiffres_cles": [
+        "Services du Premier ministre",
+        "Coordination interministérielle",
+        "Pilotage des réformes"
+      ],
+      "organigramme": [
+        "Secrétariat général du Gouvernement (SGG)",
+        "Service d'information du Gouvernement (SIG)",
+        "Direction de l'information légale et administrative (DILA)",
+        "Secrétariat général de la défense et de la sécurité nationale (SGDSN)",
+        "Direction interministérielle du numérique (DINUM)"
+      ],
+      "operateurs": [
+        "France Stratégie",
+        "Institut national du service public (INSP)"
+      ],
+      "details": {
+        "missions": {
+          "Coordonner l'action gouvernementale": [
+            "Réunions interministérielles",
+            "Arbitrages"
+          ],
+          "Arbitrer les politiques publiques interministérielles": [
+            "Décisions transversales",
+            "Suivi des priorités"
+          ],
+          "Assurer le suivi des réformes": [
+            "Tableaux de bord",
+            "Évaluation"
+          ],
+          "Piloter les services du Premier ministre": [
+            "SGG et DILA",
+            "SIG et communication"
+          ],
+          "Garantir la cohérence de l'action de l'État": [
+            "Coordination juridique",
+            "Veille réglementaire"
+          ]
+        },
+        "competences": {
+          "Coordination interministérielle": [
+            "Circulaires",
+            "Suivi des ministères"
+          ],
+          "Arbitrages et planification": [
+            "Programmation",
+            "Priorisation"
+          ],
+          "Communication gouvernementale": [
+            "Information publique",
+            "Campagnes"
+          ],
+          "Soutien juridique et réglementaire": [
+            "Textes réglementaires",
+            "Conseil juridique"
+          ],
+          "Transformation de l'action publique": [
+            "Simplification",
+            "Innovation"
+          ]
+        },
+        "politiques_publiques": {
+          "Réformes de l'État": [
+            "Programmes de modernisation",
+            "Suivi des résultats"
+          ],
+          "Simplification administrative": [
+            "Dématérialisation",
+            "Réduction des démarches"
+          ],
+          "Transformation numérique": [
+            "Services en ligne",
+            "Interopérabilité"
+          ],
+          "Suivi de l'action gouvernementale": [
+            "Reporting",
+            "Indicateurs"
+          ],
+          "Dialogue interministériel": [
+            "Comités",
+            "Arbitrages"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi pour un État au service d'une société de confiance (ESSOC, 2018)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=ESSOC%202018",
+          "synthese": "Installe une logique de confiance et de simplification dans les relations administration-usagers.",
+          "details": [
+            "Droit à l'erreur : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Expérimentations : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Simplification des démarches : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi organique relative aux lois de finances (LOLF, 2001)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=LOLF%202001",
+          "synthese": "Réforme la gestion budgétaire de l'État et la logique de performance.",
+          "details": [
+            "Budgets par programmes : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Objectifs et indicateurs : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Contrôle parlementaire renforcé : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Annuaire de l'administration",
+          "url": "https://lannuaire.service-public.gouv.fr/gouvernement/a515667c-6dc0-4544-a1a8-2cf13d7da23b"
+        },
+        {
+          "label": "DILA",
+          "url": "https://www.dila.premier-ministre.gouv.fr/"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Total CP PLF 2026 : 7.83 MdEUR",
+        "Total AE PLF 2026 : 2.71 MdEUR",
+        "Titre 2 (personnel) CP 2026 : 1.18 MdEUR",
+        "Hors titre 2 CP 2026 : 6.65 MdEUR",
+        "Missions (CP 2026) :",
+        "- Investir pour la France de 2030 : 5.50 MdEUR",
+        "- Direction de l'action du Gouvernement : 1.06 MdEUR",
+        "- Conseil et contrôle de l'État : 0.87 MdEUR",
+        "- Publications officielles et information administrative : 0.15 MdEUR",
+        "- Solidarité, insertion et égalité des chances : 0.10 MdEUR",
+        "- Monde combattant, mémoire et liens avec la Nation : 0.08 MdEUR",
+        "Programmes principaux (CP 2026) :",
+        "- P424 Financement des investissements stratégiques : 3.75 MdEUR",
+        "- P425 Financement structurel des écosystèmes d'innovation : 1.37 MdEUR",
+        "- P129 Coordination du travail gouvernemental : 0.92 MdEUR",
+        "- P165 Conseil d'État et autres juridictions administratives : 0.57 MdEUR",
+        "- P164 Cour des comptes et autres juridictions financières : 0.27 MdEUR",
+        "- P421 Soutien des progrès de l'enseignement et de la recherche : 0.20 MdEUR",
+        "- P308 Protection des droits et libertés : 0.14 MdEUR",
+        "- P423 Accélération de la modernisation des entreprises : 0.14 MdEUR"
+      ]
+    },
+    {
+      "id": "ministere-de-l-action-et-des-comptes-publics",
+      "name": "Ministère de l'Action et des Comptes publics",
+      "short_name": "Action et Comptes publics",
+      "site_url": "https://lannuaire.service-public.gouv.fr/gouvernement/9f101ac7-9a0e-4d62-8b27-8109876dff94",
+      "resume": "Piloter les comptes publics, l'exécution budgétaire, la fiscalité et le recouvrement, en garantissant la soutenabilité des finances de l'État.",
+      "missions": [
+        "Élaborer et exécuter le budget de l'État",
+        "Gérer la fiscalité et les recettes publiques",
+        "Assurer le recouvrement et la comptabilité publique",
+        "Lutter contre la fraude fiscale et sociale",
+        "Superviser les douanes et les contrôles"
+      ],
+      "competences": [
+        "Budget et performance publique",
+        "Fiscalité et recouvrement",
+        "Comptabilité de l'État",
+        "Douanes et droits indirects",
+        "Contrôle et audit"
+      ],
+      "politiques_publiques": [
+        "Modernisation de la gestion publique",
+        "Lutte contre la fraude",
+        "Simplification fiscale",
+        "Qualité de service aux usagers",
+        "Transformation numérique des finances publiques"
+      ],
+      "chiffres_cles": [
+        "Réseau DGFiP",
+        "Réseau DGDDI",
+        "Services de contrôle et d'audit"
+      ],
+      "organigramme": [
+        "Direction générale des Finances publiques (DGFiP)",
+        "Direction générale des Douanes et droits indirects (DGDDI)",
+        "Direction du Budget",
+        "Agence pour l'informatique financière de l'État (AIFE)"
+      ],
+      "operateurs": [
+        "AIFE",
+        "Agence France Trésor (AFT)"
+      ],
+      "details": {
+        "missions": {
+          "Élaborer et exécuter le budget de l'État": [
+            "Préparation de la loi de finances",
+            "Suivi de l'exécution"
+          ],
+          "Gérer la fiscalité et les recettes publiques": [
+            "Impôts et taxes",
+            "Recettes fiscales"
+          ],
+          "Assurer le recouvrement et la comptabilité publique": [
+            "Recouvrement",
+            "Comptes publics"
+          ],
+          "Lutter contre la fraude fiscale et sociale": [
+            "Contrôles ciblés",
+            "Plans antifraude"
+          ],
+          "Superviser les douanes et les contrôles": [
+            "Contrôles aux frontières",
+            "Lutte contre la fraude"
+          ]
+        },
+        "competences": {
+          "Budget et performance publique": [
+            "Suivi des programmes",
+            "Indicateurs de performance"
+          ],
+          "Fiscalité et recouvrement": [
+            "Assiette et recouvrement",
+            "Contentieux"
+          ],
+          "Comptabilité de l'État": [
+            "Tenue des comptes",
+            "Certification"
+          ],
+          "Douanes et droits indirects": [
+            "Contrôles",
+            "Taxes indirectes"
+          ],
+          "Contrôle et audit": [
+            "Inspection",
+            "Contrôle interne"
+          ]
+        },
+        "politiques_publiques": {
+          "Modernisation de la gestion publique": [
+            "Dématérialisation",
+            "Simplification"
+          ],
+          "Lutte contre la fraude": [
+            "Plan national",
+            "Renforcement des sanctions"
+          ],
+          "Simplification fiscale": [
+            "Procédures simplifiées",
+            "Prélèvement à la source"
+          ],
+          "Qualité de service aux usagers": [
+            "Accueil",
+            "Services en ligne"
+          ],
+          "Transformation numérique des finances publiques": [
+            "Chorus",
+            "Dématérialisation"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi organique relative aux lois de finances (LOLF, 2001)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=LOLF%202001",
+          "synthese": "Réforme l'architecture budgétaire de l'État et la logique de performance.",
+          "details": [
+            "Budgets par programmes : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Objectifs et indicateurs : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Responsabilisation des gestionnaires : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi relative à la lutte contre la fraude (2018)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%20lutte%20contre%20la%20fraude%202018",
+          "synthese": "Renforce les moyens de détection et de sanction des fraudes.",
+          "details": [
+            "Coopération entre administrations : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Sanctions renforcées : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Lutte contre la fraude à la TVA : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Annuaire de l'administration",
+          "url": "https://lannuaire.service-public.gouv.fr/gouvernement/9f101ac7-9a0e-4d62-8b27-8109876dff94"
+        },
+        {
+          "label": "DGFiP",
+          "url": "https://www.impots.gouv.fr/"
+        },
+        {
+          "label": "Douanes",
+          "url": "https://www.douane.gouv.fr/"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Total CP PLF 2026 : 369.63 MdEUR",
+        "Total AE PLF 2026 : 369.97 MdEUR",
+        "Titre 2 (personnel) CP 2026 : 77.46 MdEUR",
+        "Hors titre 2 CP 2026 : 292.17 MdEUR",
+        "Missions (CP 2026) :",
+        "- Remboursements et dégrèvements : 145.46 MdEUR",
+        "- Avances aux collectivités territoriales : 135.40 MdEUR",
+        "- Pensions : 69.33 MdEUR",
+        "- Gestion des finances publiques : 11.05 MdEUR",
+        "- Régimes sociaux et de retraite : 5.18 MdEUR",
+        "- Pouvoirs publics : 1.14 MdEUR",
+        "Programmes principaux (CP 2026) :",
+        "- P200 Remboursements et dégrèvements d'impôts d'État (crédits évaluatifs) : 140.85 MdEUR",
+        "- P833 Avances sur le montant des impositions revenant aux régions, départements, communes, établissements et divers organismes : 135.40 MdEUR",
+        "- P741 Pensions civiles et militaires de retraite et allocations temporaires d'invalidité : 66.07 MdEUR",
+        "- P156 Gestion fiscale et financière de l'État et du secteur public local : 8.23 MdEUR",
+        "- P201 Remboursements et dégrèvements d'impôts locaux (crédits évaluatifs) : 4.62 MdEUR",
+        "- P198 Régimes sociaux et de retraite des transports terrestres : 4.12 MdEUR",
+        "- P742 Ouvriers des établissements industriels de l'État : 2.08 MdEUR",
+        "- P302 Facilitation et sécurisation des échanges : 1.82 MdEUR"
+      ]
+    },
+    {
+      "id": "ministere-de-l-amenagement-du-territoire-et-de-la-decentralisation",
+      "name": "Ministère de l'Aménagement du Territoire et de la Décentralisation",
+      "short_name": "Aménagement du Territoire",
+      "site_url": "https://lannuaire.service-public.gouv.fr/gouvernement/7b9ab6ab-c8e4-4cfd-a63b-02416d0d5551",
+      "resume": "Piloter l'aménagement du territoire, la décentralisation et les relations avec les collectivités pour réduire les inégalités territoriales.",
+      "missions": [
+        "Assurer la cohésion des territoires",
+        "Soutenir les collectivités locales",
+        "Coordonner les politiques d'aménagement",
+        "Développer les services publics de proximité",
+        "Accompagner la décentralisation"
+      ],
+      "competences": [
+        "Relations avec les collectivités",
+        "Financements territoriaux",
+        "Politique d'aménagement",
+        "Décentralisation",
+        "Ingénierie territoriale"
+      ],
+      "politiques_publiques": [
+        "Cohésion des territoires",
+        "Contrats de plan",
+        "Services publics locaux",
+        "Soutien aux communes rurales",
+        "Égalité territoriale"
+      ],
+      "chiffres_cles": [
+        "Réseau des collectivités",
+        "Programmes d'investissements territoriaux",
+        "Dispositifs de péréquation"
+      ],
+      "organigramme": [
+        "Direction générale des collectivités locales (DGCL)",
+        "Agence nationale de la cohésion des territoires (ANCT)",
+        "Services territoriaux"
+      ],
+      "operateurs": [
+        "ANCT",
+        "Caisse des Dépôts"
+      ],
+      "details": {
+        "missions": {
+          "Assurer la cohésion des territoires": [
+            "Programmes territoriaux",
+            "Égalité territoriale"
+          ],
+          "Soutenir les collectivités locales": [
+            "Concours financiers",
+            "Appui technique"
+          ],
+          "Coordonner les politiques d'aménagement": [
+            "Schémas territoriaux",
+            "Planification"
+          ],
+          "Développer les services publics de proximité": [
+            "France services",
+            "Maisons de services"
+          ],
+          "Accompagner la décentralisation": [
+            "Transferts de compétences",
+            "Dialogue institutionnel"
+          ]
+        },
+        "competences": {
+          "Relations avec les collectivités": [
+            "Dialogue",
+            "Suivi des compétences"
+          ],
+          "Financements territoriaux": [
+            "Dotations",
+            "Péréquation"
+          ],
+          "Politique d'aménagement": [
+            "Planification",
+            "Projets structurants"
+          ],
+          "Décentralisation": [
+            "Réformes",
+            "Accompagnement"
+          ],
+          "Ingénierie territoriale": [
+            "Appui aux projets",
+            "Expertise"
+          ]
+        },
+        "politiques_publiques": {
+          "Cohésion des territoires": [
+            "Programmes de soutien",
+            "Accompagnement local"
+          ],
+          "Contrats de plan": [
+            "CPER",
+            "Financements"
+          ],
+          "Services publics locaux": [
+            "France services",
+            "Accessibilité"
+          ],
+          "Soutien aux communes rurales": [
+            "Aides ciblées",
+            "Revitalisation"
+          ],
+          "Égalité territoriale": [
+            "Péréquation",
+            "Investissements"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi de modernisation de l'action publique territoriale et d'affirmation des métropoles (MAPTAM, 2014)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=MAPTAM%202014",
+          "synthese": "Clarifie les compétences et renforce les métropoles.",
+          "details": [
+            "Rôle des métropoles : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Compétences partagées : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Organisation territoriale : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi portant nouvelle organisation territoriale de la République (NOTRe, 2015)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=NOTRe%202015",
+          "synthese": "Redéfinit les compétences des collectivités territoriales.",
+          "details": [
+            "Compétences régionales : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Intercommunalités : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Simplification : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Annuaire de l'administration",
+          "url": "https://lannuaire.service-public.gouv.fr/gouvernement/7b9ab6ab-c8e4-4cfd-a63b-02416d0d5551"
+        },
+        {
+          "label": "ANCT",
+          "url": "https://agence-cohesion-territoires.gouv.fr/"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Total CP PLF 2026 : 6.10 MdEUR",
+        "Total AE PLF 2026 : 5.50 MdEUR",
+        "Titre 2 (personnel) CP 2026 : 0.01 MdEUR",
+        "Hors titre 2 CP 2026 : 6.09 MdEUR",
+        "Missions (CP 2026) :",
+        "- Relations avec les collectivités territoriales : 3.93 MdEUR",
+        "- Écologie, développement et mobilité durables : 1.09 MdEUR",
+        "- Contrôle de la circulation et du stationnement routiers : 0.81 MdEUR",
+        "- Cohésion des territoires : 0.27 MdEUR",
+        "Programmes principaux (CP 2026) :",
+        "- P119 Concours financiers aux collectivités territoriales et à leurs groupements : 3.68 MdEUR",
+        "- P380 Fonds d'accélération de la transition écologique dans les territoires : 1.09 MdEUR",
+        "- P754 Contribution à l'équipement des collectivités territoriales pour l'amélioration des transports en commun, de la sécurité et de la circulation routières : 0.81 MdEUR",
+        "- P112 Impulsion et coordination de la politique d'aménagement du territoire : 0.27 MdEUR",
+        "- P122 Concours spécifiques et administration : 0.26 MdEUR"
+      ]
+    },
+    {
+      "id": "ministere-de-l-agriculture-et-de-la-souverainete-alimentaire",
+      "name": "Ministère de l'Agriculture, de l'Agro-alimentaire et de la Souveraineté alimentaire",
+      "short_name": "Agriculture et Souveraineté alimentaire",
+      "site_url": "https://agriculture.gouv.fr/",
+      "resume": "Assurer la souveraineté alimentaire, accompagner les filières agricoles et agroalimentaires, et protéger la santé animale et végétale.",
+      "missions": [
+        "Garantir la souveraineté alimentaire",
+        "Soutenir les filières agricoles et agroalimentaires",
+        "Préserver la santé animale et végétale",
+        "Développer l'agroécologie et la planification écologique",
+        "Assurer la sécurité et la qualité des aliments"
+      ],
+      "competences": [
+        "Planification écologique",
+        "Ecophyto 2030",
+        "Souveraineté alimentaire",
+        "Influenza aviaire",
+        "Loi d'orientation agricole",
+        "Politiques agricoles et aides",
+        "Forêt et bois"
+      ],
+      "politiques_publiques": [
+        "Transition agroécologique",
+        "Soutien aux installations et transmissions",
+        "Bien-être animal",
+        "Sécurité sanitaire des aliments",
+        "Gestion des crises sanitaires"
+      ],
+      "chiffres_cles": [
+        "Budget CP PLF 2026 : 6.32 MdEUR",
+        "Budget AE PLF 2026 : 6.27 MdEUR",
+        "Titre 2 (personnel) CP 2026 : 2.36 MdEUR"
+      ],
+      "organigramme": [
+        "Secrétariat général",
+        "Direction générale de l'alimentation (DGAL)",
+        "Direction générale de la performance économique et environnementale des entreprises (DGPE)",
+        "Direction générale de l'enseignement et de la recherche (DGER)",
+        "Direction des pêches maritimes et de l'aquaculture (DPMA)"
+      ],
+      "operateurs": [
+        "Agence de services et de paiement (ASP)",
+        "FranceAgriMer",
+        "INRAE",
+        "ANSES"
+      ],
+      "details": {
+        "missions": {
+          "Garantir la souveraineté alimentaire": [
+            "Stratégies filières",
+            "Relocalisations ciblées"
+          ],
+          "Soutenir les filières agricoles et agroalimentaires": [
+            "Aides aux exploitations",
+            "Modernisation des outils"
+          ],
+          "Préserver la santé animale et végétale": [
+            "Plans de surveillance",
+            "Lutte contre les épizooties"
+          ],
+          "Développer l'agroécologie et la planification écologique": [
+            "Réduction des intrants",
+            "Adaptation climatique"
+          ],
+          "Assurer la sécurité et la qualité des aliments": [
+            "Contrôles sanitaires",
+            "Traçabilité"
+          ]
+        },
+        "competences": {
+          "Planification écologique": [
+            "Feuilles de route",
+            "Suivi des objectifs"
+          ],
+          "Ecophyto 2030": [
+            "Réduction des pesticides",
+            "Accompagnement des pratiques"
+          ],
+          "Souveraineté alimentaire": [
+            "Consolidation des filières",
+            "Stratégies d'approvisionnement"
+          ],
+          "Influenza aviaire": [
+            "Vaccination ciblée",
+            "Mesures de biosécurité"
+          ],
+          "Loi d'orientation agricole": [
+            "Installation des jeunes",
+            "Transmission des exploitations"
+          ],
+          "Politiques agricoles et aides": [
+            "PAC et aides nationales",
+            "Accompagnement des revenus"
+          ],
+          "Forêt et bois": [
+            "Gestion durable",
+            "Reboisement"
+          ]
+        },
+        "politiques_publiques": {
+          "Transition agroécologique": [
+            "Agroécologie",
+            "Réduction des intrants"
+          ],
+          "Soutien aux installations et transmissions": [
+            "Aides à l'installation",
+            "Transmission des exploitations"
+          ],
+          "Bien-être animal": [
+            "Renforcement des contrôles",
+            "Amélioration des pratiques"
+          ],
+          "Sécurité sanitaire des aliments": [
+            "Contrôles officiels",
+            "Plans de surveillance"
+          ],
+          "Gestion des crises sanitaires": [
+            "Plans d'urgence",
+            "Coordination des acteurs"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi pour l'équilibre des relations commerciales dans le secteur agricole et alimentaire (EGAlim, 2018)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%20egalim%202018",
+          "synthese": "Rééquilibre les relations commerciales et renforce la qualité de l'alimentation.",
+          "details": [
+            "Construction des prix : le prix part des coûts de production, avec des indicateurs interprofessionnels opposables. Cela sécurise la formation des contrats et vise à limiter les négociations qui rognent la rémunération en amont.",
+            "Encadrement des promotions : la loi borne la durée et l'intensité des promotions pour éviter la guerre des prix. Elle réduit les pratiques de dévalorisation des produits agricoles et alimentaires.",
+            "Qualité de l'alimentation : elle fixe des objectifs concrets pour la restauration collective (produits de qualité, durables et bio). Elle renforce aussi l'information du consommateur et la transparence sur l'origine."
+          ]
+        },
+        {
+          "label": "Loi visant à protéger la rémunération des agriculteurs (EGAlim 2, 2021)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=egalim%202%202021",
+          "synthese": "Renforce la protection de la rémunération des producteurs.",
+          "details": [
+            "Non-négociabilité de la matière première : le coût des matières agricoles devient un socle non négociable dans les contrats. L'objectif est de sanctuariser la rémunération des producteurs face à la distribution.",
+            "Transparence des coûts : les contrats doivent mieux expliciter les composantes de prix et les indicateurs utilisés. Cela facilite les contrôles et limite les contournements via des clauses opaques.",
+            "Sanctions renforcées : les pouvoirs de contrôle sont consolidés et les amendes augmentées en cas de non-respect. Le dispositif vise un effet dissuasif réel, notamment pour les grands acheteurs."
+          ]
+        },
+        {
+          "label": "Loi d'avenir pour l'agriculture, l'alimentation et la forêt (2014)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%20avenir%20agriculture%202014",
+          "synthese": "Pose les bases de l'agroécologie et de la gestion durable des forêts.",
+          "details": [
+            "Agroécologie : la loi définit un cap de transition des pratiques pour réduire les intrants et préserver les sols. Elle soutient la diffusion d'innovations agronomiques et de systèmes plus résilients.",
+            "Renouvellement des générations : elle facilite l'installation et la transmission des exploitations, avec des outils d'accompagnement dédiés. L'enjeu est d'assurer la relève et l'attractivité des métiers agricoles.",
+            "Gestion forestière : elle promeut une gestion durable, la filière bois et l'adaptation au changement climatique. Les plans de reboisement et de prévention des risques sont renforcés."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Planification écologique",
+          "url": "https://agriculture.gouv.fr/la-planification-ecologique-au-ministere-de-lagriculture-et-de-la-souverainete-alimentaire"
+        },
+        {
+          "label": "Ecophyto 2030",
+          "url": "https://agriculture.gouv.fr/ecophyto-2030"
+        },
+        {
+          "label": "Souveraineté alimentaire",
+          "url": "https://agriculture.gouv.fr/le-grand-reveil-alimentaire-lancement-des-conferences-de-la-souverainete-alimentaire"
+        },
+        {
+          "label": "Influenza aviaire",
+          "url": "https://agriculture.gouv.fr/influenza-aviaire-la-situation-en-france"
+        },
+        {
+          "label": "Loi d'orientation agricole",
+          "url": "https://agriculture.gouv.fr/loi-dorientation-agricole-des-mesures-concretes-pour-linstallation-et-la-transmission"
+        },
+        {
+          "label": "Alimentation et agriculture",
+          "url": "https://agriculture.gouv.fr/alimentation"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Total CP PLF 2026 : 6.32 MdEUR",
+        "Total AE PLF 2026 : 6.27 MdEUR",
+        "Titre 2 (personnel) CP 2026 : 2.36 MdEUR",
+        "Hors titre 2 CP 2026 : 3.96 MdEUR",
+        "Missions (CP 2026) :",
+        "- Agriculture, alimentation, forêt et affaires rurales : 4.01 MdEUR",
+        "- Enseignement scolaire : 1.71 MdEUR",
+        "- Recherche et enseignement supérieur : 0.43 MdEUR",
+        "- Développement agricole et rural : 0.17 MdEUR",
+        "Programmes principaux (CP 2026) :",
+        "- P149 Compétitivité et durabilité de l'agriculture, de l'agroalimentaire et de la forêt : 2.06 MdEUR",
+        "- P143 Enseignement technique agricole : 1.71 MdEUR",
+        "- P206 Sécurité et qualité sanitaires de l'alimentation : 0.84 MdEUR",
+        "- P215 Conduite et pilotage des politiques de l'agriculture : 0.66 MdEUR",
+        "- P381 Allègements du coût du travail en agriculture (TODE-AG) : 0.45 MdEUR",
+        "- P142 Enseignement supérieur et recherche agricoles : 0.43 MdEUR",
+        "- P776 Recherche appliquée et innovation en agriculture : 0.10 MdEUR",
+        "- P775 Développement et transfert en agriculture : 0.07 MdEUR"
+      ]
+    },
+    {
+      "id": "ministere-de-l-education-nationale-de-l-enseignement-superieur-et-de-la-recherche",
+      "name": "Ministère de l'Éducation nationale",
+      "short_name": "Ministère de l'Éducation nationale",
+      "site_url": "https://www.education.gouv.fr/",
+      "resume": "Assurer la réussite de tous les élèves, définir les programmes et les examens, piloter les académies et accompagner les personnels de l'éducation nationale.",
+      "missions": [
+        "Garantir l'accès à l'éducation et la réussite des élèves",
+        "Définir les programmes et les examens",
+        "Piloter les académies et la carte scolaire",
+        "Former et accompagner les personnels",
+        "Promouvoir l'inclusion et la lutte contre les inégalités"
+      ],
+      "competences": [
+        "Programmes scolaires et examens",
+        "Recrutement et gestion des personnels",
+        "Pilotage des académies et des établissements",
+        "Évaluation du système éducatif",
+        "Numérique éducatif et innovation pédagogique"
+      ],
+      "politiques_publiques": [
+        "École inclusive",
+        "Lutte contre le harcèlement",
+        "Éducation au numérique et aux médias",
+        "Orientation et parcours des élèves",
+        "Égalité filles-garçons"
+      ],
+      "chiffres_cles": [
+        "Réseau d'académies et services déconcentrés",
+        "Établissements scolaires publics et privés sous contrat",
+        "Programmes et examens nationaux"
+      ],
+      "organigramme": [
+        "Secrétariat général",
+        "Direction générale de l'enseignement scolaire (DGESCO)",
+        "Direction générale des ressources humaines (DGRH)",
+        "Inspection générale de l'éducation, du sport et de la recherche (IGESR)",
+        "Directions régionales académiques (rectorats)"
+      ],
+      "operateurs": [
+        "ONISEP",
+        "CNED",
+        "Réseau Canopé",
+        "France Éducation international"
+      ],
+      "details": {
+        "missions": {
+          "Garantir l'accès à l'éducation et la réussite des élèves": [
+            "Suivi des acquis",
+            "Accompagnement personnalisé"
+          ],
+          "Définir les programmes et les examens": [
+            "Révisions des programmes",
+            "Organisation du baccalauréat"
+          ],
+          "Piloter les académies et la carte scolaire": [
+            "Répartition des moyens",
+            "Ouverture/fermeture de classes"
+          ],
+          "Former et accompagner les personnels": [
+            "Formation initiale",
+            "Formation continue"
+          ],
+          "Promouvoir l'inclusion et la lutte contre les inégalités": [
+            "Dispositifs d'accompagnement",
+            "Actions en éducation prioritaire"
+          ]
+        },
+        "competences": {
+          "Programmes scolaires et examens": [
+            "Cadres nationaux",
+            "Harmonisation des évaluations"
+          ],
+          "Recrutement et gestion des personnels": [
+            "Concours enseignants",
+            "Gestion des carrières"
+          ],
+          "Pilotage des académies et des établissements": [
+            "Contrats d'objectifs",
+            "Suivi des résultats"
+          ],
+          "Évaluation du système éducatif": [
+            "Évaluations nationales",
+            "Études et statistiques"
+          ],
+          "Numérique éducatif et innovation pédagogique": [
+            "Ressources numériques",
+            "Formation au numérique"
+          ]
+        },
+        "politiques_publiques": {
+          "École inclusive": [
+            "AESH",
+            "Adaptation des parcours"
+          ],
+          "Lutte contre le harcèlement": [
+            "Plans de prévention",
+            "Signalement et prise en charge"
+          ],
+          "Éducation au numérique et aux médias": [
+            "Safer Internet Day",
+            "Éducation aux médias"
+          ],
+          "Orientation et parcours des élèves": [
+            "Cordées de la réussite",
+            "Accompagnement à l'orientation"
+          ],
+          "Égalité filles-garçons": [
+            "Actions de sensibilisation",
+            "Lutte contre les stéréotypes"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi pour une école de la confiance (2019)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%20ecole%20de%20la%20confiance%202019",
+          "synthese": "Renforce les fondamentaux et l'organisation du système éducatif.",
+          "details": [
+            "Instruction obligatoire dès 3 ans : l'école maternelle devient pleinement intégrée dans la scolarité obligatoire. L'objectif est de réduire les écarts précoces et de renforcer l'acquisition du langage.",
+            "Renforcement de l'évaluation : généralisation d'outils communs et suivi des acquis à plusieurs niveaux. Cela permet un pilotage plus fin et un meilleur ciblage des actions de remédiation.",
+            "Évolution de la formation des enseignants : refonte de la formation initiale et articulation plus forte avec les pratiques de terrain. La loi vise une professionnalisation plus rapide et mieux accompagnée."
+          ]
+        },
+        {
+          "label": "Loi d'orientation et de programmation pour la refondation de l'école (2013)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=refondation%20de%20l%27ecole%202013",
+          "synthese": "Relance la priorité au primaire et modernise l'école.",
+          "details": [
+            "Priorité au premier degré : recentrage des moyens et des réformes sur l'école primaire pour agir sur les apprentissages fondamentaux. Cela se traduit par des dispositifs pédagogiques et des ressources dédiées.",
+            "Réforme des cycles : mise en place de cycles pluriannuels pour mieux coordonner les progressions et les évaluations. L'objectif est de limiter les ruptures entre niveaux et de sécuriser les parcours.",
+            "Développement du numérique éducatif : impulsion d'un cadre national pour les ressources numériques et la formation des enseignants. La loi encourage l'équipement et l'innovation pédagogique."
+          ]
+        },
+        {
+          "label": "Loi d'orientation sur l'éducation (1989)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%20d%27orientation%20sur%20l%27education%201989",
+          "synthese": "Fixe les objectifs et l'organisation générale du service public d'éducation.",
+          "details": [
+            "Projet d'établissement : la loi consacre le projet d'établissement comme outil de pilotage local. Il définit les priorités pédagogiques et l'organisation propre à chaque établissement.",
+            "Droits et devoirs des élèves : affirmation des droits dans le cadre scolaire et rappel des obligations. Le texte structure la vie scolaire autour d'un cadre commun de responsabilité.",
+            "Pilotage par objectifs : introduction d'objectifs partagés entre l'État et les établissements. Cela vise une meilleure cohérence entre politiques nationales et mise en œuvre locale."
+          ]
+        },
+        {
+          "label": "Loi pour l'égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées (2005)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%2011%20fevrier%202005%20handicap",
+          "synthese": "Affirme le droit à la scolarisation en milieu ordinaire et renforce l'accessibilité.",
+          "details": [
+            "Scolarisation des élèves en situation de handicap : principe d'inclusion en milieu ordinaire avec des adaptations pédagogiques. La loi pose le cadre des dispositifs d'accompagnement et des droits des familles.",
+            "Accessibilité des établissements : obligations d'aménagement des locaux et des équipements pour garantir l'accès. L'objectif est de rendre l'école praticable pour tous les élèves.",
+            "Plans d'accompagnement personnalisés : mise en place de parcours individualisés selon les besoins. Cela clarifie la coordination entre l'école, les familles et les services médico-sociaux."
+          ]
+        },
+        {
+          "label": "Loi sur le port de signes religieux à l'école (2004)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%2015%20mars%202004%20signes%20religieux%20ecole",
+          "synthese": "Encadre le port de signes religieux ostensibles dans les établissements publics.",
+          "details": [
+            "Principe de laïcité à l'école : réaffirmation de la neutralité de l'espace scolaire. Le cadre vise à préserver un climat propice aux apprentissages et au vivre-ensemble.",
+            "Cadre disciplinaire : définition d'une règle claire applicable sur tout le territoire. La loi précise la procédure en cas de manquement, avec une logique de dialogue préalable.",
+            "Accompagnement des équipes : outils et référentiels pour aider les personnels à appliquer la règle. L'objectif est d'éviter les interprétations divergentes et les tensions locales."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Sites Éducation",
+          "url": "https://www.education.gouv.fr/"
+        },
+        {
+          "label": "Cordées de la réussite",
+          "url": "https://www.education.gouv.fr/les-cordees-de-la-reussite-permettre-aux-eleves-de-batir-et-de-concretiser-un-projet-d-orientation-306210"
+        },
+        {
+          "label": "Safer Internet Day",
+          "url": "https://www.education.gouv.fr/safer-internet-day-sensibiliser-aux-usages-du-numerique-344368"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Total CP PLF 2026 : 87.93 MdEUR",
+        "Total AE PLF 2026 : 87.89 MdEUR",
+        "Titre 2 (personnel) CP 2026 : 83.31 MdEUR",
+        "Hors titre 2 CP 2026 : 4.62 MdEUR",
+        "Missions (CP 2026) :",
+        "- Enseignement scolaire : 87.93 MdEUR",
+        "Programmes principaux (CP 2026) :",
+        "- P141 Enseignement scolaire public du second degré : 40.01 MdEUR",
+        "- P140 Enseignement scolaire public du premier degré : 27.91 MdEUR",
+        "- P139 Enseignement privé du premier et du second degrés : 8.87 MdEUR",
+        "- P230 Vie de l'élève : 8.08 MdEUR",
+        "- P214 Soutien de la politique de l'éducation nationale : 3.06 MdEUR"
+      ]
+    },
+    {
+      "id": "ministere-de-l-enseignement-superieur-de-la-recherche-et-de-l-espace",
+      "name": "Ministère de l’Enseignement supérieur, de la Recherche et de l'Espace",
+      "short_name": "Enseignement supérieur et Recherche",
+      "site_url": "https://lannuaire.service-public.gouv.fr/gouvernement/4ca60afd-3886-434c-80bb-f6bc55581323",
+      "resume": "Piloter l'enseignement supérieur, la recherche et l'innovation, renforcer l'excellence académique et soutenir la vie étudiante.",
+      "missions": [
+        "Définir la stratégie de l'enseignement supérieur",
+        "Soutenir la recherche publique et l'innovation",
+        "Améliorer la vie étudiante",
+        "Structurer le financement et la performance des universités",
+        "Développer l'attractivité et la coopération internationale"
+      ],
+      "competences": [
+        "Programmation de la recherche",
+        "Pilotage des universités et grandes écoles",
+        "Vie étudiante et bourses",
+        "Innovation, transfert et valorisation",
+        "Espace et recherche spatiale"
+      ],
+      "politiques_publiques": [
+        "Orientation et réussite étudiante",
+        "Recherche fondamentale et appliquée",
+        "Innovation et transfert technologique",
+        "Internationalisation de l'enseignement supérieur",
+        "Intégrité scientifique"
+      ],
+      "chiffres_cles": [
+        "Réseau des universités et établissements publics",
+        "Programmes nationaux de recherche",
+        "Aides sociales et bourses étudiantes"
+      ],
+      "organigramme": [
+        "Secrétariat général",
+        "Direction générale de l'enseignement supérieur et de l'insertion professionnelle (DGESIP)",
+        "Direction générale de la recherche et de l'innovation (DGRI)",
+        "Inspection générale de l'éducation, du sport et de la recherche (IGESR)",
+        "Agence nationale de la recherche (ANR)"
+      ],
+      "operateurs": [
+        "CNRS",
+        "INSERM",
+        "INRIA",
+        "CNOUS / CROUS",
+        "ANR"
+      ],
+      "details": {
+        "missions": {
+          "Définir la stratégie de l'enseignement supérieur": [
+            "Coordination des politiques universitaires",
+            "Réformes des cycles"
+          ],
+          "Soutenir la recherche publique et l'innovation": [
+            "Financement des laboratoires",
+            "Programmes d'excellence"
+          ],
+          "Améliorer la vie étudiante": [
+            "Bourses et aides",
+            "Logement et restauration"
+          ],
+          "Structurer le financement et la performance des universités": [
+            "Contrats d'objectifs",
+            "Indicateurs de performance"
+          ],
+          "Développer l'attractivité et la coopération internationale": [
+            "Programmes d'échanges",
+            "Accueil des chercheurs"
+          ]
+        },
+        "competences": {
+          "Programmation de la recherche": [
+            "Priorités nationales",
+            "Financement pluriannuel"
+          ],
+          "Pilotage des universités et grandes écoles": [
+            "Gouvernance",
+            "Accréditations"
+          ],
+          "Vie étudiante et bourses": [
+            "Bourses sur critères sociaux",
+            "Aides au logement"
+          ],
+          "Innovation, transfert et valorisation": [
+            "Partenariats avec entreprises",
+            "Soutien aux startups"
+          ],
+          "Espace et recherche spatiale": [
+            "Programmes spatiaux",
+            "Coopérations internationales"
+          ]
+        },
+        "politiques_publiques": {
+          "Orientation et réussite étudiante": [
+            "Parcoursup",
+            "Accompagnement à la réussite"
+          ],
+          "Recherche fondamentale et appliquée": [
+            "Appels à projets",
+            "Programmes interdisciplinaires"
+          ],
+          "Innovation et transfert technologique": [
+            "Incubateurs",
+            "SATT et valorisation"
+          ],
+          "Internationalisation de l'enseignement supérieur": [
+            "Mobilités étudiantes",
+            "Double diplômes"
+          ],
+          "Intégrité scientifique": [
+            "Charte d'intégrité",
+            "Dispositifs de signalement"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi relative aux libertés et responsabilités des universités (LRU, 2007)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=libertes%20responsabilites%20universites%202007",
+          "synthese": "Accroît l'autonomie des universités et réforme leur gouvernance.",
+          "details": [
+            "Autonomie budgétaire : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Gouvernance renforcée : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Responsabilités élargies : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi relative à l'enseignement supérieur (1984)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%201984%20enseignement%20superieur",
+          "synthese": "Pose les principes d'organisation de l'enseignement supérieur public.",
+          "details": [
+            "Organisation des universités : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Liberté académique : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Participation des usagers : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi relative à l'enseignement supérieur et à la recherche (2013)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=enseignement%20superieur%20recherche%202013",
+          "synthese": "Redéfinit l'organisation de l'enseignement supérieur et la stratégie de recherche.",
+          "details": [
+            "Stratégie nationale de recherche : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Coordination territoriale : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Simplification des structures : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi relative à l'orientation et à la réussite des étudiants (ORE, 2018)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=orientation%20reussite%20etudiants%202018",
+          "synthese": "Réforme l'accès à l'enseignement supérieur et renforce l'accompagnement des étudiants.",
+          "details": [
+            "Parcoursup : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Contrats de réussite : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Accompagnement personnalisé : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi de programme pour la recherche (2006)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%20programme%20recherche%202006",
+          "synthese": "Renforce la gouvernance et le financement de la recherche publique.",
+          "details": [
+            "Programmes pluriannuels : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Évaluation de la recherche : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Structuration des organismes : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi de programmation de la recherche 2021-2030 (2020)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=programmation%20recherche%202020",
+          "synthese": "Fixe la trajectoire budgétaire de la recherche et modernise les carrières.",
+          "details": [
+            "Trajectoire de financement : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Chaires de professeur junior : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Renforcement de l'évaluation : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Annuaire de l'administration",
+          "url": "https://lannuaire.service-public.gouv.fr/gouvernement/4ca60afd-3886-434c-80bb-f6bc55581323"
+        },
+        {
+          "label": "Site ESR",
+          "url": "https://www.enseignementsup-recherche.gouv.fr/"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Total CP PLF 2026 : 28.87 MdEUR",
+        "Total AE PLF 2026 : 29.28 MdEUR",
+        "Titre 2 (personnel) CP 2026 : 0.45 MdEUR",
+        "Hors titre 2 CP 2026 : 28.42 MdEUR",
+        "Missions (CP 2026) :",
+        "- Recherche et enseignement supérieur : 28.87 MdEUR",
+        "Programmes principaux (CP 2026) :",
+        "- P150 Formations supérieures et recherche universitaire : 15.59 MdEUR",
+        "- P172 Recherches scientifiques et technologiques pluridisciplinaires : 8.21 MdEUR",
+        "- P231 Vie étudiante : 3.22 MdEUR",
+        "- P193 Recherche spatiale : 1.85 MdEUR"
+      ]
+    },
+    {
+      "id": "ministere-de-l-europe-et-des-affaires-etrangeres",
+      "name": "Ministère de l'Europe et des Affaires étrangères",
+      "short_name": "MEAE",
+      "site_url": "https://www.diplomatie.gouv.fr/",
+      "resume": "Conduire la diplomatie française, assurer la protection consulaire, piloter l'aide au développement et porter les positions de la France en Europe et à l'international.",
+      "missions": [
+        "Conduire la politique étrangère et la diplomatie",
+        "Protéger les Français à l'étranger",
+        "Porter la voix de la France dans l'Union européenne",
+        "Mettre en œuvre l'aide au développement",
+        "Assurer l'influence et la diplomatie culturelle"
+      ],
+      "competences": [
+        "Réseau diplomatique et consulaire",
+        "Négociation des traités et accords",
+        "Coopération internationale et développement",
+        "Gestion de crise et sécurité des ressortissants",
+        "Attractivité et diplomatie économique"
+      ],
+      "politiques_publiques": [
+        "Aide publique au développement",
+        "Diplomatie économique",
+        "Francophonie et influence culturelle",
+        "Protection consulaire",
+        "Politique européenne"
+      ],
+      "chiffres_cles": [
+        "Réseau d'ambassades et consulats",
+        "Actions de coopération et d'influence",
+        "Services consulaires pour les ressortissants"
+      ],
+      "organigramme": [
+        "Secrétariat général",
+        "Direction générale des affaires politiques et de sécurité",
+        "Direction générale de la mondialisation, de la culture, de l'enseignement et du développement international",
+        "Direction des Français à l'étranger et de l'administration consulaire",
+        "Direction de l'Union européenne"
+      ],
+      "operateurs": [
+        "Agence française de développement (AFD)",
+        "Institut français",
+        "Campus France"
+      ],
+      "details": {
+        "missions": {
+          "Conduire la politique étrangère et la diplomatie": [
+            "Négociations internationales",
+            "Relations bilatérales"
+          ],
+          "Protéger les Français à l'étranger": [
+            "Assistance consulaire",
+            "Gestion des crises"
+          ],
+          "Porter la voix de la France dans l'Union européenne": [
+            "Coordination européenne",
+            "Positions communes"
+          ],
+          "Mettre en œuvre l'aide au développement": [
+            "Programmes d'aide",
+            "Partenariats internationaux"
+          ],
+          "Assurer l'influence et la diplomatie culturelle": [
+            "Réseaux culturels",
+            "Programmes d'échanges"
+          ]
+        },
+        "competences": {
+          "Réseau diplomatique et consulaire": [
+            "Ambassades",
+            "Consulats"
+          ],
+          "Négociation des traités et accords": [
+            "Accords bilatéraux",
+            "Conventions internationales"
+          ],
+          "Coopération internationale et développement": [
+            "Aide au développement",
+            "Coopération technique"
+          ],
+          "Gestion de crise et sécurité des ressortissants": [
+            "Cellules de crise",
+            "Plans d'évacuation"
+          ],
+          "Attractivité et diplomatie économique": [
+            "Soutien aux entreprises",
+            "Promotion de la France"
+          ]
+        },
+        "politiques_publiques": {
+          "Aide publique au développement": [
+            "AFD",
+            "Programmes de solidarité"
+          ],
+          "Diplomatie économique": [
+            "Soutien à l'export",
+            "Attractivité"
+          ],
+          "Francophonie et influence culturelle": [
+            "Réseau culturel",
+            "Coopérations éducatives"
+          ],
+          "Protection consulaire": [
+            "Assistance aux ressortissants",
+            "Services consulaires"
+          ],
+          "Politique européenne": [
+            "Coordination interministérielle",
+            "Négociation au Conseil"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi d'orientation et de programmation relative à la politique de développement et de solidarité internationale (2014)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=developpement%20solidarite%20internationale%202014",
+          "synthese": "Fixe le cadre et les priorités de la politique française de développement.",
+          "details": [
+            "Priorités géographiques : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Cohérence des politiques : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Pilotage de l'aide : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi relative au développement solidaire et à la lutte contre les inégalités mondiales (2021)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=developpement%20solidaire%202021",
+          "synthese": "Renforce l'aide publique au développement et ses objectifs.",
+          "details": [
+            "Objectifs d'APD : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Transparence : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Partenariats : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Diplomatie française",
+          "url": "https://www.diplomatie.gouv.fr/"
+        },
+        {
+          "label": "AFD",
+          "url": "https://www.afd.fr/"
+        },
+        {
+          "label": "Institut français",
+          "url": "https://www.institutfrancais.com/"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Total CP PLF 2026 : 5.74 MdEUR",
+        "Total AE PLF 2026 : 6.43 MdEUR",
+        "Titre 2 (personnel) CP 2026 : 1.39 MdEUR",
+        "Hors titre 2 CP 2026 : 4.35 MdEUR",
+        "Missions (CP 2026) :",
+        "- Action extérieure de l'État : 3.46 MdEUR",
+        "- Aide publique au développement : 2.28 MdEUR",
+        "Programmes principaux (CP 2026) :",
+        "- P105 Action de la France en Europe et dans le monde : 2.70 MdEUR",
+        "- P209 Solidarité à l'égard des pays en développement : 1.54 MdEUR",
+        "- P384 Fonds de solidarité pour le développement : 0.74 MdEUR",
+        "- P185 Diplomatie culturelle et d'influence : 0.61 MdEUR",
+        "- P151 Français à l'étranger et affaires consulaires : 0.15 MdEUR"
+      ]
+    },
+    {
+      "id": "ministere-de-l-interieur",
+      "name": "Ministère de l'Intérieur",
+      "short_name": "Ministère de l'Intérieur",
+      "site_url": "https://www.interieur.gouv.fr/",
+      "resume": "Garantir la sécurité intérieure, piloter l'administration territoriale de l'État, organiser les élections et conduire la politique des étrangers, tout en coordonnant la gestion des crises sur le territoire.",
+      "missions": [
+        "Administrer le territoire",
+        "Garantir la sécurité des citoyens et des biens",
+        "Assurer le maintien et la cohésion des institutions",
+        "Garantir l'exercice des droits, devoirs et libertés",
+        "Organiser la vie démocratique et les élections",
+        "Coordonner l'action de l'État dans les territoires via le réseau préfectoral",
+        "Assurer le contrôle administratif et la légalité des actes des collectivités",
+        "Piloter la sécurité intérieure (police nationale et gendarmerie nationale)",
+        "Conduire le renseignement intérieur et la lutte contre les menaces",
+        "Assurer la sécurité civile, l'alerte et la gestion des crises",
+        "Mettre en œuvre la politique des étrangers, de l'asile et de l'intégration",
+        "Déployer la politique de sécurité routière",
+        "Garantir la délivrance et la sécurisation des titres d'identité",
+        "Conduire la coopération internationale de sécurité",
+        "Promouvoir la laïcité et la liberté de culte"
+      ],
+      "competences": [
+        "Sécurité intérieure (police et gendarmerie nationales)",
+        "Sécurité civile et gestion des crises",
+        "Administration territoriale de l'État (réseau préfectoral)",
+        "Libertés publiques et cultes",
+        "Élections et vie démocratique",
+        "Renseignement intérieur et contre-terrorisme (DGSI)",
+        "Immigration, asile, intégration et accès à la nationalité (DGEF)",
+        "Contrôle de légalité et relations avec les collectivités locales (DGCL)",
+        "Sécurité routière et contrôle automatisé des infractions (DSR)",
+        "Lutte contre la fraude documentaire et sécurisation des titres",
+        "Commandement des forces de sécurité intérieure en crise",
+        "Coopération internationale en matière de sécurité (DCIS)",
+        "Statistiques de la sécurité intérieure (SSMSI)",
+        "Pilotage RH, budget, achats et transformation numérique (SG)"
+      ],
+      "politiques_publiques": [
+        "Prévention de la délinquance",
+        "Lutte contre les violences conjugales, intrafamiliales, sexuelles et sexistes",
+        "Culture du risque et résilience face aux catastrophes",
+        "Promotion de la laïcité",
+        "Sécurisation des grands événements",
+        "Politique de sécurité routière",
+        "Lutte contre la criminalité organisée et les trafics",
+        "Protection des frontières et contrôle des flux",
+        "Politique d'asile et d'intégration des réfugiés",
+        "Lutte contre la radicalisation (CIPDR)",
+        "Développement des services numériques de l'intérieur",
+        "Contrôle automatisé des infractions routières",
+        "Prévention des risques majeurs (ORSEC, alerte population)",
+        "Modernisation du réseau préfectoral"
+      ],
+      "budget": [
+        "Total CP PLF 2026 : 33.60 MdEUR",
+        "Total AE PLF 2026 : 34.22 MdEUR",
+        "Titre 2 (personnel) CP 2026 : 24.57 MdEUR",
+        "Hors titre 2 CP 2026 : 9.03 MdEUR",
+        "Missions (CP 2026) :",
+        "- Sécurités : 25.95 MdEUR",
+        "- Administration générale et territoriale de l'État : 5.12 MdEUR",
+        "- Immigration, asile et intégration : 2.16 MdEUR",
+        "- Contrôle de la circulation et du stationnement routiers : 0.37 MdEUR",
+        "Programmes principaux (CP 2026) :",
+        "- P176 Police nationale : 13.89 MdEUR",
+        "- P152 Gendarmerie nationale : 11.09 MdEUR",
+        "- P354 Administration territoriale de l'État : 2.75 MdEUR",
+        "- P216 Conduite et pilotage des politiques de l'intérieur : 2.06 MdEUR",
+        "- P303 Immigration et asile : 1.79 MdEUR",
+        "- P161 Sécurité civile : 0.88 MdEUR",
+        "- P104 Intégration et accès à la nationalité française : 0.37 MdEUR",
+        "- P751 Structures et dispositifs de sécurité routière : 0.34 MdEUR"
+      ],
+      "chiffres_cles": [
+        "Police nationale : plus de 150 000 femmes et hommes",
+        "Gendarmerie nationale : près de 98 000 personnels (force humaine)",
+        "Gendarmerie nationale : plus de 130 000 militaires",
+        "Sécurité civile : 250 000 sapeurs-pompiers",
+        "Sécurité civile : 100 000 bénévoles des associations agréées",
+        "Collectivités locales : 34 968 communes, 1 259 intercommunalités",
+        "Collectivités locales : 101 départements, 18 régions",
+        "Élus locaux : 503 305 conseillers municipaux, 67 159 conseillers communautaires",
+        "Élus locaux : 4 031 conseillers départementaux, 1 922 conseillers régionaux",
+        "Fonction publique territoriale : près de 2 millions d'agents",
+        "DCIS : près de 300 policiers et gendarmes dans 76 services",
+        "DCIS : présence dans plus de 160 pays"
+      ],
+      "organigramme": [
+        "Secrétariat général (SG)",
+        "Direction générale des collectivités locales (DGCL)",
+        "Direction générale de la police nationale (DGPN)",
+        "Direction générale de la sécurité intérieure (DGSI)",
+        "Direction générale de la gendarmerie nationale (DGGN)",
+        "Direction générale des étrangers en France (DGEF)",
+        "Direction générale de la sécurité civile et de la gestion des crises (DGSCGC)",
+        "Direction générale des outre-mer (DGOM)",
+        "Délégation à la sécurité routière (DSR)",
+        "Direction de la coopération internationale de sécurité (DCIS)",
+        "Inspection générale de l'administration (IGA)",
+        "Service statistique ministériel de la sécurité intérieure (SSMSI)",
+        "Agence du numérique des forces de sécurité intérieure (ANFSI)"
+      ],
+      "operateurs": [
+        "France Titres - Agence nationale des titres sécurisés (ANTS)",
+        "Agence nationale de traitement automatisé des infractions (ANTAI)",
+        "Comité interministériel de prévention de la délinquance et de la radicalisation (CIPDR)",
+        "Observatoire national interministériel de la sécurité routière (ONISR)"
+      ],
+      "details": {
+        "missions": {
+          "Administrer le territoire": [
+            "Réseau des préfectures et sous-préfectures",
+            "Coordination interministérielle en département"
+          ],
+          "Coordonner l'action de l'État dans les territoires via le réseau préfectoral": [
+            "Animation des services déconcentrés",
+            "Suivi des politiques publiques en région et département"
+          ],
+          "Assurer le contrôle administratif et la légalité des actes des collectivités": [
+            "Contrôle de légalité des actes",
+            "Appui juridique aux collectivités"
+          ],
+          "Garantir la sécurité des citoyens et des biens": [
+            "Police nationale et gendarmerie nationale",
+            "Lutte contre la délinquance et criminalité"
+          ],
+          "Conduire le renseignement intérieur et la lutte contre les menaces": [
+            "Prévention des ingérences",
+            "Lutte antiterroriste"
+          ],
+          "Assurer la sécurité civile, l'alerte et la gestion des crises": [
+            "Plan ORSEC et cellules de crise",
+            "Sapeurs-pompiers et moyens nationaux"
+          ],
+          "Mettre en œuvre la politique des étrangers, de l'asile et de l'intégration": [
+            "ANEF (administration numérique des étrangers)",
+            "Dispositifs d'intégration et parcours"
+          ],
+          "Organiser la vie démocratique et les élections": [
+            "Organisation des scrutins nationaux",
+            "Tenue des listes électorales"
+          ],
+          "Déployer la politique de sécurité routière": [
+            "Plan départemental de sécurité routière",
+            "Contrôles et prévention"
+          ],
+          "Garantir la délivrance et la sécurisation des titres d'identité": [
+            "Passeports et CNI sécurisés",
+            "France Identité et ANTS"
+          ],
+          "Conduire la coopération internationale de sécurité": [
+            "Coopération policière et gendarmerie",
+            "Réseau des attachés de sécurité"
+          ],
+          "Promouvoir la laïcité et la liberté de culte": [
+            "Dialogue avec les cultes",
+            "Sensibilisation à la laïcité"
+          ]
+        },
+        "competences": {
+          "Sécurité intérieure (police et gendarmerie nationales)": [
+            "Sécurité du quotidien",
+            "Maintien de l'ordre"
+          ],
+          "Administration territoriale de l'État (réseau préfectoral)": [
+            "Gestion de crise territoriale",
+            "Coordination des politiques publiques"
+          ],
+          "Libertés publiques et cultes": [
+            "Cadre des manifestations",
+            "Relations avec les cultes"
+          ],
+          "Renseignement intérieur et contre-terrorisme (DGSI)": [
+            "Prévention des menaces",
+            "Contre-espionnage"
+          ],
+          "Immigration, asile, intégration et accès à la nationalité (DGEF)": [
+            "Titres de séjour et naturalisations",
+            "Pilotage de l'asile"
+          ],
+          "Contrôle de légalité et relations avec les collectivités locales (DGCL)": [
+            "Suivi des collectivités",
+            "Appui aux élus locaux"
+          ],
+          "Sécurité routière et contrôle automatisé des infractions (DSR)": [
+            "Radars et contrôle automatisé",
+            "Prévention des risques routiers"
+          ],
+          "Statistiques de la sécurité intérieure (SSMSI)": [
+            "Diffusion des données de délinquance",
+            "Analyses et études"
+          ],
+          "Pilotage RH, budget, achats et transformation numérique (SG)": [
+            "Stratégie RH et formation",
+            "Transformation numérique"
+          ]
+        },
+        "politiques_publiques": {
+          "Prévention de la délinquance": [
+            "CIPDR et dispositifs locaux",
+            "Actions de prévention ciblées"
+          ],
+          "Lutte contre les violences conjugales, intrafamiliales, sexuelles et sexistes": [
+            "Plateformes de signalement",
+            "Formation des forces de sécurité"
+          ],
+          "Culture du risque et résilience face aux catastrophes": [
+            "Journée nationale de la résilience",
+            "Sensibilisation du public"
+          ],
+          "Promotion de la laïcité": [
+            "Actions de sensibilisation",
+            "Accompagnement des collectivités"
+          ],
+          "Sécurisation des grands événements": [
+            "Dispositifs de sécurité renforcés",
+            "Coordination des forces mobiles"
+          ],
+          "Lutte contre la criminalité organisée et les trafics": [
+            "Services spécialisés et task forces",
+            "Coopération interservices"
+          ],
+          "Politique de sécurité routière": [
+            "Campagnes nationales",
+            "Contrôle automatisé"
+          ],
+          "Protection des frontières et contrôle des flux": [
+            "Contrôles aux frontières",
+            "Coopération européenne"
+          ],
+          "Politique d'asile et d'intégration des réfugiés": [
+            "Accueil et hébergement",
+            "Parcours d'intégration"
+          ],
+          "Lutte contre la radicalisation (CIPDR)": [
+            "Cellules de suivi départementales",
+            "Prévention des risques"
+          ],
+          "Développement des services numériques de l'intérieur": [
+            "Démarches en ligne",
+            "Identité numérique"
+          ],
+          "Prévention des risques majeurs (ORSEC, alerte population)": [
+            "Alerte et information des populations",
+            "Plans ORSEC"
+          ],
+          "Modernisation du réseau préfectoral": [
+            "Mutualisation des services",
+            "Qualité de service"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi renforçant la sécurité intérieure et la lutte contre le terrorisme (2017)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=securite%20interieure%20lutte%20contre%20le%20terrorisme%202017",
+          "synthese": "Consolide dans le droit commun plusieurs outils de prévention et de surveillance du terrorisme, en encadrant les mesures administratives et la protection des lieux sensibles.",
+          "details": [
+            "Mesures administratives de prévention : périmètres de protection lors d'événements, restrictions temporaires de circulation. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Périmètres de protection et contrôles renforcés : filtrage des accès, palpations de sécurité encadrées. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Fermeture des lieux de culte radicalisés : suspension d'activités, procédures de mise en conformité. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Mesures individuelles de contrôle administratif : obligations de pointage, limitations de déplacement. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Visites et saisies administratives encadrées : contrôle judiciaire a posteriori, saisie de matériel. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Contrôle du retour de personnes radicalisées : suivi administratif, coordination DGSI/prefectures. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Assignations et obligations de pointage : horaires contraints, signalements répétés. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Surveillance des personnes signalées : fichiers de suivi, coordination interservices. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi pour une sécurité globale préservant les libertés (2021)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=securite%20globale%20preservant%20les%20libertes%202021",
+          "synthese": "Modernise l'usage des technologies de sécurité et clarifie l'articulation des forces, tout en posant des garanties pour la protection des libertés publiques.",
+          "details": [
+            "Caméras-piétons : activation sur intervention, traçabilité des usages. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Vidéoprotection et drones : surveillance d'événements, appui aux secours. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Protection des forces : renforcement des sanctions pour violences. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Coordination police municipale et nationale : conventions de coordination, patrouilles mixtes. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Atteintes aux élus et agents : dépôt de plainte facilité, protection fonctionnelle. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Diffusion d'images des forces : encadrement des usages, protection des identités. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Interopérabilité vidéo : partage d'images entre centres de commandement. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Continuum de sécurité public/privé : articulation avec la sécurité privée. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi d'orientation et de programmation du ministère de l'Intérieur (LOPMI, 2023)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=LOPMI%202023",
+          "synthese": "Fixe une trajectoire pluriannuelle pour les moyens, la modernisation numérique et l'amélioration du service rendu par les forces de sécurité et la sécurité civile.",
+          "details": [
+            "Programmation budgétaire et effectifs : trajectoire pluriannuelle, recrutements ciblés. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Modernisation numérique et équipements : radio du futur, équipements de protection. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Sécurité civile : renouvellement des moyens aériens, doctrine ORSEC, FR-Alert. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Recrutements et formations : écoles de police/gendarmerie, filières spécialisées. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Procédures pénales numériques : plaintes en ligne, dématérialisation des actes. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Capacités d'investigation : outils d'analyse numérique, laboratoires spécialisés. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Outils d'analyse et de renseignement : plateformes de données, fusion d'informations. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Accueil des victimes et 17 : plateformes de signalement, amélioration de l'accueil. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi sur l'immigration (2024)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%20immigration%202024",
+          "synthese": "Réorganise le cadre d'entrée, de séjour et d'éloignement, tout en renforçant l'intégration et la lutte contre le travail illégal.",
+          "details": [
+            "Entrée et séjour : nouveaux critères, titres pluriannuels encadrés. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Asile et intégration : accélération des procédures, parcours d'intégration. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Emploi irrégulier : contrôles renforcés, sanctions employeurs. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Éloignement : exécution des OQTF, coopération consulaire. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Contrats d'intégration : exigences linguistiques, suivi renforcé. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Immigration professionnelle : secteurs en tension, critères d'accès. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Contrôles des titres : lutte contre la fraude documentaire. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Fraude et filières : démantèlement des réseaux, sanctions aggravées. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Le ministère et ses missions",
+          "url": "https://www.interieur.gouv.fr/"
+        },
+        {
+          "label": "Le ministère - organisation",
+          "url": "https://www.interieur.gouv.fr/ministere/organisation"
+        },
+        {
+          "label": "Organisation du ministère (organigramme)",
+          "url": "https://www.interieur.gouv.fr/ministere/organisation"
+        },
+        {
+          "label": "DGCL - missions et chiffres des collectivités",
+          "url": "https://www.interieur.gouv.fr/ministere/organisation/direction-gererale-des-collectivites-territoriales"
+        },
+        {
+          "label": "Police nationale",
+          "url": "https://www.interieur.gouv.fr/ministere/police-nationale"
+        },
+        {
+          "label": "Gendarmerie nationale",
+          "url": "https://www.interieur.gouv.fr/ministere/organisation/gendarmerie-nationale"
+        },
+        {
+          "label": "Sécurité civile",
+          "url": "https://www.interieur.gouv.fr/ministere/securite-civile-0"
+        },
+        {
+          "label": "DCIS",
+          "url": "https://www.interieur.gouv.fr/ministere/organisation/direction-de-cooperation-internationale-de-securite"
+        },
+        {
+          "label": "Violences conjugales, sexuelles et sexistes : ne rien laisser passer",
+          "url": "https://www.interieur.gouv.fr/nerienlaisserpasser"
+        },
+        {
+          "label": "Laïcité : un prix pour promouvoir un principe républicain",
+          "url": "https://www.interieur.gouv.fr/actualites/grands-dossiers/laicite-prix-pour-promouvoir-principe-republicain"
+        },
+        {
+          "label": "Beauvau de la sécurité civile",
+          "url": "https://www.interieur.gouv.fr/actualites/grands-dossiers/beauvau-de-securite-civile"
+        },
+        {
+          "label": "Journée nationale de la résilience",
+          "url": "https://www.interieur.gouv.fr/actualites/communiques-de-presse/5e-edition-de-journee-nationale-de-resilience-lancement-de-lappel-a-projets"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "ministere-de-l-economie-des-finances-et-de-la-souverainete-industrielle-et-numerique",
+      "name": "Ministère de l'Économie, des Finances et de la Souveraineté industrielle, énergétique et numérique",
+      "short_name": "Ministère de l'Économie et des Finances",
+      "site_url": "https://www.economie.gouv.fr/",
+      "resume": "Piloter les finances publiques, la politique économique et industrielle, protéger les consommateurs et encadrer les marchés pour renforcer la compétitivité et la souveraineté économique.",
+      "missions": [
+        "Élaborer et exécuter la politique budgétaire et fiscale",
+        "Soutenir l'économie, l'innovation et la compétitivité des entreprises",
+        "Garantir le bon fonctionnement des marchés et la concurrence",
+        "Protéger les consommateurs et la loyauté des pratiques commerciales",
+        "Conduire la politique industrielle et numérique"
+      ],
+      "competences": [
+        "Lutte contre les fraudes aux finances publiques",
+        "Dette publique, budget et impôt",
+        "Régulation économique, concurrence et consommation",
+        "Politique industrielle et d'innovation",
+        "Numérique, données et souveraineté technologique",
+        "Soutien aux entreprises et export"
+      ],
+      "politiques_publiques": [
+        "Facturation électronique et modernisation des échanges",
+        "Lutte contre la fraude fiscale et sociale",
+        "Soutien aux filières industrielles stratégiques",
+        "Protection des consommateurs et pouvoir d'achat",
+        "Stratégie numérique et IA"
+      ],
+      "chiffres_cles": [
+        "Réseau des finances publiques (DGFiP)",
+        "Réseau des douanes (DGDDI)",
+        "Régulation et contrôles (DGCCRF)"
+      ],
+      "organigramme": [
+        "Secrétariat général",
+        "Direction générale des Finances publiques (DGFiP)",
+        "Direction générale des Douanes et droits indirects (DGDDI)",
+        "Direction générale de la concurrence, de la consommation et de la répression des fraudes (DGCCRF)",
+        "Direction du Budget",
+        "Direction générale du Trésor",
+        "Direction générale des Entreprises (DGE)"
+      ],
+      "operateurs": [
+        "INSEE",
+        "Bpifrance",
+        "Business France",
+        "Direction interministérielle du numérique (DINUM)"
+      ],
+      "details": {
+        "missions": {
+          "Élaborer et exécuter la politique budgétaire et fiscale": [
+            "Préparation de la loi de finances",
+            "Suivi de l'exécution budgétaire"
+          ],
+          "Soutenir l'économie, l'innovation et la compétitivité des entreprises": [
+            "Soutien à l'investissement productif",
+            "Accompagnement des PME/ETI"
+          ],
+          "Garantir le bon fonctionnement des marchés et la concurrence": [
+            "Contrôles de pratiques commerciales",
+            "Surveillance des marchés"
+          ],
+          "Protéger les consommateurs et la loyauté des pratiques commerciales": [
+            "Enquêtes DGCCRF",
+            "Information et sanctions"
+          ],
+          "Conduire la politique industrielle et numérique": [
+            "Stratégies de filières",
+            "Soutien à l'innovation numérique"
+          ]
+        },
+        "competences": {
+          "Lutte contre les fraudes aux finances publiques": [
+            "Contrôle fiscal ciblé",
+            "Lutte contre la fraude à la TVA"
+          ],
+          "Dette publique, budget et impôt": [
+            "Émission et gestion de la dette",
+            "Pilotage des recettes"
+          ],
+          "Régulation économique, concurrence et consommation": [
+            "Contrôles des pratiques anti-concurrentielles",
+            "Protection du consommateur"
+          ],
+          "Politique industrielle et d'innovation": [
+            "Filières industrielles",
+            "Soutien à la R&D"
+          ],
+          "Numérique, données et souveraineté technologique": [
+            "Stratégie IA",
+            "Souveraineté numérique"
+          ],
+          "Soutien aux entreprises et export": [
+            "Aides à l'export",
+            "Appui aux investissements"
+          ]
+        },
+        "politiques_publiques": {
+          "Facturation électronique et modernisation des échanges": [
+            "Déploiement progressif",
+            "Simplification des obligations"
+          ],
+          "Lutte contre la fraude fiscale et sociale": [
+            "Plan antifraude",
+            "Renforcement des contrôles"
+          ],
+          "Soutien aux filières industrielles stratégiques": [
+            "Relocalisations ciblées",
+            "Soutien à la production"
+          ],
+          "Protection des consommateurs et pouvoir d'achat": [
+            "Contrôle des prix et promotions",
+            "Information des consommateurs"
+          ],
+          "Stratégie numérique et IA": [
+            "Soutien aux startups",
+            "Investissements numériques"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi relative à la croissance et la transformation des entreprises (PACTE, 2019)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%20pacte%202019",
+          "synthese": "Modernise le cadre des entreprises, favorise l'innovation et simplifie la vie économique.",
+          "details": [
+            "Simplification des seuils et obligations : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Développement de l'épargne et de l'actionnariat salarié : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Soutien à la croissance des PME : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi relative à la lutte contre la fraude (2018)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%20lutte%20contre%20la%20fraude%202018",
+          "synthese": "Renforce les moyens de détection et de sanction de la fraude fiscale et sociale.",
+          "details": [
+            "Coopération entre administrations : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Sanctions accrues : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Lutte contre la fraude à la TVA : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Nos priorités",
+          "url": "https://www.economie.gouv.fr/nos-priorites"
+        },
+        {
+          "label": "Lutte contre les fraudes",
+          "url": "https://www.economie.gouv.fr/agir-contre-les-fraudes"
+        },
+        {
+          "label": "Facturation électronique",
+          "url": "https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Total CP PLF 2026 : 93.87 MdEUR",
+        "Total AE PLF 2026 : 94.05 MdEUR",
+        "Titre 2 (personnel) CP 2026 : 1.22 MdEUR",
+        "Hors titre 2 CP 2026 : 92.65 MdEUR",
+        "Missions (CP 2026) :",
+        "- Engagements financiers de l'État : 60.38 MdEUR",
+        "- Écologie, développement et mobilité durables : 10.03 MdEUR",
+        "- Prêts et avances à divers services de l'État ou organismes gérant des services publics : 9.29 MdEUR",
+        "- Participations financières de l'État : 5.42 MdEUR",
+        "- Économie : 3.54 MdEUR",
+        "- Recherche et enseignement supérieur : 2.03 MdEUR",
+        "Programmes principaux (CP 2026) :",
+        "- P117 Charge de la dette et trésorerie de l'État (crédits évaluatifs) : 58.62 MdEUR",
+        "- P821 Avances à l'Agence de services et de paiement, au titre du préfinancement des aides communautaires de la politique agricole commune : 9.0 MdEUR",
+        "- P345 Service public de l'énergie : 8.44 MdEUR",
+        "- P731 Opérations en capital intéressant les participations financières de l'État : 5.42 MdEUR",
+        "- P134 Développement des entreprises et régulations : 2.10 MdEUR",
+        "- P190 Recherche dans les domaines de l'énergie, du développement et de la mobilité durables : 1.49 MdEUR",
+        "- P110 Aide économique et financière au développement : 1.29 MdEUR",
+        "- P174 Énergie, climat et après-mines : 1.23 MdEUR"
+      ]
+    },
+    {
+      "id": "ministere-de-la-culture",
+      "name": "Ministère de la Culture",
+      "short_name": "Ministère de la Culture",
+      "site_url": "https://www.culture.gouv.fr/",
+      "resume": "Protéger le patrimoine, soutenir la création artistique, développer les industries culturelles et garantir l'accès de tous à la culture.",
+      "missions": [
+        "Préserver et valoriser le patrimoine",
+        "Soutenir la création artistique",
+        "Développer l'accès à la culture",
+        "Accompagner les industries culturelles",
+        "Promouvoir l'éducation artistique et culturelle"
+      ],
+      "competences": [
+        "Patrimoine et architecture",
+        "Création et spectacle vivant",
+        "Médias, livre et industries culturelles",
+        "Archives et mémoire",
+        "Éducation artistique et culturelle"
+      ],
+      "politiques_publiques": [
+        "Patrimoine",
+        "Création",
+        "Industries culturelles",
+        "Éducation artistique",
+        "Soutien aux médias"
+      ],
+      "chiffres_cles": [
+        "Réseau des DRAC",
+        "Monuments historiques",
+        "Soutien aux artistes et institutions"
+      ],
+      "organigramme": [
+        "Secrétariat général",
+        "Direction générale des patrimoines et de l'architecture (DGPA)",
+        "Direction générale de la création artistique (DGCA)",
+        "Direction générale des médias et des industries culturelles (DGMIC)"
+      ],
+      "operateurs": [
+        "CNC",
+        "Bibliothèque nationale de France (BnF)",
+        "Centre national du livre (CNL)",
+        "Réunion des musées nationaux - Grand Palais (RMN-GP)"
+      ],
+      "details": {
+        "missions": {
+          "Préserver et valoriser le patrimoine": [
+            "Monuments historiques",
+            "Restaurations"
+          ],
+          "Soutenir la création artistique": [
+            "Aides à la création",
+            "Soutien aux lieux"
+          ],
+          "Développer l'accès à la culture": [
+            "Actions territoriales",
+            "Médiation"
+          ],
+          "Accompagner les industries culturelles": [
+            "Soutien au cinéma",
+            "Soutien au livre"
+          ],
+          "Promouvoir l'éducation artistique et culturelle": [
+            "Parcours EAC",
+            "Partenariats scolaires"
+          ]
+        },
+        "competences": {
+          "Patrimoine et architecture": [
+            "Sites classés",
+            "Qualité architecturale"
+          ],
+          "Création et spectacle vivant": [
+            "Théâtre, musique, danse",
+            "Soutien aux compagnies"
+          ],
+          "Médias, livre et industries culturelles": [
+            "Presse",
+            "Livre et lecture"
+          ],
+          "Archives et mémoire": [
+            "Archives nationales",
+            "Valorisation"
+          ],
+          "Éducation artistique et culturelle": [
+            "Éveil artistique",
+            "Parcours culturels"
+          ]
+        },
+        "politiques_publiques": {
+          "Patrimoine": [
+            "Protection",
+            "Valorisation"
+          ],
+          "Création": [
+            "Soutien aux artistes",
+            "Diffusion"
+          ],
+          "Industries culturelles": [
+            "Cinéma",
+            "Musique"
+          ],
+          "Éducation artistique": [
+            "EAC",
+            "Partenariats"
+          ],
+          "Soutien aux médias": [
+            "Pluralisme",
+            "Modernisation"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi relative à la liberté de la création, à l'architecture et au patrimoine (LCAP, 2016)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=liberte%20creation%20architecture%20patrimoine%202016",
+          "synthese": "Renforce la protection du patrimoine et la liberté de création.",
+          "details": [
+            "Protection du patrimoine : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Liberté de création : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Qualité architecturale : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi relative au prix du livre (1981)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=prix%20du%20livre%201981",
+          "synthese": "Encadre le prix du livre pour préserver la diversité culturelle.",
+          "details": [
+            "Prix unique : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Réseau de librairies : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Diversité de l'offre : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi relative à la liberté de communication (1986)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=liberte%20de%20communication%201986",
+          "synthese": "Structure le cadre juridique de l'audiovisuel.",
+          "details": [
+            "Pluralisme : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Régulation audiovisuelle : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Autorités indépendantes : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Ministère de la Culture",
+          "url": "https://www.culture.gouv.fr/"
+        },
+        {
+          "label": "Patrimoine",
+          "url": "https://www.culture.gouv.fr/Patrimoine"
+        },
+        {
+          "label": "Création",
+          "url": "https://www.culture.gouv.fr/Thematiques/Creation-artistique"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Total CP PLF 2026 : 8.32 MdEUR",
+        "Total AE PLF 2026 : 8.32 MdEUR",
+        "Titre 2 (personnel) CP 2026 : 0.76 MdEUR",
+        "Hors titre 2 CP 2026 : 7.55 MdEUR",
+        "Missions (CP 2026) :",
+        "- Avances à l'audiovisuel public : 3.88 MdEUR",
+        "- Culture : 3.75 MdEUR",
+        "- Médias, livre et industries culturelles : 0.69 MdEUR",
+        "Programmes principaux (CP 2026) :",
+        "- P841 France Télévisions : 2.44 MdEUR",
+        "- P175 Patrimoines : 1.15 MdEUR",
+        "- P131 Création : 1.01 MdEUR",
+        "- P224 Soutien aux politiques du ministère de la culture : 0.87 MdEUR",
+        "- P361 Transmission des savoirs et démocratisation de la culture : 0.72 MdEUR",
+        "- P843 Radio France : 0.65 MdEUR",
+        "- P180 Presse et médias : 0.35 MdEUR",
+        "- P334 Livre et industries culturelles : 0.34 MdEUR"
+      ]
+    },
+    {
+      "id": "ministere-de-la-justice",
+      "name": "Ministère de la Justice",
+      "short_name": "Ministère de la Justice",
+      "site_url": "https://www.justice.gouv.fr/",
+      "resume": "Assurer le fonctionnement de la justice, conduire la politique pénale, garantir l'accès au droit et accompagner la réinsertion.",
+      "missions": [
+        "Rendre la justice au nom du peuple français",
+        "Conduire la politique pénale et la lutte contre la criminalité",
+        "Assurer l'administration pénitentiaire et la réinsertion",
+        "Protéger la jeunesse et prévenir la récidive",
+        "Garantir l'accès au droit et l'aide aux victimes"
+      ],
+      "competences": [
+        "Lutte contre le narcotrafic",
+        "Justice économique",
+        "Violences au sein du couple",
+        "Justice amiable",
+        "Accès au droit",
+        "Justice de proximité",
+        "Politique pénale",
+        "Administration pénitentiaire"
+      ],
+      "politiques_publiques": [
+        "Lutte contre le narcotrafic",
+        "Justice économique",
+        "Justice de proximité",
+        "Justice amiable",
+        "Prise en charge des victimes"
+      ],
+      "chiffres_cles": [
+        "Réseau des juridictions judiciaires",
+        "Établissements pénitentiaires",
+        "Protection judiciaire de la jeunesse (PJJ)"
+      ],
+      "organigramme": [
+        "Secrétariat général",
+        "Direction des services judiciaires",
+        "Direction des affaires criminelles et des grâces",
+        "Direction des affaires civiles et du sceau",
+        "Direction de l'administration pénitentiaire",
+        "Direction de la protection judiciaire de la jeunesse"
+      ],
+      "operateurs": [
+        "École nationale de la magistrature (ENM)",
+        "École nationale d'administration pénitentiaire (ENAP)",
+        "Agence de gestion et de recouvrement des avoirs saisis (AGRASC)"
+      ],
+      "details": {
+        "missions": {
+          "Rendre la justice au nom du peuple français": [
+            "Fonctionnement des juridictions",
+            "Rendu des décisions"
+          ],
+          "Conduire la politique pénale et la lutte contre la criminalité": [
+            "Orientations pénales",
+            "Coordination des parquets"
+          ],
+          "Assurer l'administration pénitentiaire et la réinsertion": [
+            "Gestion des établissements",
+            "Programmes de réinsertion"
+          ],
+          "Protéger la jeunesse et prévenir la récidive": [
+            "Mesures éducatives",
+            "Accompagnement des mineurs"
+          ],
+          "Garantir l'accès au droit et l'aide aux victimes": [
+            "Aide juridictionnelle",
+            "Soutien aux victimes"
+          ]
+        },
+        "competences": {
+          "Lutte contre le narcotrafic": [
+            "Loi 2025 anti-narcotrafic",
+            "Coordination interservices"
+          ],
+          "Justice économique": [
+            "Contentieux économique",
+            "Lutte contre la fraude"
+          ],
+          "Violences au sein du couple": [
+            "Traitement pénal prioritaire",
+            "Protection des victimes"
+          ],
+          "Justice amiable": [
+            "Médiation et conciliation",
+            "Modes alternatifs"
+          ],
+          "Accès au droit": [
+            "Maisons de justice",
+            "Information juridique"
+          ],
+          "Justice de proximité": [
+            "Réponse rapide",
+            "Présence locale"
+          ],
+          "Politique pénale": [
+            "Circulaires de politique pénale",
+            "Suivi des priorités"
+          ],
+          "Administration pénitentiaire": [
+            "Gestion des détenus",
+            "Sécurité des établissements"
+          ]
+        },
+        "politiques_publiques": {
+          "Lutte contre le narcotrafic": [
+            "Dossiers prioritaires",
+            "Coopération internationale"
+          ],
+          "Justice économique": [
+            "Sanctions économiques",
+            "Procédures spécialisées"
+          ],
+          "Justice de proximité": [
+            "Présence renforcée",
+            "Traitement accéléré"
+          ],
+          "Justice amiable": [
+            "Médiation",
+            "Conciliation"
+          ],
+          "Prise en charge des victimes": [
+            "Bureaux d'aide",
+            "Accompagnement juridique"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi visant à sortir la France du piège du narcotrafic (2025)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=narcotrafic%202025",
+          "synthese": "Renforce l'arsenal de lutte contre les réseaux criminels liés aux stupéfiants.",
+          "details": [
+            "Moyens renforcés d'enquête : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Lutte contre le blanchiment : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Coordination judiciaire : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi de programmation 2018-2022 et de réforme pour la justice (2019)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=programmation%20reforme%20justice%202019",
+          "synthese": "Modernise la justice et fixe une trajectoire de moyens.",
+          "details": [
+            "Numérisation des procédures : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Renforcement des effectifs : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Simplification des délais : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Grands dossiers",
+          "url": "https://www.justice.gouv.fr/grands-dossiers"
+        },
+        {
+          "label": "La lutte contre le narcotrafic",
+          "url": "https://www.justice.gouv.fr/lutte-contre-narcotrafic"
+        },
+        {
+          "label": "Justice économique",
+          "url": "https://www.justice.gouv.fr/justice-economique"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Total CP PLF 2026 : 13.05 MdEUR",
+        "Total AE PLF 2026 : 12.68 MdEUR",
+        "Titre 2 (personnel) CP 2026 : 7.78 MdEUR",
+        "Hors titre 2 CP 2026 : 5.28 MdEUR",
+        "Missions (CP 2026) :",
+        "- Justice : 13.05 MdEUR",
+        "Programmes principaux (CP 2026) :",
+        "- P107 Administration pénitentiaire : 5.55 MdEUR",
+        "- P166 Justice judiciaire : 4.76 MdEUR",
+        "- P182 Protection judiciaire de la jeunesse : 1.16 MdEUR",
+        "- P101 Accès au droit et à la justice : 0.81 MdEUR",
+        "- P310 Conduite et pilotage de la politique de la justice : 0.77 MdEUR",
+        "- P335 Conseil supérieur de la magistrature : 0.01 MdEUR"
+      ]
+    },
+    {
+      "id": "ministere-des-outre-mer",
+      "name": "Ministère des Outre-mer",
+      "short_name": "Outre-mer",
+      "site_url": "https://lannuaire.service-public.gouv.fr/gouvernement/0dd547d8-44fb-4af8-8768-dc8a95614f0d",
+      "resume": "Concevoir et mettre en oeuvre les politiques publiques pour les territoires ultramarins, en matière de développement, cohésion sociale et continuité territoriale.",
+      "missions": [
+        "Assurer le développement économique des Outre-mer",
+        "Renforcer la cohésion sociale et territoriale",
+        "Soutenir les collectivités ultramarines",
+        "Garantir la continuité territoriale",
+        "Accompagner la résilience face aux risques naturels"
+      ],
+      "competences": [
+        "Politiques économiques ultramarines",
+        "Aides et dispositifs spécifiques",
+        "Relations avec les collectivités",
+        "Gestion des crises et des catastrophes",
+        "Continuité territoriale"
+      ],
+      "politiques_publiques": [
+        "Développement économique",
+        "Lutte contre la vie chère",
+        "Aménagement et logement",
+        "Emploi et insertion",
+        "Résilience climatique"
+      ],
+      "chiffres_cles": [
+        "Territoires ultramarins et collectivités",
+        "Programmes d'aide et de continuité territoriale",
+        "Plans de résilience"
+      ],
+      "organigramme": [
+        "Secrétariat général",
+        "Direction générale des Outre-mer (DGOM)",
+        "Services territoriaux"
+      ],
+      "operateurs": [
+        "AFD",
+        "Caisse des Dépôts"
+      ],
+      "details": {
+        "missions": {
+          "Assurer le développement économique des Outre-mer": [
+            "Soutien aux entreprises",
+            "Investissements structurants"
+          ],
+          "Renforcer la cohésion sociale et territoriale": [
+            "Programmes sociaux",
+            "Accompagnement des territoires"
+          ],
+          "Soutenir les collectivités ultramarines": [
+            "Appui technique",
+            "Financements dédiés"
+          ],
+          "Garantir la continuité territoriale": [
+            "Aides au transport",
+            "Dispositifs de continuité"
+          ],
+          "Accompagner la résilience face aux risques naturels": [
+            "Plans de prévention",
+            "Gestion de crise"
+          ]
+        },
+        "competences": {
+          "Politiques économiques ultramarines": [
+            "Soutien aux filières",
+            "Attractivité"
+          ],
+          "Aides et dispositifs spécifiques": [
+            "Dispositifs fiscaux",
+            "Aides sociales"
+          ],
+          "Relations avec les collectivités": [
+            "Contrats de convergence",
+            "Dialogue institutionnel"
+          ],
+          "Gestion des crises et des catastrophes": [
+            "Cellules de crise",
+            "Plans d'urgence"
+          ],
+          "Continuité territoriale": [
+            "Aides à la mobilité",
+            "Soutien aux liaisons"
+          ]
+        },
+        "politiques_publiques": {
+          "Développement économique": [
+            "Soutien aux entreprises",
+            "Investissements"
+          ],
+          "Lutte contre la vie chère": [
+            "Mesures de régulation",
+            "Dispositifs spécifiques"
+          ],
+          "Aménagement et logement": [
+            "Programmes d'habitat",
+            "Rénovation urbaine"
+          ],
+          "Emploi et insertion": [
+            "Aides à l'emploi",
+            "Formation"
+          ],
+          "Résilience climatique": [
+            "Plans de prévention",
+            "Adaptation"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi pour l'égalité réelle outre-mer (2017)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=egalite%20reelle%20outre-mer%202017",
+          "synthese": "Vise à réduire les écarts de développement entre l'Outre-mer et l'Hexagone.",
+          "details": [
+            "Trajectoires de rattrapage : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Plans de convergence : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Mesures sociales : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi pour le développement économique des Outre-mer (LODEOM, 2009)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=LODEOM%202009",
+          "synthese": "Met en place des dispositifs spécifiques de soutien économique.",
+          "details": [
+            "Aides aux entreprises : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Dispositifs fiscaux : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Soutien à l'emploi : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Annuaire de l'administration",
+          "url": "https://lannuaire.service-public.gouv.fr/gouvernement/0dd547d8-44fb-4af8-8768-dc8a95614f0d"
+        },
+        {
+          "label": "Outre-mer",
+          "url": "https://www.outre-mer.gouv.fr/"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Total CP PLF 2026 : 2.83 MdEUR",
+        "Total AE PLF 2026 : 2.91 MdEUR",
+        "Titre 2 (personnel) CP 2026 : 0.21 MdEUR",
+        "Hors titre 2 CP 2026 : 2.61 MdEUR",
+        "Missions (CP 2026) :",
+        "- Outre-mer : 2.83 MdEUR",
+        "Programmes principaux (CP 2026) :",
+        "- P138 Emploi outre-mer : 1.80 MdEUR",
+        "- P123 Conditions de vie outre-mer : 1.03 MdEUR"
+      ]
+    },
+    {
+      "id": "ministere-des-pme-du-commerce-de-l-artisanat-du-tourisme-et-du-pouvoir-d-achat",
+      "name": "Ministère des petites et moyennes Entreprises, du Commerce, de l'Artisanat, du Tourisme et du Pouvoir d'achat",
+      "short_name": "PME, Commerce, Artisanat, Tourisme",
+      "site_url": "https://lannuaire.service-public.gouv.fr/gouvernement/d2d5b079-abd0-441a-8abc-cea5a569c15c",
+      "resume": "Soutenir les PME, le commerce, l'artisanat et le tourisme, et protéger le pouvoir d'achat des consommateurs.",
+      "missions": [
+        "Accompagner la croissance des PME",
+        "Soutenir le commerce et l'artisanat",
+        "Développer l'attractivité touristique",
+        "Protéger les consommateurs et le pouvoir d'achat",
+        "Simplifier la vie des entreprises"
+      ],
+      "competences": [
+        "Politiques PME et commerce",
+        "Artisanat et économie de proximité",
+        "Tourisme",
+        "Protection des consommateurs",
+        "Réglementation économique"
+      ],
+      "politiques_publiques": [
+        "Soutien aux PME et TPE",
+        "Relance du commerce de proximité",
+        "Promotion du tourisme",
+        "Régulation des pratiques commerciales",
+        "Pouvoir d'achat"
+      ],
+      "chiffres_cles": [
+        "Réseau d'accompagnement des entreprises",
+        "Commerce de proximité",
+        "Attractivité touristique"
+      ],
+      "organigramme": [
+        "Direction générale des entreprises (DGE)",
+        "Sous-direction du tourisme",
+        "Services territoriaux"
+      ],
+      "operateurs": [
+        "Atout France",
+        "Bpifrance"
+      ],
+      "details": {
+        "missions": {
+          "Accompagner la croissance des PME": [
+            "Soutiens financiers",
+            "Accompagnement stratégique"
+          ],
+          "Soutenir le commerce et l'artisanat": [
+            "Programmes de revitalisation",
+            "Aides à la modernisation"
+          ],
+          "Développer l'attractivité touristique": [
+            "Promotion internationale",
+            "Soutien aux territoires"
+          ],
+          "Protéger les consommateurs et le pouvoir d'achat": [
+            "Contrôles DGCCRF",
+            "Information du public"
+          ],
+          "Simplifier la vie des entreprises": [
+            "Démarches en ligne",
+            "Réduction des obligations"
+          ]
+        },
+        "competences": {
+          "Politiques PME et commerce": [
+            "Aides sectorielles",
+            "Soutien à l'innovation"
+          ],
+          "Artisanat et économie de proximité": [
+            "Accompagnement des artisans",
+            "Transmission des entreprises"
+          ],
+          "Tourisme": [
+            "Promotion",
+            "Qualité des services"
+          ],
+          "Protection des consommateurs": [
+            "Contrôles",
+            "Sanctions"
+          ],
+          "Réglementation économique": [
+            "Cadre des pratiques",
+            "Suivi des prix"
+          ]
+        },
+        "politiques_publiques": {
+          "Soutien aux PME et TPE": [
+            "Subventions",
+            "Garanties"
+          ],
+          "Relance du commerce de proximité": [
+            "Fonds de soutien",
+            "Revitalisation"
+          ],
+          "Promotion du tourisme": [
+            "Campagnes",
+            "Atout France"
+          ],
+          "Régulation des pratiques commerciales": [
+            "Contrôles",
+            "Lutte contre les fraudes"
+          ],
+          "Pouvoir d'achat": [
+            "Encadrement des promotions",
+            "Protection du consommateur"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi relative à la consommation (Hamon, 2014)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%20consommation%202014",
+          "synthese": "Renforce les droits des consommateurs et encadre les pratiques commerciales.",
+          "details": [
+            "Action de groupe : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Information du consommateur : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Encadrement des pratiques : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi relative à la croissance et la transformation des entreprises (PACTE, 2019)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%20pacte%202019",
+          "synthese": "Simplifie la vie des entreprises et favorise leur croissance.",
+          "details": [
+            "Simplification des seuils : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Soutien aux PME : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Épargne et financement : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Annuaire de l'administration",
+          "url": "https://lannuaire.service-public.gouv.fr/gouvernement/d2d5b079-abd0-441a-8abc-cea5a569c15c"
+        },
+        {
+          "label": "Bercy Entreprises",
+          "url": "https://www.economie.gouv.fr/entreprises"
+        },
+        {
+          "label": "Tourisme",
+          "url": "https://www.tourisme.gouv.fr/"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Budget : rattaché au ministère de l'Économie (voir budget Économie)"
+      ]
+    },
+    {
+      "id": "ministere-de-la-transition-ecologique-de-la-biodiversite-de-la-foret-de-la-mer-et-de-la-peche",
+      "name": "Ministère de la Transition écologique, de la Biodiversité et des Négociations internationales sur le Climat et la Nature",
+      "short_name": "Transition écologique",
+      "site_url": "https://www.ecologie.gouv.fr/",
+      "resume": "Piloter la transition écologique, protéger la biodiversité, prévenir les risques et conduire les politiques climatiques et énergétiques.",
+      "missions": [
+        "Lutter contre le changement climatique",
+        "Préserver la biodiversité et les milieux naturels",
+        "Prévenir les risques naturels et technologiques",
+        "Conduire la transition énergétique",
+        "Promouvoir l'économie circulaire"
+      ],
+      "competences": [
+        "Réglementations environnementales",
+        "Politiques climatiques et adaptation",
+        "Gestion de l'eau et des déchets",
+        "Prévention des risques",
+        "Énergie et efficacité énergétique"
+      ],
+      "politiques_publiques": [
+        "Planification écologique",
+        "Adaptation au changement climatique",
+        "Biodiversité et aires protégées",
+        "Qualité de l'air",
+        "Économie circulaire"
+      ],
+      "chiffres_cles": [
+        "Réseau d'inspection environnementale",
+        "Programmes de prévention des risques",
+        "Stratégies nationales climat et biodiversité"
+      ],
+      "organigramme": [
+        "Secrétariat général",
+        "Direction générale de l'énergie et du climat (DGEC)",
+        "Direction générale de la prévention des risques (DGPR)",
+        "Direction générale de l'aménagement, du logement et de la nature (DGALN)",
+        "Direction générale des infrastructures, des transports et des mobilités (DGITM)"
+      ],
+      "operateurs": [
+        "ADEME",
+        "Office français de la biodiversité (OFB)",
+        "Météo-France",
+        "CEREMA"
+      ],
+      "details": {
+        "missions": {
+          "Lutter contre le changement climatique": [
+            "Stratégies nationales",
+            "Réduction des émissions"
+          ],
+          "Préserver la biodiversité et les milieux naturels": [
+            "Plans de protection",
+            "Aires protégées"
+          ],
+          "Prévenir les risques naturels et technologiques": [
+            "Plans de prévention",
+            "Information du public"
+          ],
+          "Conduire la transition énergétique": [
+            "Développement des énergies renouvelables",
+            "Efficacité énergétique"
+          ],
+          "Promouvoir l'économie circulaire": [
+            "Réduction des déchets",
+            "Réemploi et recyclage"
+          ]
+        },
+        "competences": {
+          "Réglementations environnementales": [
+            "Normes et contrôles",
+            "Autorisation d'installations"
+          ],
+          "Politiques climatiques et adaptation": [
+            "Plans d'adaptation",
+            "Suivi des trajectoires"
+          ],
+          "Gestion de l'eau et des déchets": [
+            "Qualité de l'eau",
+            "Traitement des déchets"
+          ],
+          "Prévention des risques": [
+            "Risques industriels",
+            "Risques naturels"
+          ],
+          "Énergie et efficacité énergétique": [
+            "Rénovation énergétique",
+            "Sobriété énergétique"
+          ]
+        },
+        "politiques_publiques": {
+          "Planification écologique": [
+            "Feuilles de route sectorielles",
+            "Suivi des objectifs"
+          ],
+          "Adaptation au changement climatique": [
+            "TRACC",
+            "Préparation des territoires"
+          ],
+          "Biodiversité et aires protégées": [
+            "Plans biodiversité",
+            "Gestion d'espaces naturels"
+          ],
+          "Qualité de l'air": [
+            "Plans locaux",
+            "Suivi des émissions"
+          ],
+          "Économie circulaire": [
+            "Réduction des déchets",
+            "Éco-conception"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi climat et résilience (2021)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%20climat%20resilience%202021",
+          "synthese": "Accélère la transition écologique dans les transports, le logement et la consommation.",
+          "details": [
+            "Sobriété et consommation : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Rénovation énergétique : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Mobilités plus propres : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi énergie-climat (2019)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%20energie%20climat%202019",
+          "synthese": "Fixe les objectifs de neutralité carbone et renforce la gouvernance énergétique.",
+          "details": [
+            "Neutralité carbone : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Programmation pluriannuelle de l'énergie : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Gouvernance climat : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi de transition énergétique pour la croissance verte (2015)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=transition%20energetique%20croissance%20verte%202015",
+          "synthese": "Lance les grands axes de la transition énergétique et des économies d'énergie.",
+          "details": [
+            "Réduction des consommations : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Développement des renouvelables : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Économie circulaire : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Grands dossiers",
+          "url": "https://www.ecologie.gouv.fr/grands-dossiers"
+        },
+        {
+          "label": "Climat : TRACC",
+          "url": "https://www.ecologie.gouv.fr/actualites/climat-trajectoire-rechauffement-inscrite-code-lenvironnement"
+        },
+        {
+          "label": "Ressources pour les élus locaux",
+          "url": "https://www.ecologie.gouv.fr/ressources-elus-locaux"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Total CP PLF 2026 : 6.87 MdEUR",
+        "Total AE PLF 2026 : 7.94 MdEUR",
+        "Titre 2 (personnel) CP 2026 : 2.92 MdEUR",
+        "Hors titre 2 CP 2026 : 3.95 MdEUR",
+        "Missions (CP 2026) :",
+        "- Écologie, développement et mobilité durables : 6.07 MdEUR",
+        "- Régimes sociaux et de retraite : 0.80 MdEUR",
+        "Programmes principaux (CP 2026) :",
+        "- P217 Conduite et pilotage des politiques de l'écologie, du développement et de la mobilité durables : 3.23 MdEUR",
+        "- P181 Prévention des risques : 1.48 MdEUR",
+        "- P197 Régimes de retraite et de sécurité sociale des marins : 0.80 MdEUR",
+        "- P159 Expertise, information géographique et météorologie : 0.67 MdEUR",
+        "- P113 Paysages, eau et biodiversité : 0.40 MdEUR",
+        "- P205 Affaires maritimes, pêche et aquaculture : 0.29 MdEUR"
+      ]
+    },
+    {
+      "id": "ministere-des-armees",
+      "name": "Ministère des Armées et des Anciens combattants",
+      "short_name": "Ministère des Armées",
+      "site_url": "https://www.defense.gouv.fr/",
+      "resume": "Préparer et engager les forces armées, assurer la dissuasion, protéger le territoire et soutenir les anciens combattants.",
+      "missions": [
+        "Assurer la défense et la sécurité de la Nation",
+        "Préparer et engager les forces armées",
+        "Garantir la dissuasion nucléaire",
+        "Protéger le territoire et les intérêts français",
+        "Soutenir la condition militaire et le lien Armée-Nation"
+      ],
+      "competences": [
+        "Planification et conduite des opérations",
+        "Équipement et innovation de défense",
+        "Renseignement et cyberdéfense",
+        "Soutien logistique et médical",
+        "Mémoire et politique des anciens combattants"
+      ],
+      "politiques_publiques": [
+        "Loi de programmation militaire",
+        "Modernisation des équipements",
+        "Réserves opérationnelles",
+        "Condition militaire",
+        "Coopérations internationales"
+      ],
+      "chiffres_cles": [
+        "Forces armées et services interarmées",
+        "Opérations extérieures et missions intérieures",
+        "Bases de défense et infrastructures"
+      ],
+      "organigramme": [
+        "État-major des Armées (EMA)",
+        "Direction générale de l'armement (DGA)",
+        "Secrétariat général pour l'administration (SGA)",
+        "Armée de Terre",
+        "Marine nationale",
+        "Armée de l'Air et de l'Espace"
+      ],
+      "operateurs": [
+        "ONERA",
+        "Service de santé des armées (SSA)",
+        "ECPAD"
+      ],
+      "details": {
+        "missions": {
+          "Assurer la défense et la sécurité de la Nation": [
+            "Protection du territoire",
+            "Préparation opérationnelle"
+          ],
+          "Préparer et engager les forces armées": [
+            "Planification des opérations",
+            "Déploiements extérieurs"
+          ],
+          "Garantir la dissuasion nucléaire": [
+            "Forces stratégiques",
+            "Posture permanente"
+          ],
+          "Protéger le territoire et les intérêts français": [
+            "Opérations intérieures",
+            "Protection des espaces"
+          ],
+          "Soutenir la condition militaire et le lien Armée-Nation": [
+            "Action sociale",
+            "Recrutement et formation"
+          ]
+        },
+        "competences": {
+          "Planification et conduite des opérations": [
+            "Commandement interarmées",
+            "Coordination avec alliés"
+          ],
+          "Équipement et innovation de défense": [
+            "Programmes d'armement",
+            "Innovation technologique"
+          ],
+          "Renseignement et cyberdéfense": [
+            "Renseignement militaire",
+            "Protection cyber"
+          ],
+          "Soutien logistique et médical": [
+            "Soutien en opération",
+            "SSA et évacuations"
+          ],
+          "Mémoire et politique des anciens combattants": [
+            "Commémorations",
+            "Reconnaissance et réparation"
+          ]
+        },
+        "politiques_publiques": {
+          "Loi de programmation militaire": [
+            "Trajectoire budgétaire",
+            "Modernisation des forces"
+          ],
+          "Modernisation des équipements": [
+            "Renouvellement des matériels",
+            "Capacités de haute intensité"
+          ],
+          "Réserves opérationnelles": [
+            "Montée en puissance",
+            "Formation et fidélisation"
+          ],
+          "Condition militaire": [
+            "Logement et rémunération",
+            "Soutien aux familles"
+          ],
+          "Coopérations internationales": [
+            "Programmes européens",
+            "Opérations conjointes"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi de programmation militaire 2024-2030",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%20de%20programmation%20militaire%202024%202030",
+          "synthese": "Fixe les moyens et priorités de défense sur la période 2024-2030.",
+          "details": [
+            "Modernisation des capacités : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Renforcement des effectifs : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Innovation et cyberdéfense : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi de programmation militaire 2019-2025",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%20de%20programmation%20militaire%202019%202025",
+          "synthese": "Relance l'effort de défense et prépare les forces aux conflits de haute intensité.",
+          "details": [
+            "Augmentation des crédits : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Renouvellement des équipements : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Soutien à la condition militaire : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Dossiers du ministère",
+          "url": "https://www.defense.gouv.fr/ministere/dossiers-evenementiels-thematiques-du-ministere-armees-anciens-combattants"
+        },
+        {
+          "label": "Service national",
+          "url": "https://www.defense.gouv.fr/nous-rejoindre/service-national"
+        },
+        {
+          "label": "Organisation du ministère",
+          "url": "https://www.defense.gouv.fr/ministere/organisation-du-ministere-armees-anciens-combattants"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Total CP PLF 2026 : 68.54 MdEUR",
+        "Total AE PLF 2026 : 94.88 MdEUR",
+        "Titre 2 (personnel) CP 2026 : 23.83 MdEUR",
+        "Hors titre 2 CP 2026 : 44.70 MdEUR",
+        "Missions (CP 2026) :",
+        "- Défense : 66.73 MdEUR",
+        "- Monde combattant, mémoire et liens avec la Nation : 1.66 MdEUR",
+        "- Recherche et enseignement supérieur : 0.15 MdEUR",
+        "Programmes principaux (CP 2026) :",
+        "- P212 Soutien de la politique de la défense : 25.63 MdEUR",
+        "- P146 Équipement des forces : 22.88 MdEUR",
+        "- P178 Préparation et emploi des forces : 15.92 MdEUR",
+        "- P144 Environnement et prospective de la politique de défense : 2.29 MdEUR",
+        "- P169 Reconnaissance et réparation en faveur du monde combattant, mémoire et liens avec la Nation : 1.66 MdEUR",
+        "- P191 Recherche duale (civile et militaire) : 0.15 MdEUR"
+      ]
+    },
+    {
+      "id": "ministere-du-travail-de-la-sante-des-solidarites-et-des-familles",
+      "name": "Ministère du Travail et des Solidarités",
+      "short_name": "Travail et Solidarités",
+      "site_url": "https://travail-emploi.gouv.fr/",
+      "resume": "Piloter la politique de l'emploi, du travail et des solidarités, lutter contre l'exclusion et accompagner les publics fragiles.",
+      "missions": [
+        "Développer l'emploi et l'insertion",
+        "Améliorer les relations de travail",
+        "Soutenir les personnes en situation de précarité",
+        "Lutter contre l'exclusion",
+        "Piloter les politiques sociales"
+      ],
+      "competences": [
+        "Politique de l'emploi",
+        "Relations du travail",
+        "Insertion sociale",
+        "Économie sociale et solidaire",
+        "Solidarités et lutte contre la pauvreté"
+      ],
+      "politiques_publiques": [
+        "Accompagnement vers l'emploi",
+        "Réformes du marché du travail",
+        "Lutte contre la pauvreté",
+        "Insertion des publics fragiles",
+        "Qualité de vie au travail"
+      ],
+      "chiffres_cles": [
+        "Réseau des services de l'emploi",
+        "Dispositifs d'insertion",
+        "Programmes de solidarité"
+      ],
+      "organigramme": [
+        "Direction générale du travail (DGT)",
+        "Délégation générale à l'emploi et à la formation professionnelle (DGEFP)",
+        "Direction générale de la cohésion sociale (DGCS)",
+        "Services déconcentrés"
+      ],
+      "operateurs": [
+        "France Travail",
+        "AFPA",
+        "ADEME (actions sociales)"
+      ],
+      "details": {
+        "missions": {
+          "Développer l'emploi et l'insertion": [
+            "Aides à l'embauche",
+            "Dispositifs d'insertion"
+          ],
+          "Améliorer les relations de travail": [
+            "Dialogue social",
+            "Contrôles"
+          ],
+          "Soutenir les personnes en situation de précarité": [
+            "Aides sociales",
+            "Accompagnement"
+          ],
+          "Lutter contre l'exclusion": [
+            "Plans de lutte",
+            "Suivi social"
+          ],
+          "Piloter les politiques sociales": [
+            "Stratégies",
+            "Coordination"
+          ]
+        },
+        "competences": {
+          "Politique de l'emploi": [
+            "Dispositifs d'emploi",
+            "Formation"
+          ],
+          "Relations du travail": [
+            "Code du travail",
+            "Inspection du travail"
+          ],
+          "Insertion sociale": [
+            "Accompagnement",
+            "Accès aux droits"
+          ],
+          "Économie sociale et solidaire": [
+            "Soutien aux structures",
+            "Financements"
+          ],
+          "Solidarités et lutte contre la pauvreté": [
+            "Plans pauvreté",
+            "Aides ciblées"
+          ]
+        },
+        "politiques_publiques": {
+          "Accompagnement vers l'emploi": [
+            "France Travail",
+            "Insertion"
+          ],
+          "Réformes du marché du travail": [
+            "Ordonnances",
+            "Négociation collective"
+          ],
+          "Lutte contre la pauvreté": [
+            "Plans nationaux",
+            "Aides sociales"
+          ],
+          "Insertion des publics fragiles": [
+            "Dispositifs d'insertion",
+            "Accompagnement"
+          ],
+          "Qualité de vie au travail": [
+            "Prévention",
+            "Dialogue social"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi pour la liberté de choisir son avenir professionnel (2018)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=avenir%20professionnel%202018",
+          "synthese": "Réforme la formation professionnelle et l'apprentissage.",
+          "details": [
+            "Compte personnel de formation : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Apprentissage : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Certification : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi portant création de France Travail (2023)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=france%20travail%202023",
+          "synthese": "Crée un service public de l'emploi renforcé et coordonné.",
+          "details": [
+            "Coordination des acteurs : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Accompagnement renforcé : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Partage de données : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Ministère du Travail",
+          "url": "https://travail-emploi.gouv.fr/"
+        },
+        {
+          "label": "Solidarités",
+          "url": "https://solidarites.gouv.fr/"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Total CP PLF 2026 : 30.77 MdEUR",
+        "Total AE PLF 2026 : 29.98 MdEUR",
+        "Titre 2 (personnel) CP 2026 : 1.08 MdEUR",
+        "Hors titre 2 CP 2026 : 29.69 MdEUR",
+        "Missions (CP 2026) :",
+        "- Travail, emploi et administration des ministères sociaux : 17.65 MdEUR",
+        "- Solidarité, insertion et égalité des chances : 13.12 MdEUR",
+        "Programmes principaux (CP 2026) :",
+        "- P304 Inclusion sociale et protection des personnes : 13.12 MdEUR",
+        "- P103 Accompagnement des mutations économiques et développement de l'emploi : 8.75 MdEUR",
+        "- P102 Accès et retour à l'emploi : 6.77 MdEUR",
+        "- P155 Soutien des ministères sociaux : 2.06 MdEUR",
+        "- P111 Amélioration de la qualité de l'emploi et des relations du travail : 0.08 MdEUR"
+      ]
+    },
+    {
+      "id": "ministere-de-la-sante-des-familles-de-l-autonomie-et-des-personnes-handicapees",
+      "name": "Ministère de la Santé, des Familles, de l’Autonomie et des Personnes handicapées",
+      "short_name": "Santé et Autonomie",
+      "site_url": "https://lannuaire.service-public.gouv.fr/gouvernement/d46810a3-6ed7-4a94-b950-1be135e43ad3",
+      "resume": "Piloter la politique de santé publique, organiser l'offre de soins, et accompagner l'autonomie des personnes âgées et en situation de handicap.",
+      "missions": [
+        "Protéger la santé publique",
+        "Organiser l'offre de soins",
+        "Prévenir les risques sanitaires",
+        "Soutenir l'autonomie et le médico-social",
+        "Réduire les inégalités de santé"
+      ],
+      "competences": [
+        "Santé publique et prévention",
+        "Organisation des soins",
+        "Sécurité sanitaire",
+        "Autonomie et handicap",
+        "Politiques familiales liées à la santé"
+      ],
+      "politiques_publiques": [
+        "Prévention et santé publique",
+        "Accès aux soins",
+        "Vieillissement et autonomie",
+        "Handicap et inclusion",
+        "Sécurité sanitaire"
+      ],
+      "chiffres_cles": [
+        "Réseau hospitalier",
+        "Agences régionales de santé (ARS)",
+        "Dispositifs de prévention"
+      ],
+      "organigramme": [
+        "Direction générale de la santé (DGS)",
+        "Direction générale de l'offre de soins (DGOS)",
+        "Direction de la sécurité sociale (DSS)",
+        "Direction générale de la cohésion sociale (DGCS)"
+      ],
+      "operateurs": [
+        "Santé publique France",
+        "ANSM",
+        "HAS"
+      ],
+      "details": {
+        "missions": {
+          "Protéger la santé publique": [
+            "Plans de prévention",
+            "Surveillance sanitaire"
+          ],
+          "Organiser l'offre de soins": [
+            "Planification",
+            "Qualité des soins"
+          ],
+          "Prévenir les risques sanitaires": [
+            "Alertes",
+            "Gestion des crises"
+          ],
+          "Soutenir l'autonomie et le médico-social": [
+            "EHPAD",
+            "Services à domicile"
+          ],
+          "Réduire les inégalités de santé": [
+            "Accès territorial",
+            "Prévention ciblée"
+          ]
+        },
+        "competences": {
+          "Santé publique et prévention": [
+            "Vaccination",
+            "Campagnes"
+          ],
+          "Organisation des soins": [
+            "Hôpital",
+            "Soins de ville"
+          ],
+          "Sécurité sanitaire": [
+            "Alertes sanitaires",
+            "Contrôles"
+          ],
+          "Autonomie et handicap": [
+            "Aides et prestations",
+            "Accompagnement"
+          ],
+          "Politiques familiales liées à la santé": [
+            "Protection maternelle",
+            "Santé des enfants"
+          ]
+        },
+        "politiques_publiques": {
+          "Prévention et santé publique": [
+            "Plan national de santé",
+            "Actions de prévention"
+          ],
+          "Accès aux soins": [
+            "Lutte contre les déserts médicaux",
+            "Permanence des soins"
+          ],
+          "Vieillissement et autonomie": [
+            "Aide à domicile",
+            "Prévention de la perte d'autonomie"
+          ],
+          "Handicap et inclusion": [
+            "Parcours de soins",
+            "Accessibilité"
+          ],
+          "Sécurité sanitaire": [
+            "Surveillance",
+            "Gestion des alertes"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi de modernisation de notre système de santé (2016)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=modernisation%20systeme%20de%20sante%202016",
+          "synthese": "Renforce la prévention et modernise l'organisation des soins.",
+          "details": [
+            "Parcours de soins : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Prévention : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Organisation territoriale : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi relative à l'organisation et à la transformation du système de santé (2019)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=transformation%20systeme%20de%20sante%202019",
+          "synthese": "Réorganise l'offre de soins et renforce les communautés de santé.",
+          "details": [
+            "Communautés professionnelles : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Accès aux soins : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Numérique en santé : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi relative à l'adaptation de la société au vieillissement (2015)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=adaptation%20societe%20vieillissement%202015",
+          "synthese": "Renforce l'accompagnement de l'autonomie et la prévention de la perte d'autonomie.",
+          "details": [
+            "Aide à domicile : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Soutien aux aidants : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Prévention : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Annuaire de l'administration",
+          "url": "https://lannuaire.service-public.gouv.fr/gouvernement/d46810a3-6ed7-4a94-b950-1be135e43ad3"
+        },
+        {
+          "label": "Ministère de la Santé",
+          "url": "https://sante.gouv.fr/"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Total CP PLF 2026 : 17.94 MdEUR",
+        "Total AE PLF 2026 : 17.93 MdEUR",
+        "Titre 2 (personnel) CP 2026 : 0.0 MdEUR",
+        "Hors titre 2 CP 2026 : 17.94 MdEUR",
+        "Missions (CP 2026) :",
+        "- Solidarité, insertion et égalité des chances : 16.27 MdEUR",
+        "- Santé : 1.67 MdEUR",
+        "Programmes principaux (CP 2026) :",
+        "- P157 Handicap et dépendance : 16.27 MdEUR",
+        "- P183 Protection maladie : 1.22 MdEUR",
+        "- P379 Reversement à la sécurité sociale des recettes de la Facilité pour la Relance et la Résilience (FRR) européenne au titre du volet « Ségur investissement » du plan national de relance et de résilience (PNRR) : 0.24 MdEUR",
+        "- P204 Prévention, sécurité sanitaire et offre de soins : 0.21 MdEUR"
+      ]
+    },
+    {
+      "id": "ministere-des-sports-de-la-jeunesse-et-de-la-vie-associative",
+      "name": "Ministère des Sports, de la Jeunesse et de la Vie associative",
+      "short_name": "Sports et Jeunesse",
+      "site_url": "https://lannuaire.service-public.gouv.fr/gouvernement/2fd089d2-669f-4a91-80b2-b345db391349",
+      "resume": "Développer la pratique sportive, accompagner la jeunesse et soutenir la vie associative partout sur le territoire.",
+      "missions": [
+        "Promouvoir le sport pour tous",
+        "Soutenir le sport de haut niveau",
+        "Développer les politiques de jeunesse",
+        "Encourager l'engagement associatif",
+        "Renforcer la prévention par le sport"
+      ],
+      "competences": [
+        "Sport et équipements",
+        "Jeunesse et éducation populaire",
+        "Vie associative",
+        "Engagement et service civique",
+        "Prévention et santé par le sport"
+      ],
+      "politiques_publiques": [
+        "Plan sport pour tous",
+        "Soutien aux associations",
+        "Engagement des jeunes",
+        "Prévention des violences dans le sport",
+        "Promotion de la santé par l'activité physique"
+      ],
+      "chiffres_cles": [
+        "Réseau des services déconcentrés",
+        "Fédérations sportives",
+        "Associations de jeunesse"
+      ],
+      "organigramme": [
+        "Direction des sports",
+        "Direction de la jeunesse, de l'éducation populaire et de la vie associative (DJEPVA)",
+        "Services territoriaux"
+      ],
+      "operateurs": [
+        "Agence nationale du Sport",
+        "Agence du service civique",
+        "INJEP"
+      ],
+      "details": {
+        "missions": {
+          "Promouvoir le sport pour tous": [
+            "Accès aux équipements",
+            "Sport scolaire et loisirs"
+          ],
+          "Soutenir le sport de haut niveau": [
+            "Accompagnement des athlètes",
+            "Structures de haut niveau"
+          ],
+          "Développer les politiques de jeunesse": [
+            "Programmes éducatifs",
+            "Mobilité et insertion"
+          ],
+          "Encourager l'engagement associatif": [
+            "Soutien financier",
+            "Formation des bénévoles"
+          ],
+          "Renforcer la prévention par le sport": [
+            "Sport-santé",
+            "Prévention des risques"
+          ]
+        },
+        "competences": {
+          "Sport et équipements": [
+            "Planification",
+            "Subventions"
+          ],
+          "Jeunesse et éducation populaire": [
+            "Programmes d'éducation populaire",
+            "Soutien aux initiatives"
+          ],
+          "Vie associative": [
+            "Financements",
+            "Accompagnement"
+          ],
+          "Engagement et service civique": [
+            "Service civique",
+            "Engagement"
+          ],
+          "Prévention et santé par le sport": [
+            "Sport-santé",
+            "Prévention"
+          ]
+        },
+        "politiques_publiques": {
+          "Plan sport pour tous": [
+            "Accessibilité",
+            "Pratique de proximité"
+          ],
+          "Soutien aux associations": [
+            "Subventions",
+            "Accompagnement"
+          ],
+          "Engagement des jeunes": [
+            "Service civique",
+            "Bénévolat"
+          ],
+          "Prévention des violences dans le sport": [
+            "Signalement",
+            "Formation"
+          ],
+          "Promotion de la santé par l'activité physique": [
+            "Sport-santé",
+            "Programmes de prévention"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi visant à démocratiser le sport en France (2022)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=democratiser%20le%20sport%202022",
+          "synthese": "Facilite la pratique sportive et renforce la gouvernance du sport.",
+          "details": [
+            "Accès au sport : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Gouvernance : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Prévention des violences : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi relative au service civique (2010)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=service%20civique%202010",
+          "synthese": "Crée le service civique pour favoriser l'engagement des jeunes.",
+          "details": [
+            "Engagement citoyen : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Missions d'intérêt général : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Accompagnement : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Annuaire de l'administration",
+          "url": "https://lannuaire.service-public.gouv.fr/gouvernement/2fd089d2-669f-4a91-80b2-b345db391349"
+        },
+        {
+          "label": "Sports",
+          "url": "https://www.sports.gouv.fr/"
+        },
+        {
+          "label": "Jeunesse",
+          "url": "https://www.jeunes.gouv.fr/"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Total CP PLF 2026 : 1.24 MdEUR",
+        "Total AE PLF 2026 : 1.60 MdEUR",
+        "Titre 2 (personnel) CP 2026 : 0.13 MdEUR",
+        "Hors titre 2 CP 2026 : 1.10 MdEUR",
+        "Missions (CP 2026) :",
+        "- Sport, jeunesse et vie associative : 1.24 MdEUR",
+        "Programmes principaux (CP 2026) :",
+        "- P163 Jeunesse et vie associative : 0.63 MdEUR",
+        "- P219 Sport : 0.55 MdEUR",
+        "- P385 Jeux olympiques et paralympiques d'hiver 2030 : 0.05 MdEUR"
+      ]
+    },
+    {
+      "id": "ministere-des-transports",
+      "name": "Ministère des Transports",
+      "short_name": "Transports",
+      "site_url": "https://lannuaire.service-public.gouv.fr/gouvernement/0c78ef90-614a-4fcb-b7af-449f6c66f6b6",
+      "resume": "Piloter les politiques de transport, la mobilité durable, la sécurité et la régulation des infrastructures.",
+      "missions": [
+        "Développer les mobilités durables",
+        "Assurer la sécurité des transports",
+        "Moderniser les infrastructures",
+        "Réguler les services et opérateurs",
+        "Réduire l'empreinte environnementale des transports"
+      ],
+      "competences": [
+        "Transports ferroviaires, routiers, aériens et maritimes",
+        "Régulation économique et sécurité",
+        "Infrastructures et investissements",
+        "Mobilités du quotidien",
+        "Transition énergétique des transports"
+      ],
+      "politiques_publiques": [
+        "Loi d'orientation des mobilités",
+        "Développement du ferroviaire",
+        "Sécurité routière",
+        "Décarbonation des transports",
+        "Mobilités actives"
+      ],
+      "chiffres_cles": [
+        "Réseaux ferroviaires et routiers",
+        "Aéroports et ports",
+        "Programmes d'investissements"
+      ],
+      "organigramme": [
+        "Direction générale des infrastructures, des transports et des mobilités (DGITM)",
+        "Direction générale de l'aviation civile (DGAC)",
+        "Services territoriaux"
+      ],
+      "operateurs": [
+        "SNCF Réseau",
+        "Voies navigables de France (VNF)",
+        "CEREMA"
+      ],
+      "details": {
+        "missions": {
+          "Développer les mobilités durables": [
+            "Transports collectifs",
+            "Mobilités actives"
+          ],
+          "Assurer la sécurité des transports": [
+            "Réglementation",
+            "Contrôles"
+          ],
+          "Moderniser les infrastructures": [
+            "Investissements",
+            "Maintenance"
+          ],
+          "Réguler les services et opérateurs": [
+            "Contrats et concessions",
+            "Suivi des opérateurs"
+          ],
+          "Réduire l'empreinte environnementale des transports": [
+            "Décarbonation",
+            "Efficiences énergétiques"
+          ]
+        },
+        "competences": {
+          "Transports ferroviaires, routiers, aériens et maritimes": [
+            "Réglementation",
+            "Coordination des acteurs"
+          ],
+          "Régulation économique et sécurité": [
+            "Normes",
+            "Contrôles"
+          ],
+          "Infrastructures et investissements": [
+            "Programmation",
+            "Financements"
+          ],
+          "Mobilités du quotidien": [
+            "Offres locales",
+            "Intermodalité"
+          ],
+          "Transition énergétique des transports": [
+            "Véhicules propres",
+            "Carburants alternatifs"
+          ]
+        },
+        "politiques_publiques": {
+          "Loi d'orientation des mobilités": [
+            "Plan de mobilité",
+            "Gouvernance"
+          ],
+          "Développement du ferroviaire": [
+            "Investissements",
+            "Réseau"
+          ],
+          "Sécurité routière": [
+            "Prévention",
+            "Contrôle"
+          ],
+          "Décarbonation des transports": [
+            "ZFE",
+            "Aides à la conversion"
+          ],
+          "Mobilités actives": [
+            "Plan vélo",
+            "Aménagements"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi d'orientation des mobilités (LOM, 2019)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%20orientation%20mobilites%202019",
+          "synthese": "Structure la politique des mobilités et organise la transition vers des transports propres.",
+          "details": [
+            "Autorités organisatrices de la mobilité : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Mobilités du quotidien : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Transition énergétique : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Annuaire de l'administration",
+          "url": "https://lannuaire.service-public.gouv.fr/gouvernement/0c78ef90-614a-4fcb-b7af-449f6c66f6b6"
+        },
+        {
+          "label": "Mobilités et transports",
+          "url": "https://www.ecologie.gouv.fr/"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Total CP PLF 2026 : 7.21 MdEUR",
+        "Total AE PLF 2026 : 8.48 MdEUR",
+        "Titre 2 (personnel) CP 2026 : 1.44 MdEUR",
+        "Hors titre 2 CP 2026 : 5.77 MdEUR",
+        "Missions (CP 2026) :",
+        "- Écologie, développement et mobilité durables : 4.64 MdEUR",
+        "- Contrôle et exploitation aériens : 2.43 MdEUR",
+        "- Prêts et avances à des particuliers ou à des organismes privés : 0.15 MdEUR",
+        "Programmes principaux (CP 2026) :",
+        "- P203 Infrastructures et services de transports : 4.64 MdEUR",
+        "- P613 Soutien aux prestations de l'aviation civile : 1.68 MdEUR",
+        "- P612 Navigation aérienne : 0.70 MdEUR",
+        "- P869 Prêts à la société concessionnaire de la liaison express entre Paris et l'aéroport Paris-Charles de Gaulle : 0.15 MdEUR",
+        "- P614 Transports aériens, surveillance et certification : 0.05 MdEUR"
+      ]
+    },
+    {
+      "id": "ministere-de-la-ville-et-du-logement",
+      "name": "Ministère de la Ville et du Logement",
+      "short_name": "Ville et Logement",
+      "site_url": "https://lannuaire.service-public.gouv.fr/gouvernement/051be6c4-2693-45e0-9644-b84049e57f02",
+      "resume": "Conduire la politique du logement et de la ville, lutter contre les inégalités territoriales et améliorer l'accès au logement.",
+      "missions": [
+        "Faciliter l'accès au logement",
+        "Améliorer l'habitat et la rénovation",
+        "Conduire la politique de la ville",
+        "Réduire les inégalités territoriales",
+        "Accompagner les collectivités dans l'aménagement"
+      ],
+      "competences": [
+        "Aides au logement",
+        "Rénovation énergétique",
+        "Urbanisme et aménagement",
+        "Politique de la ville",
+        "Hébergement et insertion"
+      ],
+      "politiques_publiques": [
+        "Accès au logement social",
+        "Rénovation énergétique des bâtiments",
+        "Quartiers prioritaires",
+        "Hébergement d'urgence",
+        "Planification urbaine"
+      ],
+      "chiffres_cles": [
+        "Programmes d'aides au logement",
+        "Quartiers prioritaires",
+        "Rénovation et aménagement"
+      ],
+      "organigramme": [
+        "Direction générale de l'aménagement, du logement et de la nature (DGALN)",
+        "Direction de l'habitat, de l'urbanisme et des paysages (DHUP)",
+        "Services territoriaux"
+      ],
+      "operateurs": [
+        "ANRU",
+        "ANAH",
+        "CEREMA"
+      ],
+      "details": {
+        "missions": {
+          "Faciliter l'accès au logement": [
+            "Aides personnelles",
+            "Logement social"
+          ],
+          "Améliorer l'habitat et la rénovation": [
+            "Rénovation énergétique",
+            "Qualité de l'habitat"
+          ],
+          "Conduire la politique de la ville": [
+            "Quartiers prioritaires",
+            "Cohésion sociale"
+          ],
+          "Réduire les inégalités territoriales": [
+            "Programmes d'aménagement",
+            "Aides aux collectivités"
+          ],
+          "Accompagner les collectivités dans l'aménagement": [
+            "Appui technique",
+            "Planification urbaine"
+          ]
+        },
+        "competences": {
+          "Aides au logement": [
+            "APL",
+            "Aides spécifiques"
+          ],
+          "Rénovation énergétique": [
+            "MaPrimeRenov",
+            "Programmes ANAH"
+          ],
+          "Urbanisme et aménagement": [
+            "Documents d'urbanisme",
+            "Planification"
+          ],
+          "Politique de la ville": [
+            "Contrats de ville",
+            "ANRU"
+          ],
+          "Hébergement et insertion": [
+            "Hébergement d'urgence",
+            "Insertion"
+          ]
+        },
+        "politiques_publiques": {
+          "Accès au logement social": [
+            "Production de logements",
+            "Attributions"
+          ],
+          "Rénovation énergétique des bâtiments": [
+            "Rénovation des logements",
+            "Performance énergétique"
+          ],
+          "Quartiers prioritaires": [
+            "Renouvellement urbain",
+            "Cohésion sociale"
+          ],
+          "Hébergement d'urgence": [
+            "Places d'urgence",
+            "Parcours vers le logement"
+          ],
+          "Planification urbaine": [
+            "Documents d'urbanisme",
+            "Stratégies territoriales"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi relative à la solidarité et au renouvellement urbains (SRU, 2000)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%20SRU%202000",
+          "synthese": "Renforce la mixité sociale et l'obligation de logement social.",
+          "details": [
+            "Objectifs de logements sociaux : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Planification urbaine : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Mixité sociale : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi pour l'accès au logement et un urbanisme rénové (ALUR, 2014)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%20ALUR%202014",
+          "synthese": "Réforme le logement, la location et l'urbanisme.",
+          "details": [
+            "Encadrement des loyers : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Simplification des règles : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Réforme de la copropriété : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Loi portant évolution du logement, de l'aménagement et du numérique (ELAN, 2018)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=loi%20ELAN%202018",
+          "synthese": "Accélère la construction et réforme le secteur du logement.",
+          "details": [
+            "Simplification des procédures : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Accélération de la construction : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Modernisation du parc social : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Annuaire de l'administration",
+          "url": "https://lannuaire.service-public.gouv.fr/gouvernement/051be6c4-2693-45e0-9644-b84049e57f02"
+        },
+        {
+          "label": "Accès au logement",
+          "url": "https://www.ecologie.gouv.fr/dossiers/comment-faciliter-lacces-logement"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Total CP PLF 2026 : 21.88 MdEUR",
+        "Total AE PLF 2026 : 21.75 MdEUR",
+        "Titre 2 (personnel) CP 2026 : 0.02 MdEUR",
+        "Hors titre 2 CP 2026 : 21.86 MdEUR",
+        "Missions (CP 2026) :",
+        "- Cohésion des territoires : 21.88 MdEUR",
+        "Programmes principaux (CP 2026) :",
+        "- P109 Aide à l'accès au logement : 16.13 MdEUR",
+        "- P177 Hébergement, parcours vers le logement et insertion des personnes vulnérables : 3.07 MdEUR",
+        "- P135 Urbanisme, territoires et amélioration de l'habitat : 2.03 MdEUR",
+        "- P147 Politique de la ville : 0.65 MdEUR"
+      ]
+    },
+    {
+      "id": "office-francais-de-protection-des-refugies-et-apatrides",
+      "name": "Office français de protection des réfugiés et apatrides",
+      "short_name": "OFPRA",
+      "site_url": "https://www.ofpra.gouv.fr/",
+      "resume": "Autorité indépendante chargée d'instruire les demandes d'asile et de protéger les réfugiés, apatrides et bénéficiaires de la protection subsidiaire.",
+      "missions": [
+        "Instruction des demandes de protection internationale",
+        "Protection juridique et administrative des réfugiés, apatrides et bénéficiaires de la protection subsidiaire",
+        "Conseil dans la procédure d'asile aux frontières"
+      ],
+      "competences": [
+        "Instruction des demandes d'asile",
+        "Protection internationale",
+        "Statut d'apatride",
+        "Coopération avec les juridictions de l'asile"
+      ],
+      "politiques_publiques": [
+        "Droit d'asile",
+        "Protection subsidiaire",
+        "Accueil et intégration"
+      ],
+      "chiffres_cles": [
+        "Dossiers d'asile instruits",
+        "Décisions de protection",
+        "Réseau de protection"
+      ],
+      "organigramme": [
+        "Direction générale",
+        "Directions de l'instruction",
+        "Direction de la protection",
+        "Services territoriaux"
+      ],
+      "operateurs": [
+        "Cour nationale du droit d'asile (CNDA)"
+      ],
+      "details": {
+        "missions": {
+          "Instruction des demandes de protection internationale": [
+            "Examen des dossiers",
+            "Entretiens"
+          ],
+          "Protection juridique et administrative des réfugiés, apatrides et bénéficiaires de la protection subsidiaire": [
+            "Décisions de statut",
+            "Suivi de la protection"
+          ],
+          "Conseil dans la procédure d'asile aux frontières": [
+            "Avis techniques",
+            "Coordination"
+          ]
+        },
+        "competences": {
+          "Instruction des demandes d'asile": [
+            "Analyse des demandes",
+            "Décisions"
+          ],
+          "Protection internationale": [
+            "Statut de réfugié",
+            "Protection subsidiaire"
+          ],
+          "Statut d'apatride": [
+            "Reconnaissance du statut",
+            "Suivi administratif"
+          ],
+          "Coopération avec les juridictions de l'asile": [
+            "CNDA",
+            "Échanges juridiques"
+          ]
+        },
+        "politiques_publiques": {
+          "Droit d'asile": [
+            "Instruction",
+            "Protection"
+          ],
+          "Protection subsidiaire": [
+            "Décisions",
+            "Suivi"
+          ],
+          "Accueil et intégration": [
+            "Coordination",
+            "Accompagnement"
+          ]
+        }
+      },
+      "grandes_lois": [
+        {
+          "label": "Loi relative à la réforme du droit d'asile (2015)",
+          "url": "https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query=reforme%20droit%20asile%202015",
+          "synthese": "Réorganise la procédure d'asile et renforce les garanties.",
+          "details": [
+            "Délais de procédure : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Garanties : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Protection : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        },
+        {
+          "label": "Code de l'entrée et du séjour des étrangers et du droit d'asile (CESEDA)",
+          "url": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070158/",
+          "synthese": "Cadre juridique de l'asile et du séjour des étrangers.",
+          "details": [
+            "Procédures d'asile : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Statuts de protection : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable.",
+            "Droits des demandeurs : Le dispositif clarifie le cadre et fixe des objectifs concrets. Il précise les responsabilités des acteurs et les modalités d'application. Il vise une mise en œuvre cohérente et mesurable."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Missions",
+          "url": "https://www.ofpra.gouv.fr/missions"
+        }
+      ],
+      "notes": "",
+      "budget": [
+        "Budget : opérateur public rattaché au ministère de l'Intérieur (voir budget Intérieur)"
+      ]
+    }
+  ]
+}
